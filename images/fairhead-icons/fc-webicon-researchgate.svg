@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <svg id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="23.9995" y1="0" x2="23.9995" y2="48.0005">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#EAEAEA"/>
+</linearGradient>
  <g>
   <title>Layer 1</title>
   <g stroke="null" id="svg_6">
