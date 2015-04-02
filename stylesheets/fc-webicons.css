@@ -99,6 +99,7 @@
 .no-svg .fc-webicon.researchgate { background: url("../images/fairhead-icons/fc-webicon-researchgate-m.png"); }
 .no-svg .fc-webicon.researchgate.large { background: url("../images/fairhead-icons/fc-webicon-researchgate.png"); }
 .no-svg .fc-webicon.researchgate.small { background: url("../images/fairhead-icons/fc-webicon-researchgate-s.png"); }
+.svg .fc-webicon.researchgate { background: url("../images/fairhead-icons/fc-webicon-researchgate.svg"); }
 
 /* RSS */
 .no-svg .fc-webicon.rss { background: url("../images/fairhead-icons/fc-webicon-rss-m.png"); }
