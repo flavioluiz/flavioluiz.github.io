@@ -1,19 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
 # Permalinks
 permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
-paginate:         1
-baseurl:          /
+title:            Flavio Ribeiro
+tagline:          ''
+description:      'Aeronautical Engineer, PhD Candidate'
+url:              http://flavioluiz.github.io/
+baseurl:          http://flavioluiz.github.io/
+
 author:
-  name:           Mark Otto
+  name:           'Mark Otto'
   url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+
+paginate:         5
 
 # Custom vars
-version:          1.0.0
+version:          2.1.0
+
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/poole/hyde
