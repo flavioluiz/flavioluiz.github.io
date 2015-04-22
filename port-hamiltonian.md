@@ -3,10 +3,12 @@ layout: page
 title: Port-Hamiltonian Systems
 ---
 
-During my PhD, I've been working with modeling and control of systems using the
+As part of my PhD research, I've been working with modeling and control of systems using the
 port-Hamiltonian formulation. In this page, I will give a little introduction about
 the subject as well as show the first results obtained using this formulation for the
 modeling of coupled fluid-structure system.
+
+This research is part of [ANR HAMECMOPSYS](https://hamecmopsys.ens2m.fr/) project.
 
 Introduction
 ----------------------------
@@ -14,13 +16,15 @@ Introduction
 The port-Hamiltonian systems formulation brings together several traditions from
 mechanics, systems modeling and control. 
 One of them is the port-based modeling, where complex systems can be represented
-by the interconnection of simple blocks. Energy flows between each subsystem and
-is used as a common language that allows modeling systems belonging to different
+by the interconnection of simpler blocks. While classical block diagrams and other signal-based
+system interconnection have uni-directional information flow, port-based modeling uses
+bi-directional energy ports between interconnected systems. In addition, by using
+energy as a common language for interconnection, this approach allows modeling systems belonging to different
 physical domains (mechanical, electrical, thermal, ...).
 The graphical representation for this modeling concept is given by the so-called
 [bond graphs](http://en.wikipedia.org/wiki/Bond_graph).
 
-The formulation is also an extension of Hamiltonian mechanics, allowing the modeling
+The formulation is also an extension of [Hamiltonian mechanics](http://en.wikipedia.org/wiki/Hamiltonian_mechanics), allowing the modeling
 of open systems.
 
 Finally, since port-Hamiltonian systems are a subclass of passive systems, they
@@ -56,7 +60,7 @@ and the dynamic equations become the so-called Hamilton's equations:
 $$
 \begin{align}
 	\frac{d}{dt}\left[\begin{matrix} p \\ x \end{matrix}\right]
-	 = \left[ \begin{matrix} 0 & 1 \\ -1 & 0 \end{matrix} \right]
+	 = \left[ \begin{matrix} 0 & -1 \\ 1 & 0 \end{matrix} \right]
 	 \left[\begin{matrix} \frac{\partial H}{\partial p}  \\ \frac{\partial H}{\partial x} \end{matrix} \right] 
 	 + \left[ \begin{matrix} 1 \\ 0 \end{matrix} \right] F_{ext},
 \end{align}
@@ -135,7 +139,7 @@ beam and fluid equations. Then, appropriated [discretization methodologies](http
 can be used for obtaining a finite-dimensional representation that guarantees that the interconnection
 structure and passivity characteristics of the original system are conserved.
 
-At ISAE, we have an experimental device that consists in an aluminum plate with a tip tank that can
+At ISAE, we have an experimental device that consists in an aluminium plate with a tip tank that can
 be partially filled with liquid. We've used the port-Hamiltonian formulation to model this system 
 and compare it with experimental results.
 
@@ -143,6 +147,9 @@ The plate is modeled as a beam (with independent torsion and bending). The tank 
 rigid mass/inertias. Finally, the fluid is modeled using Saint-Venant equations.
 Each subsystem is coupled using a power conserving interconnection. For now, we've used
 the final system for simulation. In the near future, we plan to use it for control design.
+
+For a detailed description of the system, you can check the pre-print version of a [submitted paper]({{ site.baseurl }}papers/FluidStructurePH.pdf) about the subject.
+For detailed results as well as the source codes, you can check our [github page](https://github.com/flavioluiz/port-hamiltonian/tree/master/LHMNLC2015).
 
 The following table shows the natural frequencies of the coupled system, considering the tank 25% filled:
 

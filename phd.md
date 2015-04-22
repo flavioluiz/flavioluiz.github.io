@@ -26,4 +26,4 @@ presented at EuroGNC 2015.
 
 Since 2014, I've been working with port-Hamiltonian approach for modeling and control
 of flexible-fluid structures.
-An introduction about this subject as well as first results are presented [here]({{ site.baseurl }}port_hamiltonian).
+An introduction about this subject as well as first results are presented [here]({{ site.baseurl }}port-hamiltonian).
