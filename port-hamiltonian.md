@@ -3,9 +3,73 @@ layout: page
 title: Port-Hamiltonian Systems
 ---
 
+During my PhD, I've been working with modeling and control of systems using the
+port-Hamiltonian formulation. In this page, I will give a little introduction about
+the subject as well as show the first results obtained using this formulation for the
+modeling of coupled fluid-structure system.
+
 Introduction
 ----------------------------
-To be written!!
+
+The port-Hamiltonian systems formulation brings together several traditions from
+mechanics, systems modeling and control.
+
+Simple example: Mass-spring
+---------------------------- 
+
+The well-know dynamic equation for the mass-spring is given by (from Newton's second law):
+
+$$
+\begin{align}
+	m\ddot{x} + k x = F_{ext},
+\end{align}
+$$
+
+The system total energy is given by the sum of kinetic and potential energy:
+
+$$
+\begin{align}
+	E = \frac{m \dot{x}^2}{2} + \frac{k x^2}{2},
+\end{align}
+$$
+by defining the moment variable:$$ $p := m\dot{x}$ $$, we can rewrite the energy as:
+
+$$
+\begin{align}
+	H(p,x) = \frac{p^2}{2 m} + \frac{k x^2}{2},
+\end{align}
+$$
+and the dynamic equations become the so-called Hamilton's equations: 
+
+$$
+\begin{align}
+	\frac{d}{dt}\left[ \begin{matrix} p \\ x \end{matrix}\right]
+	 = \left[ \begin{matrix} 0 & 1 \\ -1 & 0 \end{matrix} \right]
+	 \left[ \begin{matrix} \frac{\partial H}{\partial p}  \\ \frac{\partial H}{\partial x} \end{matrix} \right] 
+	 + \left[ 1 \\ 0 \end{matrix} \right] F_{ext},
+\end{align}
+$$
+
+If we compute the time rate of the Hamiltonian (energy flow):
+
+$$
+\begin{align}
+	\frac{d H}{d t}(p,x) & = \frac{p}{m} \dot{p} + k x \dot{x},
+	                     & = \dot{x} F_{ext}.
+\end{align}
+$$
+
+Notice that if the external force is zero, then the system is conservative
+(which is obviously the case for a mass-spring without damper).
+
+In the port-Hamiltonian formulation, we define ports (like the force and
+speed in this case), that can be used to interconnect with other systems.
+By using power-conserving interconnections, the formulation allows to
+model complex systems consistently. In addition, each subsystem can
+come from different domains (thermal, mechanical, electro-magnetic,...).
+
+A typical representation of port-Hamiltonian system is given by the following
+equations:
 
 $$
 \begin{align}
@@ -16,16 +80,55 @@ $$
 \end{align}
 $$
 
+Where J(x) is a skew-symmetric matrix, H(x) is the system Hamiltonian, x is
+a state vector. If we compute the energy flow for this system:
+
+$$
+\begin{align}
+	\frac{d H}{d t}(x) & = \nabla H(x)^T \dot{x},
+	                     & = \nabla H(x)^T J(x) \nabla H(x) + \nabla H(x) B u,
+						 & = y^T u.
+\end{align}
+$$
+
+Systems that shows the previous energy flow are called passive systems. There are
+several control techniques appropriated to these systems. In addition, the fact that
+the port-Hamiltonian formulation naturally comes with an energy function (the Hamiltonian),
+makes it a very convenient formulation for control using energy-shaping techniques.
+
+Control motivation - damping assignment
+-----------------------------------------
+
+As a very simple example of control law. Suppose that we want to increase the damping of
+some mechanical system that is given by the port-Hamiltonian equations presented before.
+A simple 'u = - K y' control law will lead to the following energy flow:
+
+$$
+\begin{align}
+	\frac{d H}{d t}(x) & = - y^T K y \leq 0, if K \beq 0.
+\end{align}
+$$
+
+Using this control law, we can guarantee that the system energy will be reduced. If the Hamiltonian
+has a lower bound, it guarantees that the system will converge to equilibrium. 
 
 
 Example: coupled structure dynamics + fluid dynamics
 --------------------------------------------------------
 
-All subsystems are coupled in the file `.\main\couplefullsystem.m`. Several tests
-with the coupled system can be performed with `coupledFULL.m`. For a given tank FILLING ratio,
-specifying the number of elements of each subsystem, this script finds the system natural frequencies.
-It also plots the system modal shapes and presents the results of a simple simulation (where the
-beam is initially deformed and released at initial time).
+The port-Hamiltonian formulation can also be extended to infinite-dimensional systems (PDEs), as
+beam and fluid equations. Then, appropriated discretization methodologies can be used for
+obtaining a finite-dimensional representation that guarantees that the interconnection structure and
+passivity characteristics of the original system are conserved.
+
+At ISAE, we have an experimental device that consists in an aluminum plate with a tip tank that can
+be partially filled with liquid. We've used the port-Hamiltonian formulation to model this system 
+and compare it with experimental results.
+
+The plate is modeled as a beam (with independent torsion and bending). The tank is modeled using
+rigid mass/inertias. Finally, the fluid is modeled using Saint-Venant equations.
+Each subsystem is coupled using a power conserving interconnection. For now, we've used
+the final system for simulation. In the near future, we plan to use it for control design.
 
 The following table shows the natural frequencies of the coupled system, considering the tank 25% filled:
 
@@ -67,7 +170,7 @@ The following mode is an example of symmetric one:
 
 ![Symmetric mode](https://github.com/flavioluiz/port-hamiltonian/raw/master/LHMNLC2015/results/modesym.gif)
 
-Finally, the code can be used for simulation. The following animated GIF shows an example
+Finally, it is possible to simulate the system. The following animated GIF shows an example
 of simulation. The beam starts at a deformed condition and it is then released:
 
 ![Simulation](https://github.com/flavioluiz/port-hamiltonian/raw/master/LHMNLC2015/results/simulation.gif)
