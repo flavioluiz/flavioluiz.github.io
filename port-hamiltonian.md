@@ -12,7 +12,19 @@ Introduction
 ----------------------------
 
 The port-Hamiltonian systems formulation brings together several traditions from
-mechanics, systems modeling and control.
+mechanics, systems modeling and control. 
+One of them is the port-based modeling, where complex systems can be represented
+by the interconnection of simple blocks. Energy flows between each subsystem and
+is used as a common language that allows modeling systems belonging to different
+physical domains (mechanical, electrical, thermal, ...).
+The graphical representation for this modeling concept is given by the so-called
+[bond graphs](http://en.wikipedia.org/wiki/Bond_graph).
+
+The formulation is also an extension of Hamiltonian mechanics, allowing the modeling
+of open systems.
+
+Finally, since port-Hamiltonian systems are a subclass of passive systems, they
+become a natural starting point for passivity-based control design.
 
 Simple example: Mass-spring
 ---------------------------- 
@@ -43,10 +55,10 @@ and the dynamic equations become the so-called Hamilton's equations:
 
 $$
 \begin{align}
-	\frac{d}{dt}\left[ \begin{matrix} p \\ x \end{matrix}\right]
+	\frac{d}{dt}\left[\begin{matrix} p \\ x \end{matrix}\right]
 	 = \left[ \begin{matrix} 0 & 1 \\ -1 & 0 \end{matrix} \right]
-	 \left[ \begin{matrix} \frac{\partial H}{\partial p}  \\ \frac{\partial H}{\partial x} \end{matrix} \right] 
-	 + \left[ 1 \\ 0 \end{matrix} \right] F_{ext},
+	 \left[\begin{matrix} \frac{\partial H}{\partial p}  \\ \frac{\partial H}{\partial x} \end{matrix} \right] 
+	 + \left[ \begin{matrix} 1 \\ 0 \end{matrix} \right] F_{ext},
 \end{align}
 $$
 
@@ -54,7 +66,7 @@ If we compute the time rate of the Hamiltonian (energy flow):
 
 $$
 \begin{align}
-	\frac{d H}{d t}(p,x) & = \frac{p}{m} \dot{p} + k x \dot{x},
+	\frac{d H}{d t}(p,x) & = \frac{p}{m} \dot{p} + k x \dot{x}, \\
 	                     & = \dot{x} F_{ext}.
 \end{align}
 $$
@@ -80,13 +92,13 @@ $$
 \end{align}
 $$
 
-Where J(x) is a skew-symmetric matrix, H(x) is the system Hamiltonian, x is
+where J(x) is a skew-symmetric matrix, H(x) is the system Hamiltonian, x is
 a state vector. If we compute the energy flow for this system:
 
 $$
 \begin{align}
-	\frac{d H}{d t}(x) & = \nabla H(x)^T \dot{x},
-	                     & = \nabla H(x)^T J(x) \nabla H(x) + \nabla H(x) B u,
+	\frac{d H}{d t}(x) & = \nabla H(x)^T \dot{x}, \\
+	                     & = \nabla H(x)^T J(x) \nabla H(x) + \nabla H(x) B u, \\
 						 & = y^T u.
 \end{align}
 $$
@@ -94,32 +106,34 @@ $$
 Systems that shows the previous energy flow are called passive systems. There are
 several control techniques appropriated to these systems. In addition, the fact that
 the port-Hamiltonian formulation naturally comes with an energy function (the Hamiltonian),
-makes it a very convenient formulation for control using energy-shaping techniques.
+makes it a very convenient formulation for control using energy-shaping techniques as well
+show the system stability (by means of Lyapunov analysis).
 
 Control motivation - damping assignment
 -----------------------------------------
 
 As a very simple example of control law. Suppose that we want to increase the damping of
 some mechanical system that is given by the port-Hamiltonian equations presented before.
-A simple 'u = - K y' control law will lead to the following energy flow:
+A simple 'u = - k y', with positive 'k', control law will lead to the following energy flow:
 
 $$
 \begin{align}
-	\frac{d H}{d t}(x) & = - y^T K y \leq 0, if K \beq 0.
+	\frac{d H}{d t}(x) & = - k y^T y \leq 0.
 \end{align}
 $$
 
 Using this control law, we can guarantee that the system energy will be reduced. If the Hamiltonian
-has a lower bound, it guarantees that the system will converge to equilibrium. 
+has a lower bound, it guarantees that the system is stable (better than that: it is stable regardless
+of plant uncertainties!!).
 
 
-Example: coupled structure dynamics + fluid dynamics
+Coupled structure + fluid dynamics
 --------------------------------------------------------
 
 The port-Hamiltonian formulation can also be extended to infinite-dimensional systems (PDEs), as
-beam and fluid equations. Then, appropriated discretization methodologies can be used for
-obtaining a finite-dimensional representation that guarantees that the interconnection structure and
-passivity characteristics of the original system are conserved.
+beam and fluid equations. Then, appropriated [discretization methodologies](https://www.researchgate.net/publication/222522902_Hamiltonian_discretization_of_boundary_control_systems)
+can be used for obtaining a finite-dimensional representation that guarantees that the interconnection
+structure and passivity characteristics of the original system are conserved.
 
 At ISAE, we have an experimental device that consists in an aluminum plate with a tip tank that can
 be partially filled with liquid. We've used the port-Hamiltonian formulation to model this system 
@@ -132,7 +146,7 @@ the final system for simulation. In the near future, we plan to use it for contr
 
 The following table shows the natural frequencies of the coupled system, considering the tank 25% filled:
 
-Number of elements: | 10 | 50 | 200 | Ref. previous work
+Number of elements: | 10 | 50 | 200 | Ref. [previous work](https://www.researchgate.net/publication/274896289_Control_design_for_a_coupled_fluid-structure_system_with_piezoelectric_actuators?ev=prf_pub)
  --- | --- | --- | --- | --- | --- 
 Slosh+bending | 0.4318 | 0.4332 | 0.4332  |  0.4362  
 Slosh+bending | 1.1404 | 1.1436 | 1.1437  |  1.1938  
