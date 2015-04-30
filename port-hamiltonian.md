@@ -48,7 +48,7 @@ $$
 	E = \frac{m \dot{x}^2}{2} + \frac{k x^2}{2},
 \end{align}
 $$
-by defining the moment variable:$$ $p := m\dot{x}$ $$, we can rewrite the energy as:
+by defining the moment variable:$$p := m\dot{x}$$, we can rewrite the energy as:
 
 $$
 \begin{align}
