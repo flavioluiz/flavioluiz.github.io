@@ -102,16 +102,16 @@ a state vector. If we compute the energy flow for this system:
 $$
 \begin{align}
 	\frac{d H}{d t}(x) & = \nabla H(x)^T \dot{x}, \\
-	                     & = \nabla H(x)^T J(x) \nabla H(x) + \nabla H(x) B u, \\
+	                     & = \nabla H(x)^T J(x) \nabla H(x) + \nabla H(x)^T B u, \\
 						 & = y^T u.
 \end{align}
 $$
 
-Systems that shows the previous energy flow are called passive systems. There are
-several control techniques appropriated to these systems. In addition, the fact that
+Systems that exhibit the previous energy flow are called passive systems. There are
+several control techniques appropriate to these systems. In addition, the fact that
 the port-Hamiltonian formulation naturally comes with an energy function (the Hamiltonian),
-makes it a very convenient formulation for control using energy-shaping techniques as well
-show the system stability (by means of Lyapunov analysis).
+makes it a very convenient formulation for control using energy-shaping techniques, and
+helps proving the system stability (by means of Lyapunov analysis).
 
 Control motivation - damping assignment
 -----------------------------------------
@@ -135,9 +135,9 @@ Coupled structure + fluid dynamics
 --------------------------------------------------------
 
 The port-Hamiltonian formulation can also be extended to infinite-dimensional systems (PDEs), as
-beam and fluid equations. Then, appropriated [discretization methodologies](https://www.researchgate.net/publication/222522902_Hamiltonian_discretization_of_boundary_control_systems)
-can be used for obtaining a finite-dimensional representation that guarantees that the interconnection
-structure and passivity characteristics of the original system are conserved.
+beam and fluid equations. Then, appropriate [discretization methodologies](https://www.researchgate.net/publication/222522902_Hamiltonian_discretization_of_boundary_control_systems)
+can be used for obtaining a finite-dimensional approximation that guarantees that both the interconnection
+structure and the passivity characteristics of the original system are conserved at the finite-dimensional level.
 
 At ISAE, we have an experimental device that consists in an aluminium plate with a tip tank that can
 be partially filled with liquid. We've used the port-Hamiltonian formulation to model this system 
@@ -145,8 +145,8 @@ and compare it with experimental results.
 
 The plate is modeled as a beam (with independent torsion and bending). The tank is modeled using
 rigid mass/inertias. Finally, the fluid is modeled using Saint-Venant equations.
-Each subsystem is coupled using a power conserving interconnection. For now, we've used
-the final system for simulation. In the near future, we plan to use it for control design.
+Each subsystem is coupled using a power conserving interconnection. Up to now, we've used
+the global system for simulation. In the near future, we plan to use it for control design.
 
 For a detailed description of the system, you can check the pre-print version of a [submitted paper]({{ site.baseurl }}papers/FluidStructurePH.pdf) about the subject.
 For detailed results as well as the source codes, you can check our [github page](https://github.com/flavioluiz/port-hamiltonian/tree/master/LHMNLC2015).
@@ -168,7 +168,7 @@ From the the eigenvectors of each mode, we can find the modal shape. The followi
 show the first 3 modal shapes (which represent coupled fluid+bending modes).
 Each numerically obtained mode are also compared with the experimental
 results obtained by exciting the system in the frequencies of these specific modes.
-The tank is filling ratio is 75% for all following cases:
+The tank filling ratio is 75% for all following cases:
 
 1st mode:
 
@@ -186,12 +186,12 @@ The tank is filling ratio is 75% for all following cases:
 ![Third mode video](https://github.com/flavioluiz/port-hamiltonian/raw/master/LHMNLC2015/results/video3.gif) 
 
 *Remark:* Symmetric sloshing modes were neglected in the previous table. Due to their symmetry, 
-they won't interact with structural dynamics (so they are not observable, neither controllable).
+they won't interact with structural dynamics (so they are neither observable, nor controllable).
 The following mode is an example of symmetric one:
 
 ![Symmetric mode](https://github.com/flavioluiz/port-hamiltonian/raw/master/LHMNLC2015/results/modesym.gif)
 
 Finally, it is possible to simulate the system. The following animated GIF shows an example
-of simulation. The beam starts at a deformed condition and it is then released:
+of simulation. The beam starts from a deformed initial condition and it is then released:
 
 ![Simulation](https://github.com/flavioluiz/port-hamiltonian/raw/master/LHMNLC2015/results/simulation.gif)
