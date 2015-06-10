@@ -11,8 +11,8 @@ modeling of coupled fluid-structure system.
 This research is part of [ANR HAMECMOPSYS](https://hamecmopsys.ens2m.fr/) project.
 
 I and my advisor presented an introduction to the subject during a seminary at ISAE.
-You can check the slides: [part I - Introduction](./presentations/DAEP/partI.pdf) and
- [part II - Fluid-structure interactions](./presentations/DAEP/partII.pdf).
+You can check the slides: [part I - Introduction]({{ site.baseurl }}/presentations/DAEP/partI.pdf) and
+ [part II - Fluid-structure interactions]({{ site.baseurl }}/presentations/DAEP/partII.pdf).
 
 Introduction
 ----------------------------
