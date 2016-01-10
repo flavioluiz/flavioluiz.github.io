@@ -4,19 +4,22 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
 title:            Flavio Ribeiro
 tagline:          ''
 description:      'Aeronautical Engineer, PhD candidate'
 url:              http://flavioluiz.github.io/
-baseurl:          http://flavioluiz.github.io/
+#url:              http://localhost:4000/
+#baseurl:          http://flavioluiz.github.io/
+baseurl:           /
 
 author:
   name:           'Mark Otto'
   url:            https://twitter.com/mdo
 
+gems: [jekyll-paginate]
 paginate:         5
 
 # Custom vars
