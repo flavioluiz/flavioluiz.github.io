@@ -10,10 +10,6 @@ modeling of coupled fluid-structure system.
 
 This research is part of [ANR HAMECMOPSYS](https://hamecmopsys.ens2m.fr/) project.
 
-I and my advisor presented an introduction to the subject during a seminar at ISAE.
-You can check the slides: [part I - Introduction]({{ site.baseurl }}/presentations/DAEP/partI.pdf) and
- [part II - Fluid-structure interactions]({{ site.baseurl }}/presentations/DAEP/partII.pdf).
-
 Introduction
 ----------------------------
 
@@ -199,3 +195,9 @@ Finally, it is possible to simulate the system. The following animated GIF shows
 of simulation. The beam starts from a deformed initial condition and it is then released:
 
 ![Simulation](https://github.com/flavioluiz/port-hamiltonian/raw/master/LHMNLC2015/results/simulation.gif)
+
+More info
+---------------------------------------
+I and my advisor presented an introduction to Port Hamiltonian systems during a seminar at ISAE.
+You can check the slides: [part I - Introduction]({{ site.baseurl }}/presentations/DAEP/partI.pdf) and
+ [part II - Fluid-structure interactions]({{ site.baseurl }}/presentations/DAEP/partII.pdf).

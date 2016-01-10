@@ -12,8 +12,8 @@ tagline:          ''
 description:      'Aeronautical Engineer, PhD candidate'
 url:              http://flavioluiz.github.io/
 #url:              http://localhost:4000/
-#baseurl:          http://flavioluiz.github.io/
-baseurl:           /
+baseurl:          http://flavioluiz.github.io/
+#baseurl:           /
 
 author:
   name:           'Mark Otto'
