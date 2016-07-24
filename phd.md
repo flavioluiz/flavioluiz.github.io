@@ -23,8 +23,8 @@ Some partial results of my research were presented in the following publications
 presented at IEEE/ASME AIM 2014 in Lyon, France;
 * [Control design for a coupled fluid-structure system with piezoelectric actuators](https://www.researchgate.net/publication/274896289_Control_design_for_a_coupled_fluid-structure_system_with_piezoelectric_actuators),
 presented at EuroGNC 2015 in Toulouse, France;
-* [Modeling of a Fluid-structure coupled system using port-Hamiltonian formulation]() presented at IFAC LHMNC 2015;
-* [Piezoelectric beam with distributed control ports : a power-preserving discretization using weak formulation]() presented at IFAC CPDE 2016 in Bertinoro, Italy;
+* [Modeling of a Fluid-structure coupled system using port-Hamiltonian formulation](https://www.researchgate.net/publication/279849968_Modeling_of_a_Fluid-structure_coupled_system_using_port-Hamiltonian_formulation) presented at IFAC LHMNC 2015;
+* [Piezoelectric beam with distributed control ports : a power-preserving discretization using weak formulation](https://www.researchgate.net/publication/304174954_Piezoelectric_beam_with_distributed_control_ports_a_power-preserving_discretization_using_weak_formulation) presented at IFAC CPDE 2016 in Bertinoro, Italy;
 * 'Modeling by interconnection and control by damping injection of a fluid-structure system with non-collocated actuators and sensors', to be presented
  at ISMA 2016, in Leuven, Belgium;
 
