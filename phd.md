@@ -19,7 +19,7 @@ deforms when a voltage is applied).
 
 Results of my research were presented in the following papers: 
 
-* [A port-Hamiltonian model of liquid sloshing in moving containers and application to a fluid-structure system](http://flavioluiz.github.io/papers/paperJFS2017.pdf), published at the Journal of Fluids and Structures, Volume 69, February 2017, Pages 402–427  (doi:10.1016/j.jfluidstructs.2016.12.007).
+* [A port-Hamiltonian model of liquid sloshing in moving containers and application to a fluid-structure system](http://flavioluiz.github.io/papers/PhsJFS.pdf), published at the Journal of Fluids and Structures, Volume 69, February 2017, Pages 402–427  (doi:10.1016/j.jfluidstructs.2016.12.007).
 * [Modeling of a coupled fluid-structure system excited by piezoelectric actuators](https://www.researchgate.net/publication/263927713_Modeling_of_a_Coupled_Fluid-Structure_System_Excited_by_Piezoelectric_Actuators):
 presented at IEEE/ASME AIM 2014 in Lyon, France;
 * [Control design for a coupled fluid-structure system with piezoelectric actuators](https://www.researchgate.net/publication/274896289_Control_design_for_a_coupled_fluid-structure_system_with_piezoelectric_actuators),
