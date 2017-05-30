@@ -7,16 +7,16 @@ title: Courses
 
 ## MVO-31 - Desempenho de Aeronaves
 
-* Desempenho em subida: [exercício 1](http://flavioluiz.github.io/courses/mvo31_2017/exercicio1.pdf)
+* Desempenho em subida: [exercÃ­cio 1](http://flavioluiz.github.io/courses/mvo31_2017/exercicio1.pdf)
 
-* Desempenho em curva: [exercício 2](http://flavioluiz.github.io/courses/mvo31_2017/exercicio2.pdf)
+* Desempenho em curva: [exercÃ­cio 2](http://flavioluiz.github.io/courses/mvo31_2017/exercicio2.pdf)
 
-- [Lista de exercícios e laboratório de MATLAB 1](http://flavioluiz.github.io/courses/mvo31_2017/matlab1.pdf)
+- [Lista de exercÃ­cios e laboratÃ³rio de MATLAB 1](http://flavioluiz.github.io/courses/mvo31_2017/matlab1.pdf)
 
-* Desempenho integral: exercício 3
+* Desempenho integral: exercÃ­cio 3
 
-* Decolagem: exercício 4
+* Decolagem: exercÃ­cio 4
 
-* Manobras e digrama V-n: exercício 5
+* Manobras e digrama V-n: exercÃ­cio 5
 
-- Lista de exercícios e laboratório de MATLAB 2
+- Lista de exercÃ­cios e laboratÃ­rio de MATLAB 2
