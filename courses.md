@@ -13,10 +13,10 @@ title: Courses
 
 - [Lista de exercícios e laboratório de MATLAB 1](http://flavioluiz.github.io/courses/mvo31_2017/matlab1.pdf)
 
-* Desempenho integral: exercício 3
+* Desempenho integral
 
-* Decolagem: exercício 4
+* Decolagem [slides](http://flavioluiz.github.io/courses/mvo31_2017/slidesDecolagem.pdf)
 
-* Manobras e digrama V-n: exercício 5
+* Manobras e digrama V-n [slides](http://flavioluiz.github.io/courses/mvo31_2017/slidesDiagramaVn.pdf)
 
-- Lista de exercícios e laboratírio de MATLAB 2
+- [Lista de exercícios e laboratório de MATLAB 2]((http://flavioluiz.github.io/courses/mvo31_2017/matlab2.pdf))
