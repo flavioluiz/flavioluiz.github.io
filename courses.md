@@ -19,4 +19,4 @@ title: Courses
 
 * Manobras e digrama V-n [slides](http://flavioluiz.github.io/courses/mvo31_2017/slidesDiagramaVn.pdf)
 
-- [Lista de exercícios e laboratório de MATLAB 2]((http://flavioluiz.github.io/courses/mvo31_2017/matlab2.pdf))
+- [Lista de exercícios e laboratório de MATLAB 2](http://flavioluiz.github.io/courses/mvo31_2017/matlab2.pdf)
