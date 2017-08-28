@@ -8,7 +8,8 @@ title: Courses
 ## MVO-20 - Fundamentos da Teoria de Controle - Laboratório
 
 * Descrição das atividades do primeiro bimestre:
-[roteiro](http://flavioluiz.github.io/cursos/MVO20/lab1.pdf)
+[roteiro](http://flavioluiz.github.io/cursos/MVO20/lab1.pdf),
+[slides](http://flavioluiz.github.io/cursos/MVO20/slides.pdf)
 
 Códigos: [código arduino](http://flavioluiz.github.io/cursos/MVO20/codigoembarcado_lab1.ino),
 [códigos MATLAB](http://flavioluiz.github.io/cursos/MVO20/codigosMATLAB.zip).
