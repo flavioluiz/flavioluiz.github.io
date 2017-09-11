@@ -11,6 +11,9 @@ title: Courses
 [roteiro](http://flavioluiz.github.io/cursos/MVO20/lab1.pdf),
 [slides](http://flavioluiz.github.io/cursos/MVO20/slides.pdf)
 
+* Laboratório de familiarização com o controle do motor DC:
+[slides](http://flavioluiz.github.io/cursos/MVO20/slides_labmotor.pdf),
+
 Códigos: [código arduino](http://flavioluiz.github.io/cursos/MVO20/codigoembarcado_lab1.ino),
 [códigos MATLAB](http://flavioluiz.github.io/cursos/MVO20/codigosMATLAB.zip).
 
