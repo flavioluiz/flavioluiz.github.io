@@ -3,6 +3,15 @@ layout: page
 title: Courses
 ---
 
+# 2018
+
+## MVO-20 - Mecânica Orbital
+
+* Planejamento e descrição do curso: 
+[planejamento](http://flavioluiz.github.io/courses/mvo41_2018/programa.pdf), [slides](http://flavioluiz.github.io/courses/mvo41_2018/apresentacao_curso.pdf)
+
+* Aula 1: breve histórico e motivações para o estudo da mecânica orbital [slides](http://flavioluiz.github.io/courses/mvo41_2018/aula01_historico.pdf)
+
 # 2017
 
 ## MVO-20 - Fundamentos da Teoria de Controle - Laboratório
