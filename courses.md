@@ -10,7 +10,14 @@ title: Courses
 * Planejamento e descrição do curso: 
 [planejamento](http://flavioluiz.github.io/courses/mvo41_2018/programa.pdf), [slides](http://flavioluiz.github.io/courses/mvo41_2018/apresentacao_curso.pdf)
 
-* Aula 1: breve histórico e motivações para o estudo da mecânica orbital [slides](http://flavioluiz.github.io/courses/mvo41_2018/aula01_historico.pdf)
+* 1) breve histórico e motivações para o estudo da mecânica orbital [slides](http://flavioluiz.github.io/courses/mvo41_2018/aula01_historico.pdf)
+
+* 2) revisão das Leis da mecânica (Bate: 1.1)
+
+* 3) O problema de N-corpos (Bate: 1.2, ver tabela de [parâmetro gravitacional](http://flavioluiz.github.io/courses/mvo41_2018/tabela_grav_param.jpg))
+
+* 4) O problema de 2-corpos (Bate: 1.3), propriedades conservadas (Bate: 1.4)
+
 
 # 2017
 
