@@ -16,8 +16,9 @@ title: Courses
 
 * 3) O problema de N-corpos (Bate: 1.2, ver tabela de [parâmetro gravitacional](http://flavioluiz.github.io/courses/mvo41_2018/tabela_grav_param.jpg))
 
-* 4) O problema de 2-corpos (Bate: 1.3), propriedades conservadas (Bate: 1.4)
+* 4) O problema de 2-corpos (Bate: 1.3), propriedades conservadas (Bate: 1.4), equação da trajetória (1.5), energia e momento angular e propriedades geométricas (1.6), órbitas cônicas (1.7,1.8, 1.9, 1.10), e unidades canônicas (1.11)
 
+* 5) Sistemas de coordenadas e elementos orbitais (2.2 e 2.3 e [slides](http://flavioluiz.github.io/courses/mvo41_2018/coordenadas_elementos_orbitais.pdf))
 
 # 2017
 
