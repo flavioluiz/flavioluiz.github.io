@@ -5,7 +5,35 @@ title: Courses
 
 # 2018
 
-## MVO-20 - Mecânica Orbital
+## AB-722 - Estabilidade e Controle de Aeronaves
+* Planejamento e descrição do curso:
+[planejamento](http://flavioluiz.github.io/cursos/AB722/programa.pdf), [slides](http://flavioluiz.github.io/cursos/AB722/0Introducao.pdf)
+
+* 1) Sistemas de comando de voo: [slides](http://flavioluiz.github.io/cursos/AB722/1ComandosVoo.pdf)
+
+* 2) Equações do movimento logitudinal: [slides](http://flavioluiz.github.io/cursos/AB722/2EqsMovimentoLong.pdf)
+
+* 3) Linearização: [slides](http://flavioluiz.github.io/cursos/AB722/3LinearizacaoEstabDinamica.pdf)
+
+* 4) Estabilidade estática longitudinal: [slides](http://flavioluiz.github.io/cursos/AB722/4EstEstaticaLong.pdf)
+
+* 5) Sistemas de aumento de estabilidade
+
+* 6) Equações do movimento completo
+
+Atividades práticas: [modelos de avião em MATLAB](http://flavioluiz.github.io/cursos/AB722/labs/modelos_aviao.zip), [modelo atmosférico](atmosfera.m)
+
+* 1) Simulação do movimento longitudinal: [slides](http://flavioluiz.github.io/cursos/AB722/labs/lab1.pdf)
+
+* 2) Linearização e simulação no Simulink: [slides](http://flavioluiz.github.io/cursos/AB722/labs/lab2.pdf)
+
+* 3) Projeto de sistema de aumento de estabilidade;
+
+* 4) Simulação da dinâmica completa;
+
+## MVO-41 - Mecânica Orbital
+
+Ver [moodle do curso](http://aero.moodlecloud.com)!
 
 * Planejamento e descrição do curso: 
 [planejamento](http://flavioluiz.github.io/courses/mvo41_2018/programa.pdf), [slides](http://flavioluiz.github.io/courses/mvo41_2018/apresentacao_curso.pdf)
