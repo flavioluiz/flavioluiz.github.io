@@ -21,7 +21,7 @@ title: Courses
 
 * 6) Equações do movimento completo
 
-Atividades práticas: [modelos de avião em MATLAB](http://flavioluiz.github.io/cursos/AB722/labs/modelos_aviao.zip), [modelo atmosférico](atmosfera.m)
+Atividades práticas: [modelos de avião em MATLAB](http://flavioluiz.github.io/cursos/AB722/labs/modelos_aviao.zip), [modelo atmosférico](http://flavioluiz.github.io/cursos/AB722/labs/atmosfera.m)
 
 * 1) Simulação do movimento longitudinal: [slides](http://flavioluiz.github.io/cursos/AB722/labs/lab1.pdf)
 
