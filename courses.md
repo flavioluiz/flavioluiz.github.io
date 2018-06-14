@@ -17,7 +17,7 @@ title: Courses
 
 * 4) Estabilidade estática longitudinal: [slides](http://flavioluiz.github.io/cursos/AB722/4EstEstaticaLong.pdf)
 
-* 5) Sistemas de aumento de estabilidade
+* 5) Sistemas de aumento de estabilidade [slides](http://flavioluiz.github.io/cursos/AB722/5SistemasControleLong.pdf)
 
 * 6) Equações do movimento completo
 
@@ -27,7 +27,7 @@ Atividades práticas: [modelos de avião em MATLAB](http://flavioluiz.github.io/
 
 * 2) Linearização e simulação no Simulink: [slides](http://flavioluiz.github.io/cursos/AB722/labs/lab2.pdf)
 
-* 3) Projeto de sistema de aumento de estabilidade;
+* 3) Projeto de sistema de aumento de estabilidade: [slides](http://flavioluiz.github.io/cursos/AB722/labs/lab3.pdf)
 
 * 4) Simulação da dinâmica completa;
 
