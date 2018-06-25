@@ -19,7 +19,9 @@ title: Courses
 
 * 5) Sistemas de aumento de estabilidade [slides](http://flavioluiz.github.io/cursos/AB722/5SistemasControleLong.pdf)
 
-* 6) Equações do movimento completo
+* 6) Equações do movimento completo [slides](http://flavioluiz.github.io/cursos/AB722/6MovimentoCompleto.pdf)
+
+* 7) Linearização das equações do movimento completo [slides](http://flavioluiz.github.io/cursos/AB722/7LinearizacaoCompleto.pdf)
 
 Atividades práticas: [modelos de avião em MATLAB](http://flavioluiz.github.io/cursos/AB722/labs/modelos_aviao.zip), [modelo atmosférico](http://flavioluiz.github.io/cursos/AB722/labs/atmosfera.m)
 
@@ -30,6 +32,9 @@ Atividades práticas: [modelos de avião em MATLAB](http://flavioluiz.github.io/
 * 3) Projeto de sistema de aumento de estabilidade: [slides](http://flavioluiz.github.io/cursos/AB722/labs/lab3.pdf)
 
 * 4) Simulação da dinâmica completa: [códigos](http://flavioluiz.github.io/cursos/AB722/labs/simulador.zip) e [descrição](http://flavioluiz.github.io/cursos/AB722/labs/lab4.pdf)
+
+
+[Lista de exercícios e roteiro do relatório final](http://flavioluiz.github.io/cursos/AB722/relatorio.pdf)
 
 ## MVO-41 - Mecânica Orbital
 
