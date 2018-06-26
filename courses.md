@@ -31,7 +31,7 @@ Atividades práticas: [modelos de avião em MATLAB](http://flavioluiz.github.io/
 
 * 3) Projeto de sistema de aumento de estabilidade: [slides](http://flavioluiz.github.io/cursos/AB722/labs/lab3.pdf)
 
-* 4) Simulação da dinâmica completa;
+* 4) Simulação da dinâmica completa: [códigos](http://flavioluiz.github.io/cursos/AB722/labs/simulador.zip) e [descrição](http://flavioluiz.github.io/cursos/AB722/labs/lab4.pdf)
 
 
 [Lista de exercícios e roteiro do relatório final](http://flavioluiz.github.io/cursos/AB722/relatorio.pdf)
