@@ -4,6 +4,27 @@ title: Courses
 ---
 
 # 2018
+## AB-271 - Abordagem porta-Hamiltoniana para Modelagem, Simulação e Controle
+* Planejamento e descrição do curso:
+[planejamento](http://flavioluiz.github.io/cursos/AB271/programa.pdf), [slides](http://flavioluiz.github.io/cursos/AB271/0programa.pdf)
+
+* 1) Breve introdução aos sistemas porta-Hamiltonianos, aplicações e motivação:
+[slides](http://flavioluiz.github.io/cursos/AB271/1Introducao.pdf)
+
+
+Algumas referências:
+
+Livros: 
+* van der Schaft, [Port-Hamiltonian Systems
+Theory: An Introductory Overview](http://www.math.rug.nl/arjan/DownloadVarious/PHbook.pdf)
+* Duindam, V. et al, [Modeling and Control of Complex Physical Systems:
+The Port-Hamiltonian Approach](https://www.springer.com/br/book/9783642031953)
+
+Artigos:
+Ortega, R. et al, [Putting Energy Back in Control](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=915398)
+
+Teses:
+Cardoso-Ribeiro, F. L., [Port-Hamiltonian modeling and control of a fluid-structure system: Application to sloshing phenomena in a moving container coupled to a flexible structure](http://flavioluiz.github.io/thesis/phdthesis.pdf)
 
 ## AB-722 - Estabilidade e Controle de Aeronaves
 * Planejamento e descrição do curso:
