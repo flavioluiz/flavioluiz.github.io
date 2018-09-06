@@ -8,8 +8,10 @@ title: Courses
 * Planejamento e descrição do curso:
 [planejamento](http://flavioluiz.github.io/cursos/AB271/programa.pdf), [slides](http://flavioluiz.github.io/cursos/AB271/0programa.pdf)
 
-* 1) Breve introdução aos sistemas porta-Hamiltonianos, aplicações e motivação:
+* 0) Breve introdução aos sistemas porta-Hamiltonianos, aplicações e motivação:
 [slides](http://flavioluiz.github.io/cursos/AB271/1Introducao.pdf)
+* 1) Revisão de mecânica analítica (capítulo 2 do livro "Methods of Analitical Dynamics", L. Meirovitch). [Exemplo feito em aula em MATLAB](http://flavioluiz.github.io/cursos/AB271/dinamica_Hamiltoniana_simbolica.m).
+* 2) Modelagem baseada em portas: Bond-Graphs (capítulos 2 e 3 do livro [System Dynamics: Modeling, Simulation and Control of Mechatronic systems](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118152812), D.C. Karnopp, D.L. Margolis, R.C. Rosenberg )
 
 
 Algumas referências:
