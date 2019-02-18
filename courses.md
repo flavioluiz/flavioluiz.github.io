@@ -2,6 +2,18 @@
 layout: page
 title: Courses
 ---
+# 2019
+## MVO-31
+* Planejamento e descrição do curso:
+[planejamento](http://flavioluiz.github.io/cursos/2019/mvo31/programa.pdf), [slides](http://flavioluiz.github.io/cursos/2019/mvo31/apresentacao.pdf)
+
+* Modelo atmosférico: [slides](http://flavioluiz.github.io/cursos/2019/mvo31/1modeloatmosferico.pdf)
+
+* Modelo aerodinâmico: [slides](http://flavioluiz.github.io/cursos/2019/mvo31/2modeloaerodinamico.pdf)
+
+* Planeio: [slides](http://flavioluiz.github.io/cursos/2019/mvo31/3planeio.pdf)
+
+
 
 # 2018
 ## AB-271 - Abordagem porta-Hamiltoniana para Modelagem, Simulação e Controle
