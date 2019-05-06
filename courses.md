@@ -3,15 +3,21 @@ layout: page
 title: Courses
 ---
 # 2019
+
+## AB-721
+* Apresentação do curso:
+ [slides](http://flavioluiz.github.io/cursos/2019/ab721/apresentacao.pdf)
+
+* Modelo atmosférico: [slides](http://flavioluiz.github.io/cursos/2019/ab721/1modeloatmosferico.pdf)
+
+* Modelo aerodinâmico: [slides](http://flavioluiz.github.io/cursos/2019/ab721/2modeloaerodinamico.pdf)
+
+* Planeio: [slides](http://flavioluiz.github.io/cursos/2019/ab721/3planeio.pdf)
+
+* Atividade prática 1: [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab1.pdf)
+
 ## MVO-31
-* Planejamento e descrição do curso:
-[planejamento](http://flavioluiz.github.io/cursos/2019/mvo31/programa.pdf), [slides](http://flavioluiz.github.io/cursos/2019/mvo31/apresentacao.pdf)
-
-* Modelo atmosférico: [slides](http://flavioluiz.github.io/cursos/2019/mvo31/1modeloatmosferico.pdf)
-
-* Modelo aerodinâmico: [slides](http://flavioluiz.github.io/cursos/2019/mvo31/2modeloaerodinamico.pdf)
-
-* Planeio: [slides](http://flavioluiz.github.io/cursos/2019/mvo31/3planeio.pdf)
+Todo o material está no moodle do curso, clique [aqui](http://mecvoo.moodlecloud.com).
 
 
 
