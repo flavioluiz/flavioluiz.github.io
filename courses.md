@@ -14,7 +14,11 @@ title: Courses
 
 * Planeio: [slides](http://flavioluiz.github.io/cursos/2019/ab721/3planeio.pdf)
 
-* Atividade prática 1: [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab1.pdf)
+* Cruzeiro: [slides](http://flavioluiz.github.io/cursos/2019/ab721/3cruzeiro.pdf)
+
+* Atividade prática 1 (planeio): [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab1.pdf)
+
+* Atividade prática 2 (cruzeiro): [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab2.pdf)
 
 ## MVO-31
 Todo o material está no moodle do curso, clique [aqui](http://mecvoo.moodlecloud.com).
