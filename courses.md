@@ -16,6 +16,8 @@ title: Courses
 
 * Cruzeiro: [slides](http://flavioluiz.github.io/cursos/2019/ab721/4cruzeiro.pdf)
 
+* Subida: [slides](http://flavioluiz.github.io/cursos/2019/ab721/5subida.pdf)
+
 * Atividade prática 1 (planeio): [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab1.pdf)
 
 * Atividade prática 2 (cruzeiro): [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab2.pdf)
