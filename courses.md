@@ -20,7 +20,7 @@ title: Courses
 
 * Decolagem: [slides](http://flavioluiz.github.io/cursos/2019/ab721/Decolagem.pdf)
 
-* Manobras e diagrama V-n: [slides](http://flavioluiz.github.io/cursos/2019/ab721/Manorbras_Vn.pdf)
+* Manobras e diagrama V-n: [slides](http://flavioluiz.github.io/cursos/2019/ab721/Manobras_Vn.pdf)
 
 * Atividade prática 1 (planeio): [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab1.pdf)
 
