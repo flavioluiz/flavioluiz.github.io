@@ -26,6 +26,9 @@ title: Courses
 
 * Atividade prática 2 (cruzeiro): [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab2.pdf)
 
+* Atividade prática 3 (decolagem): [pdf](http://flavioluiz.github.io/cursos/2019/ab721/lab3.pdf)
+
+
 ## MVO-31
 Todo o material está no moodle do curso, clique [aqui](http://mecvoo.moodlecloud.com).
 
