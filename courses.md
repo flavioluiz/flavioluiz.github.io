@@ -4,6 +4,15 @@ title: Courses
 ---
 # 2019
 
+## AB-272
+* Apresentação do curso:
+[slides](http://flavioluiz.github.io/cursos/2019/ab272/aula0.pdf)
+
+* Motivação (Porta-Hamiltonianos):
+[slides](http://flavioluiz.github.io/cursos/2019/ab272/aula0_PHS.pdf)
+
+* Breve tutorial de Python para usuários de MATLAB: [link](https://towardsdatascience.com/python-for-matlab-users-ac3e0b8463a5)
+
 ## AB-721
 * Apresentação do curso:
  [slides](http://flavioluiz.github.io/cursos/2019/ab721/apresentacao.pdf)
