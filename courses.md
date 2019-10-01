@@ -3,6 +3,20 @@ layout: page
 title: Courses
 ---
 # 2019
+## Simulink e Mecânica de Voo
+* Apresentação do curso/revisão:
+[slides](http://flavioluiz.github.io/cursos/2019/SimulinkMVO/00_intro.pdf)
+
+* Inclusão de vento nas equações do movimento:
+[slides](http://flavioluiz.github.io/cursos/2019/SimulinkMVO/01_Vento.pdf)
+
+* Saídas:
+[slides](http://flavioluiz.github.io/cursos/2019/SimulinkMVO/02_saidas.pdf)
+
+* Projeto 1 (vento, equilíbrio e linearização):
+[pdf](http://flavioluiz.github.io/cursos/2019/SimulinkMVO/projeto1.pdf)
+, [matlab](http://flavioluiz.github.io/cursos/2019/SimulinkMVO/MATLAB.zip)
+
 
 ## AB-272
 * Apresentação do curso:
