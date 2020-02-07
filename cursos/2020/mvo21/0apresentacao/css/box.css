@@ -1,0 +1,26 @@
+.box{
+    margin: 30px;
+    border: 1px solid black;
+}
+
+.box pbold {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+.box p {
+    color: #000000;
+  }
+.red{
+    background-color: rgba(255, 0, 0, .3);
+}
+.green{
+    background-color:rgba(0, 255, 0, .3);
+}
+.blue{
+    background-color:rgba(0, 0, 255, .3);
+}
+.white{
+    background-color: rgba(255, 255, 255, .3);
+}
