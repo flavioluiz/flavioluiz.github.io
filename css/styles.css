@@ -1,0 +1,156 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    line-height: 2.0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Math equation styles */
+.MathJax {
+    font-size: 1.1em !important;
+}
+
+.math-display {
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+/* Add these styles for better matrix equation display */
+.MathJax_Display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5em 0;
+}
+
+.MathJax_SVG_Display {
+    text-align: center;
+    margin: 1em 0em;
+    position: relative;
+}
+
+.MathJax_SVG {
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* Ensure equations don't overflow on mobile */
+@media screen and (max-width: 600px) {
+    .MathJax_SVG_Display {
+        font-size: 90% !important;
+    }
+}
+
+/* Remove the matrix-specific styles */
+.mjx-chtml .mjx-math,
+.mjx-chtml .mjx-matrix,
+.mjx-chtml .mjx-row,
+.mjx-chtml .mjx-cell {
+    /* Remove these styles */
+}
+
+/* Matrix display styles */
+.matrix-equation {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.matrix {
+    display: grid;
+    gap: 0.5em;
+    padding: 0 0.5em;
+    position: relative;
+}
+
+.matrix::before,
+.matrix::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: black;
+}
+
+.matrix::before {
+    left: 0;
+}
+
+.matrix::after {
+    right: 0;
+}
+
+.matrix-2x1 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.matrix-2x2 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
