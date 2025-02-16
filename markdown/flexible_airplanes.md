@@ -1,8 +1,3 @@
----
-layout: page
-title: Flexible airplanes
----
-
 One of my research interests are the aeroelasticity and flight dynamics of very flexible airplanes.
 (like [NASA Helios](http://en.wikipedia.org/wiki/NASA_Helios)). For these airplanes,
 the structural deflections during the flight are so large that they strongly affects the flight

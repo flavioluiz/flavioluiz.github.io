@@ -1,8 +1,3 @@
----
-layout: page
-title: PhD research
----
-
 My PhD thesis is about modeling and control of a flexible-fluid coupled system.
 
 At [ISAE](http://www.isae.fr), an experimental set up is available that consists of an aluminium plate with
