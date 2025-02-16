@@ -1,11 +1,14 @@
 <h2>Flávio Luiz Cardoso Ribeiro</h2>
-<p>Assistant Professor at Instituto Tecnológico de Aeronáutica (ITA)</p>
+<p>Associate Professor (Professor Adjunto) at Instituto Tecnológico de Aeronáutica (ITA)</p>
 
 <h3>Contact:</h3>
 <ul>
     <li>Email: flaviocr [at] ita [dot] br</li>
     <li><a href="http://github.com/flavioluiz">GitHub</a></li>
     <li><a href="https://www.researchgate.net/profile/Flavio_Cardoso_Ribeiro">ResearchGate</a></li>
+    <li><a href="https://scholar.google.fr/citations?user=6gpZu9wAAAAJ">Google Scholar</a></li>
+    <li><a href="https://orcid.org/0000-0002-6454-9671">ORCID</a></li>
+    <li><a href="https://www.scopus.com/authid/detail.uri?authorId=46461159000">Scopus</a></li>
 </ul>
 
 <h3>Research Interests:</h3>
@@ -18,41 +21,35 @@
 
 <h3>Education:</h3>
 <ul>
-    <li>PhD, Control, Université de Toulouse - ISAE (2016)</li>
-    <li>MSc, Flight Dynamics and Control, ITA (2012)</li>
-    <li>Aeronautical Engineering degree, ITA (2008)</li>
+    <li>PhD in Control, Université de Toulouse - ISAE (2013-2016)</li>
+    <li>MSc in Flight Dynamics and Control, ITA (2009-2011)</li>
+    <li>Aeronautical Engineering degree, ITA (2004-2008)</li>
 </ul>
 
-<h3>Selected Publications:</h3>
+<h3>Professional Experience:</h3>
 <ul>
-    <li>A Partitioned Finite Element Method for power-preserving discretization of open systems of conservation laws<br>
-        FL Cardoso-Ribeiro, D Matignon, L Lefèvre<br>
-        <em>IMA Journal of Mathematical Control and Information</em> 38 (2), 493-533, 2021</li>
-    <li>A port-Hamiltonian model of liquid sloshing in moving containers and application to a fluid-structure system<br>
-        FL Cardoso-Ribeiro, D Matignon, V Pommier-Budinger<br>
-        <em>Journal of Fluids and Structures</em> 69, 402-427, 2017</li>
-    <li>Modeling and control of a rotating flexible spacecraft: A port-Hamiltonian approach<br>
-        S Aoues, FL Cardoso-Ribeiro, D Matignon, D Alazard<br>
-        <em>IEEE Transactions on Control Systems Technology</em> 27 (1), 355-362, 2017</li>
-    <li>A structure-preserving partitioned finite element method for the 2D wave equation<br>
-        FL Cardoso-Ribeiro, D Matignon, L Lefevre<br>
-        <em>IFAC-PapersOnLine</em> 51 (3), 119-124, 2018</li>
-    <li>Modeling of a fluid-structure coupled system using port-Hamiltonian formulation<br>
-        FL Cardoso-Ribeiro, D Matignon, V Pommier-Budinger<br>
-        <em>IFAC-PapersOnLine</em> 48 (13), 217-222, 2015</li>
-    <li>Flexible aircraft simulation validation with flight test data<br>
-        AB Guimarães Neto, GC Barbosa, JA Paulino, RM Bertolin, JSM Nunes, ...<br>
-        <em>AIAA Journal</em> 61 (1), 285-304, 2023</li>
+    <li>Associate Professor (Professor Adjunto), ITA (2017-present)</li>
+    <li>Assistant Professor (Professor Assistente), ITA (2012-2016)</li>
+    <li>Teaching Assistant (Professor Auxiliar), ITA (2010-2011)</li>
 </ul>
 
-<h3>Selected Projects:</h3>
+<h3>Current Research Projects:</h3>
 <ul>
-    <li>Estudos Avançados em Física e Controle de Voo (2022-Present) - Research on flight control of flexible aircraft.</li>
-    <li>DinaFlex: Estudos Avançados em Física do Vôo - Fase 2 (2018-2020) - Investigation of structural flexibility effects on aircraft dynamics.</li>
+    <li>FINEP/EMBRAER: Advanced Studies in Flight Physics and Control (2022-Present)</li>
+    <li>CAPES Brafitec: "New Horizons for a Sustainable Aerospace Sector" - Coordinator (2022-Present)</li>
 </ul>
 
-<h3>Teaching:</h3>
+<h3>Recent Selected Publications:</h3>
 <ul>
-    <li>Flight Dynamics</li>
-    <li>Control Systems</li>
+    <li>Cardoso-Ribeiro, F. L., Haine, G., Lefèvre, L., & Matignon, D. (2024). Rotational shallow water equations with viscous damping and boundary control: structure-preserving spatial discretization. <em>Mathematics of Control Signals and Systems</em>.<br>
+        <a href="https://doi.org/10.1007/s00498-024-00404-6">DOI: 10.1007/s00498-024-00404-6</a></li>https
+    
+    <li>Cardoso-Ribeiro, F. L., Haine, G., Le Gorrec, Y., Matignon, D., & Ramirez, H. (2024). Port-Hamiltonian formulations for the modeling, simulation and control of fluids. <em>Computers & Fluids</em>, 283, 106407.<br>
+        <a href="https://doi.org/10.1016/j.compfluid.2024.106407">DOI: 10.1016/j.compfluid.2024.106407</a></li>
+    
+    <li>Guimarães Neto, A. B., Barbosa, G. C., Paulino, J. A., Bertolin, R. M., Ramirez, P. J. G., Cardoso-Ribeiro, F. L., Morales, M. A. V., Silva, R. G. A., Bussamra, F. L. S., Silvestre, F. J., Moreira, F. J. O., & Cesnik, C. E. S. (2023). Flexible Aircraft Simulation Validation with Flight Test Data. <em>AIAA Journal</em>, 61(1), 285-304.<br>
+        <a href="https://doi.org/10.2514/1.J061852">DOI: 10.2514/1.J061852</a></li>
+    
+    <li>Cardoso-Ribeiro, F. L., Matignon, D., & Lefèvre, L. (2021). A partitioned finite element method for power-preserving discretization of open systems of conservation laws. <em>IMA Journal of Mathematical Control and Information</em>, 38(2), 493-533.<br>
+        <a href="https://doi.org/10.1093/imamci/dnaa038">DOI: 10.1093/imamci/dnaa038</a></li>
 </ul>

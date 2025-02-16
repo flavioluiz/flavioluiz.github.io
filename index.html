@@ -2,20 +2,30 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <!-- Updated polyfill source to use cdnjs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/polyfill/8.2.3/polyfill.min.js"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        // Check if we're at the root
-        if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/') {
-            window.location.href = 'pages/welcome.html';
-        }
-    </script>
-    <!-- Add favicon link -->
+    <title>Prof. Flávio L. Cardoso-Ribeiro</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/polyfill/8.2.3/polyfill.min.js"></script>
+    <script src="js/mathjax-config.js"></script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-SVG">
+    </script>
 </head>
 <body>
-    <p>Please wait, you are being redirected...</p>
+    <header>
+        <h1>Prof. Flávio L. Cardoso-Ribeiro</h1>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#flexible_airplanes">Flexible Airplanes</a></li>
+                <li><a href="#port-hamiltonian">Port-Hamiltonian Systems</a></li>
+                <li><a href="#courses">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content"></div>
+    <script src="js/script.js"></script>
 </body>
 </html>

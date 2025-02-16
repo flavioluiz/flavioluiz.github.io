@@ -5,7 +5,7 @@ title: Port-Hamiltonian Systems
 
 As part of my PhD research, I worked with modeling and control of systems using the port-Hamiltonian formulation. In this page, I give a little introduction about
 the subject as well as show the first results obtained using this formulation for the
-modeling of coupled fluid-structure system.
+modeling of coupled fluid-structure system. For more details about my PhD research, see [my PhD thesis page](#phd).
 
 This research is part of [ANR HAMECMOPSYS](https://hamecmopsys.ens2m.fr/) project.
 

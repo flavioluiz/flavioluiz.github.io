@@ -1,39 +1,25 @@
 async function loadMarkdown() {
     try {
-        // Get the current page name from the URL
-        let pageName = window.location.pathname.split('/').pop().replace('.html', '');
+        // Get the current page from the URL hash
+        let pageName = window.location.hash.slice(1) || 'welcome';
         
-        // Handle root path and index cases
-        if (pageName === '' || pageName === 'index') {
-            pageName = 'welcome';
-        }
-
         console.log('Loading markdown for page:', pageName);
         
-        const response = await fetch(`../markdown/${pageName}.md`);
+        // Update page title
+        document.title = `${pageName.charAt(0).toUpperCase() + pageName.slice(1).replace('_', ' ')} - Prof. Flávio L. Cardoso-Ribeiro`;
+        
+        const response = await fetch(`markdown/${pageName}.md`);
         if (!response.ok) {
             throw new Error(`Failed to load markdown: ${response.statusText}`);
         }
         
         const markdown = await response.text();
-        console.log('Markdown loaded successfully');
-        
-        // Remove YAML front matter
-        const content = markdown.replace(/---[\s\S]*?---/, "").trim();
-        
-        const converter = new showdown.Converter({
-            tables: true,
-            strikethrough: true,
-            ghCodeBlocks: true
-        });
-        
-        // Update image paths in the markdown content
-        const updatedContent = content.replace(/!\[([^\]]*)\]\(images\//g, '![$1](../images/');
-        const html = converter.makeHtml(updatedContent);
+        const converter = new showdown.Converter();
+        const html = converter.makeHtml(markdown);
         document.getElementById("content").innerHTML = html;
-        
-        // Wait for MathJax to be ready and typeset
-        if (typeof MathJax !== 'undefined' && MathJax.Hub) {
+
+        // Typeset math if MathJax is available
+        if (window.MathJax) {
             console.log('MathJax found, starting typeset');
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
             console.log('MathJax typesetting queued');
@@ -47,5 +33,8 @@ async function loadMarkdown() {
     }
 }
 
-// Wait for DOM to be ready
+// Load content when hash changes
+window.addEventListener('hashchange', loadMarkdown);
+
+// Initial load
 document.addEventListener('DOMContentLoaded', loadMarkdown);
