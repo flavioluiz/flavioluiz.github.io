@@ -19,10 +19,16 @@ async function loadMarkdown() {
         document.getElementById("content").innerHTML = html;
 
         // Typeset math if MathJax is available
-        if (window.MathJax) {
+        if (typeof MathJax !== 'undefined') {
             console.log('MathJax found, starting typeset');
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-            console.log('MathJax typesetting queued');
+            try {
+                await MathJax.typesetPromise([document.getElementById("content")]);
+                console.log('MathJax typesetting completed');
+            } catch (err) {
+                console.error('MathJax typesetting failed:', err);
+            }
+        } else {
+            console.warn('MathJax not found');
         }
     } catch (error) {
         console.error('Error loading markdown:', error);
