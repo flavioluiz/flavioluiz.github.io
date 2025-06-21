@@ -123,3 +123,9 @@ Recent key contributions to the field include:
 6. Cardoso-Ribeiro, F. L., Matignon, D., & Pommier-Budinger, V. (2017). A port-Hamiltonian model of liquid sloshing in moving containers and application to a fluid-structure system. *Journal of Fluids and Structures*, 69, 402-427.
 
 For more information about our ongoing research in this area, please check our latest publications on [Google Scholar](https://scholar.google.fr/citations?user=6gpZu9wAAAAJ).
+
+## Seminars and Presentations
+
+### DAEP Seminar on Port-Hamiltonian Systems
+- [Part I - Introduction and Mathematical Foundations](presentations/DAEP/partI.pdf)
+- [Part II - Advanced Applications and Control Design](presentations/DAEP/partII.pdf)
