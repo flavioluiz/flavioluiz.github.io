@@ -1,6 +1,7 @@
 # Teaching Activities
 
-## Current Courses (1st Semester 2025)
+## Current Courses (2025)
+- **AS-765**: [Control Systems](./as-765-controle.md) (Professional Master's in Aeronautical Engineering)
 - **AB-271**: Port-Hamiltonian Framework for Modeling, Simulation and Control (Academic Graduate Program)
 - **AS-801**: Introduction to Aeronautical Engineering (Specialization Program)
 - **AB-721**: [Flight Performance](https://terrific-meadow-b58.notion.site/AB-721-Desempenho-de-aeronaves-2025-1c0c6043e74680799eb4e5ce3736e9fc?pvs=4) (Professional Master's in Aeronautical Engineering)
