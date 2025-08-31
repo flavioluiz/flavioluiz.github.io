@@ -12,7 +12,7 @@
 
 ## Apostila do Curso
 
-📖 **[Apostila de Sistemas de Controle (PDF)](./assets/as765/apostila-controle-as765.pdf)**
+📖 **[Apostila de Sistemas de Controle (PDF)](../courses/as765/apostila-controle-as765.pdf)**
 
 > ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 30/agosto/2025.
 
@@ -33,8 +33,8 @@
   - Ponto de operação
   - Aproximação por série de Taylor
 
-**Material**: 📊 [Slides Cap 1 - Modelagem](./assets/as765/slides-aula1.pdf)
-**Material**: 📊 [Slides Cap 2 - Linearização](./assets/as765/slides-aula2.pdf)
+**Material**: 📊 [Slides Cap 1 - Modelagem](../courses/as765/slides-aula1.pdf)
+**Material**: 📊 [Slides Cap 2 - Linearização](../courses/as765/slides-aula2.pdf)
 
 ---
 
@@ -53,8 +53,8 @@
   - Transformada inversa
   - Aplicação a sistemas de controle
 
-**Material**: 📊 [Slides Cap 2 - Linearização](./assets/as765/slides-aula2.pdf)
-**Material**: 📊 [Slides Cap 3 - Transformadas de Laplace](./assets/as765/slides-aula3.pdf)
+**Material**: 📊 [Slides Cap 2 - Linearização](../courses/as765/slides-aula2.pdf)
+**Material**: 📊 [Slides Cap 3 - Transformadas de Laplace](../courses/as765/slides-aula3.pdf)
 
 ---
 
