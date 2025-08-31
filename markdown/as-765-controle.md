@@ -10,7 +10,9 @@
 - **Horas efetivas de conteúdo**: 44 horas
 - **Material**: Apostila + Slides + Exemplos MATLAB
 
-## Apostila do Curso
+## Material do Curso
+
+📊 **[Apresentação Geral do Curso (PDF)](../courses/as765/apresentacao-geral.pdf)**
 
 📖 **[Apostila de Sistemas de Controle (PDF)](../courses/as765/apostila-controle-as765.pdf)**
 
