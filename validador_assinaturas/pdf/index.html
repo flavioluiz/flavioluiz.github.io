@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador ITI - Assinaturas Digitais</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #4facfe;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+
+        button {
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: transform 0.2s ease;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .qr-result, .validation-result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px dashed #ddd;
+            text-align: center;
+        }
+
+        .qr-result.success, .validation-result.success {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .qr-result.error, .validation-result.error {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+
+        .document-list {
+            margin-top: 20px;
+        }
+
+        .document-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .document-info {
+            flex: 1;
+        }
+
+        .document-actions button {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .status-valid {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-invalid {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #4facfe;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .api-response {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .success-api { border-left: 4px solid #28a745; }
+        .error-api { border-left: 4px solid #dc3545; }
+
+        .github-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .github-info h3 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+
+        .github-info code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .file-instructions {
+            background: #e7f3ff;
+            border: 1px solid #b8daff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .file-instructions h3 {
+            color: #004085;
+            margin-bottom: 15px;
+        }
+
+        .file-instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .pdf-preview {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .pdf-preview h4 {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .pdf-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .pdf-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Validador ITI - Assinaturas Digitais</h1>
+            <p>Sistema para registrar PDFs hospedados no GitHub e gerar QR Codes para validação ITI</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Seção de Registro de PDF -->
+            <div class="section">
+                <h2>📄 Registrar PDF Hospedado</h2>
+                
+                <div class="file-instructions">
+                    <h3>📋 Como Funciona:</h3>
+                    <ol>
+                        <li>Faça upload manual do PDF para: <code>validador_assinaturas/pdf/files/</code></li>
+                        <li>Registre o arquivo no sistema abaixo</li>
+                        <li>Gere o QR Code para validação ITI</li>
+                        <li>O PDF ficará público e acessível via ITI</li>
+                    </ol>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentName">Nome do Documento:</label>
+                    <input type="text" id="documentName" placeholder="Ex: Contrato_2024_001">
+                </div>
+
+                <div class="form-group">
+                    <label for="pdfFileName">Nome do Arquivo PDF:</label>
+                    <input type="text" id="pdfFileName" placeholder="Ex: contrato_assinado.pdf">
+                    <small style="color: #666; font-size: 14px;">Nome exato do arquivo na pasta /files/</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentType">Tipo de Documento:</label>
+                    <select id="documentType">
+                        <option value="prescription">Prescrição Médica</option>
+                        <option value="atestado">Atestado Médico</option>
+                        <option value="exame">Solicitação de Exame</option>
+                        <option value="laudo">Laudo Laboratorial</option>
+                        <option value="relatorio">Relatório Médico</option>
+                        <option value="contrato">Contrato</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentDescription">Descrição (opcional):</label>
+                    <textarea id="documentDescription" rows="3" placeholder="Descrição do documento..."></textarea>
+                </div>
+
+                <button onclick="testPDFAccess()" id="testBtn">
+                    <span id="testBtnText">🔗 Testar Acesso ao PDF</span>
+                </button>
+
+                <button onclick="registerDocument()" id="registerBtn">
+                    <span id="registerBtnText">📋 Registrar e Gerar QR Code</span>
+                </button>
+
+                <div id="pdfPreview" class="pdf-preview" style="display: none;"></div>
+
+                <div id="qrResult" class="qr-result" style="display: none;">
+                    <div id="qrCanvas"></div>
+                    <p id="qrInfo"></p>
+                    <button onclick="downloadQR()">📥 Baixar QR</button>
+                    <button onclick="copyURL()">📋 Copiar URL</button>
+                    <button onclick="testValidation()">🧪 Testar Validação</button>
+                </div>
+            </div>
+
+            <!-- Seção de Validação -->
+            <div class="section">
+                <h2>✅ Validar Documento</h2>
+                
+                <div class="form-group">
+                    <label for="validationURL">URL do QR Code ou Link Direto:</label>
+                    <input type="text" id="validationURL" placeholder="Cole a URL do QR Code aqui">
+                </div>
+
+                <button onclick="validateDocument()" id="validateBtn">
+                    <span id="validateBtnText">🔍 Validar Documento</span>
+                </button>
+
+                <div id="validationResult" class="validation-result" style="display: none;"></div>
+
+                <div id="apiResponse" class="api-response" style="display: none;"></div>
+            </div>
+        </div>
+
+        <!-- Lista de Documentos -->
+        <div class="section" style="margin: 20px 40px;">
+            <h2>📋 Documentos Registrados</h2>
+            <div id="documentList" class="document-list">
+                <p>Nenhum documento registrado ainda.</p>
+            </div>
+        </div>
+
+        <!-- Informações para GitHub Pages -->
+        <div class="github-info" style="margin: 20px 40px;">
+            <h3>📁 Estrutura de Pastas no GitHub:</h3>
+            <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; overflow-x: auto;">seu-repositorio/
+├── validador_assinaturas/
+│   └── pdf/
+│       ├── index.html (este arquivo)
+│       └── files/
+│           ├── documento1.pdf
+│           ├── contrato_assinado.pdf
+│           └── prescricao_medica.pdf</pre>
+            
+            <p><strong>URLs dos PDFs:</strong><br>
+            <code>https://flavioluiz.github.io/validador_assinaturas/pdf/files/NOME_DO_ARQUIVO.pdf</code></p>
+        </div>
+
+        <!-- Instruções ITI -->
+        <div class="section" style="margin: 20px 40px; background: #e7f3ff;">
+            <h2>🔗 Integração com Validador ITI</h2>
+            <div style="line-height: 1.8;">
+                <p><strong>1. URLs geradas seguem o padrão ITI:</strong></p>
+                <code id="sampleUrl" style="word-break: break-all;">https://flavioluiz.github.io/validador_assinaturas/pdf/?_format=application/validador-iti+json&_secretCode=CODIGO&id=ID&type=TYPE</code>
+                
+                <p style="margin-top: 15px;"><strong>2. Resposta JSON para o ITI:</strong></p>
+                <pre style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-size: 12px;">{
+  "version": "1.0.0",
+  "prescription": {
+    "signatureFiles": [
+      {
+        "url": "https://flavioluiz.github.io/validador_assinaturas/pdf/files/arquivo.pdf"
+      }
+    ]
+  }
+}</pre>
+
+                <p style="margin-top: 15px;"><strong>3. Para validar:</strong></p>
+                <ol style="margin-left: 20px;">
+                    <li>Acesse <a href="https://validar.iti.gov.br" target="_blank">https://validar.iti.gov.br</a></li>
+                    <li>Escaneie o QR Code ou cole a URL</li>
+                    <li>O ITI acessará seu PDF automaticamente</li>
+                    <li>Validação da assinatura digital será exibida</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Estado da aplicação
+        let documents = JSON.parse(localStorage.getItem('iti_documents_v2') || '[]');
+        let currentQRData = null;
+
+        // Base URL do GitHub Pages
+        const baseURL = window.location.origin + window.location.pathname;
+        const filesURL = baseURL.replace('/index.html', '').replace(/\/$/, '') + '/files/';
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDocumentList();
+            handleITIValidation();
+            console.log('Base URL:', baseURL);
+            console.log('Files URL:', filesURL);
+        });
+
+        // Testar acesso ao PDF
+        async function testPDFAccess() {
+            const fileName = document.getElementById('pdfFileName').value.trim();
+            
+            if (!fileName) {
+                alert('Por favor, insira o nome do arquivo PDF.');
+                return;
+            }
+
+            const btn = document.getElementById('testBtn');
+            const btnText = document.getElementById('testBtnText');
+            
+            btn.disabled = true;
+            btnText.innerHTML = '<span class="loading"></span> Testando...';
+
+            try {
+                const pdfUrl = filesURL + fileName;
+                
+                // Tentar acessar o PDF
+                const response = await fetch(pdfUrl, { method: 'HEAD' });
+                
+                const previewDiv = document.getElementById('pdfPreview');
+                
+                if (response.ok) {
+                    previewDiv.style.display = 'block';
+                    previewDiv.className = 'pdf-preview';
+                    previewDiv.style.borderLeft = '4px solid #28a745';
+                    previewDiv.innerHTML = `
+                        <h4>✅ PDF Encontrado e Acessível</h4>
+                        <p><strong>URL:</strong> <a href="${pdfUrl}" target="_blank" class="pdf-link">${pdfUrl}</a></p>
+                        <p><strong>Status:</strong> <span class="status-badge status-valid">HTTP ${response.status} - OK</span></p>
+                        <p><strong>Tipo:</strong> ${response.headers.get('content-type') || 'application/pdf'}</p>
+                        <small>✓ O ITI conseguirá acessar este PDF</small>
+                    `;
+                } else {
+                    previewDiv.style.display = 'block';
+                    previewDiv.className = 'pdf-preview';
+                    previewDiv.style.borderLeft = '4px solid #dc3545';
+                    previewDiv.innerHTML = `
+                        <h4>❌ PDF Não Encontrado</h4>
+                        <p><strong>URL Testada:</strong> ${pdfUrl}</p>
+                        <p><strong>Status:</strong> <span class="status-badge status-invalid">HTTP ${response.status}</span></p>
+                        <p><strong>Solução:</strong></p>
+                        <ol style="margin-left: 20px; margin-top: 10px;">
+                            <li>Verifique se o arquivo existe na pasta <code>/files/</code></li>
+                            <li>Confirme se o nome está exato (incluindo extensão .pdf)</li>
+                            <li>Faça commit e aguarde o GitHub Pages atualizar</li>
+                        </ol>
+                    `;
+                }
+
+            } catch (error) {
+                const previewDiv = document.getElementById('pdfPreview');
+                previewDiv.style.display = 'block';
+                previewDiv.className = 'pdf-preview';
+                previewDiv.style.borderLeft = '4px solid #dc3545';
+                previewDiv.innerHTML = `
+                    <h4>❌ Erro ao Testar Acesso</h4>
+                    <p><strong>Erro:</strong> ${error.message}</p>
+                    <p>Verifique sua conexão e se o GitHub Pages está ativo.</p>
+                `;
+            } finally {
+                btn.disabled = false;
+                btnText.textContent = '🔗 Testar Acesso ao PDF';
+            }
+        }
+
+        // Registrar documento
+        async function registerDocument() {
+            const name = document.getElementById('documentName').value.trim();
+            const fileName = document.getElementById('pdfFileName').value.trim();
+            const type = document.getElementById('documentType').value;
+            const description = document.getElementById('documentDescription').value.trim();
+
+            if (!name || !fileName) {
+                alert('Por favor, preencha o nome do documento e o nome do arquivo PDF.');
+                return;
+            }
+
+            const btn = document.getElementById('registerBtn');
+            const btnText = document.getElementById('registerBtnText');
+            
+            btn.disabled = true;
+            btnText.innerHTML = '<span class="loading"></span> Registrando...';
+
+            try {
+                // Verificar se o PDF existe
+                const pdfUrl = filesURL + fileName;
+                const response = await fetch(pdfUrl, { method: 'HEAD' });
+                
+                if (!response.ok) {
+                    throw new Error(`PDF não encontrado: ${pdfUrl}. Status: ${response.status}`);
+                }
+
+                // Gerar ID e código secreto únicos
+                const documentId = Date.now().toString();
+                const secretCode = generateSecretCode();
+                
+                // Criar documento
+                const documentData = {
+                    id: documentId,
+                    name: name,
+                    type: type,
+                    description: description,
+                    fileName: fileName,
+                    pdfUrl: pdfUrl,
+                    secretCode: secretCode,
+                    createdAt: new Date().toISOString(),
+                    status: 'active'
+                };
+
+                // Gerar URL de validação ITI
+                const validationURL = `${baseURL}?_format=application/validador-iti+json&_secretCode=${secretCode}&id=${documentId}&type=${type}`;
+
+                // Gerar QR Code
+                const qrCanvas = document.getElementById('qrCanvas');
+                qrCanvas.innerHTML = '';
+                
+                await QRCode.toCanvas(qrCanvas, validationURL, {
+                    width: 300,
+                    margin: 2,
+                    color: {
+                        dark: '#000000',
+                        light: '#FFFFFF'
+                    }
+                });
+
+                currentQRData = {
+                    url: validationURL,
+                    documentData: documentData
+                };
+
+                // Salvar documento
+                documents.push(documentData);
+                localStorage.setItem('iti_documents_v2', JSON.stringify(documents));
+
+                // Mostrar resultado
+                document.getElementById('qrResult').style.display = 'block';
+                document.getElementById('qrResult').className = 'qr-result success';
+                document.getElementById('qrInfo').innerHTML = `
+                    <strong>✅ Documento registrado com sucesso!</strong><br>
+                    <strong>Nome:</strong> ${name}<br>
+                    <strong>PDF:</strong> <a href="${pdfUrl}" target="_blank">${fileName}</a><br>
+                    <strong>Código:</strong> <code>${secretCode}</code><br>
+                    <strong>ID:</strong> ${documentId}<br>
+                    <small>QR Code pronto para uso no validador ITI oficial</small>
+                `;
+
+                // Limpar formulário
+                clearForm();
+                
+                // Atualizar lista
+                updateDocumentList();
+
+            } catch (error) {
+                console.error('Erro ao registrar documento:', error);
+                document.getElementById('qrResult').style.display = 'block';
+                document.getElementById('qrResult').className = 'qr-result error';
+                document.getElementById('qrInfo').innerHTML = `
+                    <strong>❌ Erro ao registrar documento</strong><br>
+                    ${error.message}<br>
+                    <small>Verifique se o arquivo PDF existe na pasta /files/</small>
+                `;
+            } finally {
+                btn.disabled = false;
+                btnText.textContent = '📋 Registrar e Gerar QR Code';
+            }
+        }
+
+        // Gerar código secreto
+        function generateSecretCode() {
+            return CryptoJS.lib.WordArray.random(128/8).toString(CryptoJS.enc.Hex).toUpperCase().substring(0, 32);
+        }
+
+        // Validar documento
+        async function validateDocument() {
+            const url = document.getElementById('validationURL').value.trim();
+            
+            if (!url) {
+                alert('Por favor, insira uma URL para validação.');
+                return;
+            }
+
+            const btn = document.getElementById('validateBtn');
+            const btnText = document.getElementById('validateBtnText');
+            
+            btn.disabled = true;
+            btnText.innerHTML = '<span class="loading"></span> Validando...';
+
+            try {
+                const result = await performValidation(url);
+                showValidationResult(result);
+
+            } catch (error) {
+                console.error('Erro na validação:', error);
+                showValidationResult({
+                    valid: false,
+                    error: 'Erro ao processar validação: ' + error.message,
+                    httpStatus: 500
+                });
+            } finally {
+                btn.disabled = false;
+                btnText.textContent = '🔍 Validar Documento';
+            }
+        }
+
+        // Realizar validação
+        async function performValidation(url) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    try {
+                        const urlObj = new URL(url);
+                        const format = urlObj.searchParams.get('_format');
+                        const secretCode = urlObj.searchParams.get('_secretCode');
+                        const id = urlObj.searchParams.get('id');
+
+                        // Verificar formato ITI
+                        if (format !== 'application/validador-iti+json') {
+                            resolve({
+                                valid: false,
+                                error: 'Formato inválido. Deve ser application/validador-iti+json',
+                                httpStatus: 400
+                            });
+                            return;
+                        }
+
+                        // Buscar documento
+                        const document = documents.find(doc => 
+                            doc.id === id && doc.secretCode === secretCode
+                        );
+
+                        if (!document) {
+                            resolve({
+                                valid: false,
+                                error: 'Documento não encontrado ou código secreto inválido',
+                                httpStatus: 404
+                            });
+                            return;
+                        }
+
+                        // Sucesso - retornar dados do documento
+                        resolve({
+                            valid: true,
+                            document: document,
+                            httpStatus: 200,
+                            response: {
+                                "version": "1.0.0",
+                                "prescription": {
+                                    "signatureFiles": [
+                                        {
+                                            "url": document.pdfUrl
+                                        }
+                                    ]
+                                }
+                            }
+                        });
+
+                    } catch (error) {
+                        resolve({
+                            valid: false,
+                            error: 'URL inválida',
+                            httpStatus: 400
+                        });
+                    }
+                }, 1000);
+            });
+        }
+
+        // Mostrar resultado da validação
+        function showValidationResult(result) {
+            const resultDiv = document.getElementById('validationResult');
+            const responseDiv = document.getElementById('apiResponse');
+            
+            resultDiv.style.display = 'block';
+            responseDiv.style.display = 'block';
+            
+            if (result.valid) {
+                resultDiv.className = 'validation-result success';
+                resultDiv.innerHTML = `
+                    <h3>✅ Documento Válido - PDF Público Acessível</h3>
+                    <p><strong>Nome:</strong> ${result.document.name}</p>
+                    <p><strong>Tipo:</strong> ${result.document.type}</p>
+                    <p><strong>Arquivo:</strong> ${result.document.fileName}</p>
+                    <p><strong>Criado:</strong> ${new Date(result.document.createdAt).toLocaleString('pt-BR')}</p>
+                    <p><strong>Status HTTP:</strong> <span class="status-badge status-valid">${result.httpStatus} - OK</span></p>
+                    <p><strong>PDF Público:</strong> <a href="${result.document.pdfUrl}" target="_blank" class="pdf-link">${result.document.pdfUrl}</a></p>
+                `;
+                
+                responseDiv.className = 'api-response success-api';
+                responseDiv.innerHTML = `HTTP ${result.httpStatus} OK
+Content-Type: application/json
+
+${JSON.stringify(result.response, null, 2)}`;
+                
+            } else {
+                resultDiv.className = 'validation-result error';
+                resultDiv.innerHTML = `
+                    <h3>❌ Validação Falhou</h3>
+                    <p><strong>Erro:</strong> ${result.error}</p>
+                    <p><strong>Status HTTP:</strong> <span class="status-badge status-invalid">${result.httpStatus}</span></p>
+                `;
+                
+                responseDiv.className = 'api-response error-api';
+                responseDiv.innerHTML = `HTTP ${result.httpStatus} Error
+Content-Type: application/json
+
+${JSON.stringify({error: result.error}, null, 2)}`;
+            }
+        }
+
+        // Manipular validação ITI (resposta automática para o ITI)
+        function handleITIValidation() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const format = urlParams.get('_format');
+            const secretCode = urlParams.get('_secretCode');
+            const id = urlParams.get('id');
+
+            // Se foi chamado pelo ITI, responder como API
+            if (format === 'application/validador-iti+json' && secretCode && id) {
+                const document = documents.find(doc => 
+                    doc.id === id && doc.secretCode === secretCode
+                );
+
+                document.body.innerHTML = '';
+                
+                if (document) {
+                    // Documento encontrado - resposta de sucesso
+                    document.body.innerHTML = `
+                        <div style="font-family: 'Segoe UI', sans-serif; padding: 30px; background: #f8f9fa;">
+                            <div style="max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <div style="text-align: center; margin-bottom: 30px;">
+                                    <h1 style="color: #28a745; margin-bottom: 10px;">✅ ITI API Response</h1>
+                                    <p style="color: #666; font-size: 18px;">HTTP 200 OK - Documento Válido</p>
+                                </div>
+                                
+                                <div style="background: #e7f3ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                                    <h3 style="color: #004085; margin-bottom: 15px;">📄 Informações do Documento:</h3>
+                                    <p><strong>Nome:</strong> ${document.name}</p>
+                                    <p><strong>Tipo:</strong> ${document.type}</p>
+                                    <p><strong>Arquivo:</strong> ${document.fileName}</p>
+                                    <p><strong>Criado em:</strong> ${new Date(document.createdAt).toLocaleString('pt-BR')}</p>
+                                    ${document.description ? `<p><strong>Descrição:</strong> ${document.description}</p>` : ''}
+                                </div>
+
+                                <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                                    <h3 style="color: #495057; margin-bottom: 15px;">📡 Resposta JSON para ITI:</h3>
+                                    <pre style="background: #ffffff; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-size: 14px;">${JSON.stringify({
+                                        "version": "1.0.0",
+                                        "prescription": {
+                                            "signatureFiles": [
+                                                {
+                                                    "url": document.pdfUrl
+                                                }
+                                            ]
+                                        }
+                                    }, null, 2)}</pre>
+                                </div>
+
+                                <div style="background: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                                    <h3 style="color: #155724; margin-bottom: 15px;">🔗 Acesso ao PDF:</h3>
+                                    <p><strong>URL Pública:</strong></p>
+                                    <p><a href="${document.pdfUrl}" target="_blank" style="color: #007bff; word-break: break-all; font-weight: 500;">${document.pdfUrl}</a></p>
+                                    <p style="margin-top: 15px;"><small>✅ Este PDF está hospedado no GitHub Pages e é publicamente acessível para validação ITI</small></p>
+                                </div>
+
+                                <div style="text-align: center; margin-top: 30px;">
+                                    <button onclick="window.close()" style="background: #6c757d; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; margin-right: 10px;">← Fechar</button>
+                                    <button onclick="history.back()" style="background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer;">🏠 Voltar ao Validador</button>
+                                </div>
+
+                                <hr style="margin: 30px 0; border: none; border-top: 1px solid #dee2e6;">
+                                <p style="text-align: center; color: #666; font-size: 14px;">
+                                    <em>Esta é a resposta que seria enviada automaticamente ao validador ITI oficial.<br>
+                                    Timestamp: ${new Date().toLocaleString('pt-BR')}</em>
+                                </p>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    // Documento não encontrado - resposta de erro
+                    document.body.innerHTML = `
+                        <div style="font-family: 'Segoe UI', sans-serif; padding: 30px; background: #f8f9fa;">
+                            <div style="max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <div style="text-align: center; margin-bottom: 30px;">
+                                    <h1 style="color: #dc3545; margin-bottom: 10px;">❌ ITI API Response</h1>
+                                    <p style="color: #666; font-size: 18px;">HTTP 404 Not Found</p>
+                                </div>
+                                
+                                <div style="background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                                    <h3 style="color: #721c24; margin-bottom: 15px;">🚫 Documento Não Encontrado</h3>
+                                    <p><strong>Erro:</strong> Documento não encontrado ou código secreto inválido</p>
+                                    <p><strong>ID solicitado:</strong> ${id}</p>
+                                    <p><strong>Código fornecido:</strong> ${secretCode}</p>
+                                </div>
+
+                                <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                                    <h3 style="color: #495057; margin-bottom: 15px;">📡 Resposta JSON para ITI:</h3>
+                                    <pre style="background: #ffffff; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-size: 14px;">${JSON.stringify({
+                                        "error": "Document not found or invalid secret code"
+                                    }, null, 2)}</pre>
+                                </div>
+
+                                <div style="text-align: center; margin-top: 30px;">
+                                    <button onclick="window.close()" style="background: #6c757d; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; margin-right: 10px;">← Fechar</button>
+                                    <button onclick="history.back()" style="background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer;">🏠 Voltar ao Validador</button>
+                                </div>
+
+                                <hr style="margin: 30px 0; border: none; border-top: 1px solid #dee2e6;">
+                                <p style="text-align: center; color: #666; font-size: 14px;">
+                                    <em>Esta é a resposta que seria enviada automaticamente ao validador ITI oficial.<br>
+                                    Timestamp: ${new Date().toLocaleString('pt-BR')}</em>
+                                </p>
+                            </div>
+                        </div>
+                    `;
+                }
+                return;
+            }
+        }
+
+        // Testar validação do documento atual
+        function testValidation() {
+            if (currentQRData) {
+                document.getElementById('validationURL').value = currentQRData.url;
+                validateDocument();
+            }
+        }
+
+        // Funções auxiliares para QR Code
+        function downloadQR() {
+            if (!currentQRData) return;
+            const canvas = document.querySelector('#qrCanvas canvas');
+            if (canvas) {
+                const link = document.createElement('a');
+                link.download = `qrcode_${currentQRData.documentData.name.replace(/[^a-zA-Z0-9]/g, '_')}.png`;
+                link.href = canvas.toDataURL();
+                link.click();
+            }
+        }
+
+        function copyURL() {
+            if (!currentQRData) return;
+            navigator.clipboard.writeText(currentQRData.url).then(() => {
+                alert('✅ URL copiada!\n\nUse no validador ITI: https://validar.iti.gov.br');
+            }).catch(() => {
+                prompt('Copie esta URL para usar no validador ITI:', currentQRData.url);
+            });
+        }
+
+        // Limpar formulário
+        function clearForm() {
+            document.getElementById('documentName').value = '';
+            document.getElementById('pdfFileName').value = '';
+            document.getElementById('documentType').value = 'prescription';
+            document.getElementById('documentDescription').value = '';
+            document.getElementById('pdfPreview').style.display = 'none';
+        }
+
+        // Atualizar lista de documentos
+        function updateDocumentList() {
+            const container = document.getElementById('documentList');
+            
+            if (documents.length === 0) {
+                container.innerHTML = '<p>Nenhum documento registrado ainda.</p>';
+                return;
+            }
+
+            container.innerHTML = documents.map(doc => `
+                <div class="document-item">
+                    <div class="document-info">
+                        <h4>${doc.name}</h4>
+                        <p><strong>Arquivo:</strong> <a href="${doc.pdfUrl}" target="_blank" class="pdf-link">${doc.fileName}</a></p>
+                        <p><strong>Tipo:</strong> ${doc.type} | <strong>Registrado:</strong> ${new Date(doc.createdAt).toLocaleDateString('pt-BR')}</p>
+                        ${doc.description ? `<p><small><strong>Descrição:</strong> ${doc.description}</small></p>` : ''}
+                        <p><strong>Código:</strong> <code>${doc.secretCode}</code></p>
+                        <span class="status-badge status-valid">PDF Público</span>
+                    </div>
+                    <div class="document-actions">
+                        <button onclick="regenerateQR('${doc.id}')">🎯 Ver QR</button>
+                        <button onclick="validateById('${doc.id}')">✅ Validar</button>
+                        <button onclick="openPDF('${doc.pdfUrl}')">📄 Abrir PDF</button>
+                        <button onclick="deleteDocument('${doc.id}')" style="background: #dc3545;">🗑️ Excluir</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Regenerar QR de documento existente
+        async function regenerateQR(documentId) {
+            const document = documents.find(doc => doc.id === documentId);
+            if (!document) return;
+
+            const validationURL = `${baseURL}?_format=application/validador-iti+json&_secretCode=${document.secretCode}&id=${document.id}&type=${document.type}`;
+
+            const qrCanvas = document.getElementById('qrCanvas');
+            qrCanvas.innerHTML = '';
+            
+            await QRCode.toCanvas(qrCanvas, validationURL, {
+                width: 300,
+                margin: 2,
+                color: {
+                    dark: '#000000',
+                    light: '#FFFFFF'
+                }
+            });
+
+            currentQRData = {
+                url: validationURL,
+                documentData: document
+            };
+
+            document.getElementById('qrResult').style.display = 'block';
+            document.getElementById('qrResult').className = 'qr-result success';
+            document.getElementById('qrInfo').innerHTML = `
+                <strong>✅ QR Code para: ${document.name}</strong><br>
+                <strong>PDF:</strong> <a href="${document.pdfUrl}" target="_blank" class="pdf-link">${document.fileName}</a><br>
+                <strong>Código:</strong> <code>${document.secretCode}</code><br>
+                <small>QR Code pronto para uso no validador ITI</small>
+            `;
+
+            // Scroll para o resultado
+            document.getElementById('qrResult').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Validar por ID
+        function validateById(documentId) {
+            const document = documents.find(doc => doc.id === documentId);
+            if (!document) return;
+
+            const validationURL = `${baseURL}?_format=application/validador-iti+json&_secretCode=${document.secretCode}&id=${document.id}&type=${document.type}`;
+            
+            document.getElementById('validationURL').value = validationURL;
+            validateDocument();
+        }
+
+        // Abrir PDF
+        function openPDF(pdfUrl) {
+            window.open(pdfUrl, '_blank');
+        }
+
+        // Deletar documento
+        function deleteDocument(documentId) {
+            const document = documents.find(doc => doc.id === documentId);
+            if (!document) return;
+
+            if (confirm(`Tem certeza que deseja excluir o documento "${document.name}"?\n\nIsso não excluirá o arquivo PDF do GitHub.`)) {
+                documents = documents.filter(doc => doc.id !== documentId);
+                localStorage.setItem('iti_documents_v2', JSON.stringify(documents));
+                
+                updateDocumentList();
+                
+                // Limpar QR se era o documento atual
+                if (currentQRData && currentQRData.documentData.id === documentId) {
+                    document.getElementById('qrResult').style.display = 'none';
+                    currentQRData = null;
+                }
+            }
+        }
+
+        // Funções administrativas
+        function exportDocuments() {
+            const dataStr = JSON.stringify({
+                documents: documents,
+                exportedAt: new Date().toISOString(),
+                version: 'v2',
+                baseURL: baseURL,
+                filesURL: filesURL
+            }, null, 2);
+            
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `iti_validador_backup_${new Date().toISOString().split('T')[0]}.json`;
+            link.click();
+            
+            URL.revokeObjectURL(url);
+        }
+
+        function importDocuments(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    
+                    if (data.documents && Array.isArray(data.documents)) {
+                        if (confirm(`Importar ${data.documents.length} documentos?\n\nIsso irá substituir todos os documentos atuais.`)) {
+                            documents = data.documents;
+                            localStorage.setItem('iti_documents_v2', JSON.stringify(documents));
+                            updateDocumentList();
+                            alert('✅ Documentos importados com sucesso!');
+                        }
+                    } else {
+                        alert('❌ Arquivo de backup inválido.');
+                    }
+                } catch (error) {
+                    alert('❌ Erro ao ler arquivo: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function clearAllData() {
+            if (confirm('⚠️ ATENÇÃO: Isso irá excluir TODOS os registros de documentos.\n\nOs arquivos PDF no GitHub não serão excluídos.\n\nContinuar?')) {
+                if (confirm('Última confirmação: Excluir todos os registros?')) {
+                    localStorage.removeItem('iti_documents_v2');
+                    documents = [];
+                    currentQRData = null;
+                    
+                    updateDocumentList();
+                    document.getElementById('qrResult').style.display = 'none';
+                    document.getElementById('validationResult').style.display = 'none';
+                    document.getElementById('apiResponse').style.display = 'none';
+                    document.getElementById('pdfPreview').style.display = 'none';
+                    clearForm();
+                    
+                    alert('✅ Todos os registros foram excluídos.');
+                }
+            }
+        }
+
+        // Adicionar seção administrativa
+        document.addEventListener('DOMContentLoaded', function() {
+            const adminSection = document.createElement('div');
+            adminSection.className = 'section';
+            adminSection.style.margin = '20px 40px';
+            adminSection.style.background = '#fff3cd';
+            adminSection.innerHTML = `
+                <h2>⚙️ Administração</h2>
+                <p style="margin-bottom: 15px; color: #856404;">Ferramentas para backup e gerenciamento dos registros.</p>
+                
+                <button onclick="exportDocuments()">📤 Exportar Backup</button>
+                <label for="importFile" style="display: inline-block;">
+                    <button type="button" onclick="document.getElementById('importFile').click()">📥 Importar Backup</button>
+                </label>
+                <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importDocuments(event)">
+                <button onclick="showStats()">📊 Estatísticas</button>
+                <button onclick="clearAllData()" style="background: #dc3545;">🗑️ Limpar Registros</button>
+                
+                <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; border: 1px solid #dee2e6;">
+                    <h4 style="color: #495057; margin-bottom: 10px;">📁 URLs do Sistema:</h4>
+                    <p><strong>Base:</strong> <code id="currentBaseUrl">${baseURL}</code></p>
+                    <p><strong>Arquivos:</strong> <code id="currentFilesUrl">${filesURL}</code></p>
+                    <small style="color: #666;">Use estas URLs para verificar se o GitHub Pages está funcionando corretamente.</small>
+                </div>
+            `;
+            document.querySelector('.container').appendChild(adminSection);
+        });
+
+        function showStats() {
+            const totalDocs = documents.length;
+            const typeCount = documents.reduce((acc, doc) => {
+                acc[doc.type] = (acc[doc.type] || 0) + 1;
+                return acc;
+            }, {});
+            
+            const oldestDoc = documents.length > 0 ? new Date(Math.min(...documents.map(d => new Date(d.createdAt)))).toLocaleDateString('pt-BR') : 'N/A';
+            const newestDoc = documents.length > 0 ? new Date(Math.max(...documents.map(d => new Date(d.createdAt)))).toLocaleDateString('pt-BR') : 'N/A';
+
+            alert(`📊 Estatísticas do Validador ITI:
+            
+📄 Total de documentos: ${totalDocs}
+📅 Primeiro registro: ${oldestDoc}
+📅 Último registro: ${newestDoc}
+
+📊 Documentos por tipo:
+${Object.entries(typeCount).map(([type, count]) => `   • ${type}: ${count} documento${count > 1 ? 's' : ''}`).join('\n')}
+
+🔗 URLs configuradas:
+   • Base: ${baseURL}
+   • Arquivos: ${filesURL}
+
+🕒 Gerado em: ${new Date().toLocaleString('pt-BR')}`);
+        }
+
+        // Log de atividades
+        console.log('🚀 Validador ITI carregado');
+        console.log('📁 Base URL:', baseURL);
+        console.log('📄 Files URL:', filesURL);
+        console.log('📊 Documentos carregados:', documents.length);
+    </script>
+</body>
+</html>
