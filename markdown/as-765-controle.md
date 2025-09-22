@@ -72,6 +72,8 @@
   - Função de transferência de malha fechada
   - Exemplos MATLAB: manipulação de funções de transferência
 
+**Material**: 📊 [Slides Cap 4 - Função de Transferência](../courses/as765/slides-cap4.pdf)
+
 
 ---
 
@@ -86,6 +88,8 @@
   - Sistemas de ordem superior
   - Aproximação por polos dominantes
   - Exemplos MATLAB: análise temporal, stepinfo()
+
+**Material**: 📊 [Slides Cap 5 - Resposta Dinâmica](../courses/as765/slides-cap5.pdf)
 
 ---
 
