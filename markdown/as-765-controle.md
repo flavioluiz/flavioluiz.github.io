@@ -16,7 +16,9 @@
 
 📖 **[Apostila de Sistemas de Controle (PDF)](../courses/as765/apostila-controle-as765.pdf)**
 
-> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 30/agosto/2025.
+📝 **[Lista de Exercícios 01 (PDF)](../courses/as765/lista01.pdf)** - Para preparação da 1ª prova (6 de outubro)
+
+> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 29/setembro/2025.
 
 ## Cronograma e Material das Aulas
 
@@ -89,7 +91,7 @@
   - Aproximação por polos dominantes
   - Exemplos MATLAB: análise temporal, stepinfo()
 
-**Material**: 📊 [Slides Cap 5 - Resposta Dinâmica](../courses/as765/slides-cap5.pdf)
+**Material**: 📊 [Slides Cap 5 - Resposta Dinâmica](../courses/as765/slides-cap5.pdf) *(atualizado em 29/setembro/2025)*
 
 ---
 
@@ -104,8 +106,8 @@
   - Margens de estabilidade básicas
 
 - **1ª PROVA** (2h)
-  - **Matéria**: Capítulos 1 a 6
-  - **Foco**: Modelagem, linearização, função de transferência, resposta temporal, estabilidade básica
+  - **Matéria**: Capítulos 1 a 5
+  - **Foco**: Modelagem, linearização, função de transferência, resposta temporal
 
 ---
 
@@ -211,10 +213,10 @@
 
 ## Avaliação
 
-- **1ª Prova (30%)**: Fundamentos (Cap 1-6)
+- **1ª Prova (30%)**: Fundamentos (Cap 1-5)
 - **2ª Prova (40%)**: Métodos de projeto (Cap 7-12)
 - **Entregas (30%)**: Listas de exercícios + Projetos MATLAB
 
 ---
 
-*Última atualização: 31/agosto/2025*
+*Última atualização: 29/setembro/2025*
