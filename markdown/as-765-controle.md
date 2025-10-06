@@ -18,7 +18,7 @@
 
 📝 **[Lista de Exercícios 01 (PDF)](../courses/as765/lista01.pdf)** - Para preparação da 1ª prova (6 de outubro)
 
-> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 29/setembro/2025.
+> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 6/outubro/2025.
 
 ## Cronograma e Material das Aulas
 
@@ -219,4 +219,4 @@
 
 ---
 
-*Última atualização: 29/setembro/2025*
+*Última atualização: 6/outubro/2025*
