@@ -109,6 +109,8 @@
   - **Matéria**: Capítulos 1 a 5
   - **Foco**: Modelagem, linearização, função de transferência, resposta temporal
 
+**Material**: 📊 [Slides Cap 6 - Estabilidade](../courses/as765/slides-cap6.pdf)
+
 ---
 
 ### **AULA 6** - Resposta em Frequência
