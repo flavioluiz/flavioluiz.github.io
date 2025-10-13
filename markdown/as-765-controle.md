@@ -18,7 +18,7 @@
 
 📝 **[Lista de Exercícios 01 (PDF)](../courses/as765/lista01.pdf)** - Para preparação da 1ª prova (6 de outubro)
 
-> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 6/outubro/2025.
+> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 13/outubro/2025.
 
 ## Cronograma e Material das Aulas
 
@@ -125,6 +125,9 @@
   - Relação entre resposta temporal e frequencial
   - Exemplos MATLAB: bode(), margin(), bandwidth
 
+**Material**: 📊 [Slides Cap 7 - Resposta em Frequência - Diagramas de Bode](../courses/as765/slides-cap7.pdf)
+
+
 ---
 
 ### **AULA 7** - Análise de Estabilidade no Domínio da Frequência
@@ -139,6 +142,7 @@
   - Análise de robustez
   - Exemplos MATLAB: nyquist(), margin(), allmargin()
 
+**Material**: 📊 [Slides Cap 7 - Resposta em Frequência - Análise de Estabilidade](../courses/as765/slides-cap8.pdf) (versão provisória)
 ---
 
 ### **AULA 8** - Controladores PID
@@ -221,4 +225,4 @@
 
 ---
 
-*Última atualização: 6/outubro/2025*
+*Última atualização: 13/outubro/2025*
