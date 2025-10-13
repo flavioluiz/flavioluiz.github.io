@@ -142,7 +142,9 @@
   - Análise de robustez
   - Exemplos MATLAB: nyquist(), margin(), allmargin()
 
-**Material**: 📊 [Slides Cap 7 - Resposta em Frequência - Análise de Estabilidade](../courses/as765/slides-cap8.pdf) (versão provisória)
+**Material**: 📊 [Slides Cap 8 - Resposta em Frequência - Análise de Estabilidade](../courses/as765/slides-cap8.pdf) (versão provisória)
+
+
 ---
 
 ### **AULA 8** - Controladores PID
