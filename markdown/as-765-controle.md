@@ -126,6 +126,7 @@
   - Exemplos MATLAB: bode(), margin(), bandwidth
 
 **Material**: 📊 [Slides Cap 7 - Resposta em Frequência - Diagramas de Bode](../courses/as765/slides-cap7.pdf)
+**Exemplos MATLAB**: 💻 [Domínio da Frequência (MLX)](../courses/as765/dominio_frequencia.mlx)
 
 
 ---
