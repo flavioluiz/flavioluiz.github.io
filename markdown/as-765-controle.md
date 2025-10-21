@@ -18,7 +18,7 @@
 
 📝 **[Lista de Exercícios 01 (PDF)](../courses/as765/lista01.pdf)** - Para preparação da 1ª prova (6 de outubro)
 
-> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 13/outubro/2025.
+> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 21/outubro/2025.
 
 ## Cronograma e Material das Aulas
 
@@ -143,7 +143,9 @@
   - Análise de robustez
   - Exemplos MATLAB: nyquist(), margin(), allmargin()
 
-**Material**: 📊 [Slides Cap 8 - Resposta em Frequência - Análise de Estabilidade](../courses/as765/slides-cap8.pdf) (versão provisória)
+**Material**: 📊 [Slides Cap 8 - Resposta em Frequência - Análise de Estabilidade](../courses/as765/slides-cap8.pdf)
+
+> ✅ **Atualização (21/out/2025)**: Versão corrigida - erros relacionados ao sentido de circulação do ponto crítico no diagrama de Nyquist foram corrigidos.
 
 
 ---
@@ -228,4 +230,4 @@
 
 ---
 
-*Última atualização: 13/outubro/2025*
+*Última atualização: 21/outubro/2025*
