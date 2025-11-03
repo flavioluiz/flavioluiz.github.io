@@ -162,6 +162,8 @@
   - Problemas comuns (windup, ruído derivativo)
   - Exemplos MATLAB: pid(), pidtune(), step()
 
+**Material**: 📊 [Slides Cap 9 - Controladores PID](../courses/as765/slides_cap9.pdf)
+
 ---
 
 ### **AULA 9** - Lugar Geométrico das Raízes (LGR)
