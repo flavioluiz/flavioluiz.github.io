@@ -18,7 +18,7 @@
 
 📝 **[Lista de Exercícios 01 (PDF)](../courses/as765/lista01.pdf)** - Para preparação da 1ª prova (6 de outubro)
 
-> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 21/outubro/2025.
+> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 3/novembro/2025.
 
 ## Cronograma e Material das Aulas
 
@@ -164,6 +164,8 @@
 
 **Material**: 📊 [Slides Cap 9 - Controladores PID](../courses/as765/slides_cap9.pdf)
 
+> ✅ **Atualização (3/nov/2025)**: Slides do Capítulo 9 adicionados - aborda controladores PID com métodos de sintonia e implementação prática.
+
 ---
 
 ### **AULA 9** - Lugar Geométrico das Raízes (LGR)
@@ -232,4 +234,4 @@
 
 ---
 
-*Última atualização: 21/outubro/2025*
+*Última atualização: 3/novembro/2025*
