@@ -145,6 +145,10 @@
 
 **Material**: 📊 [Slides Cap 8 - Resposta em Frequência - Análise de Estabilidade](../courses/as765/slides-cap8.pdf)
 
+**Exemplos MATLAB**:
+- 💻 [Margens de Estabilidade (MLX)](../courses/as765/20_outubro_2025/margens_estab.mlx)
+- 💻 [Diagrama de Nyquist (MLX)](../courses/as765/20_outubro_2025/plot_nyquist.mlx)
+
 > ✅ **Atualização (21/out/2025)**: Versão corrigida - erros relacionados ao sentido de circulação do ponto crítico no diagrama de Nyquist foram corrigidos.
 
 
@@ -163,6 +167,10 @@
   - Exemplos MATLAB: pid(), pidtune(), step()
 
 **Material**: 📊 [Slides Cap 9 - Controladores PID](../courses/as765/slides_cap9.pdf)
+
+**Exemplos MATLAB**:
+- 💻 [Controladores PID (MLX)](../courses/as765/2_nov_2025/aula_3_nov2025_pid.mlx)
+- 💻 [Sistemas Simplificados (MLX)](../courses/as765/2_nov_2025/aula3_nov_2025_sistemas_simplificados.mlx)
 
 > ✅ **Atualização (3/nov/2025)**: Slides do Capítulo 9 adicionados - aborda controladores PID com métodos de sintonia e implementação prática.
 
