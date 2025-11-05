@@ -18,6 +18,8 @@
 
 📝 **[Lista de Exercícios 01 (PDF)](../courses/as765/lista01.pdf)** - Para preparação da 1ª prova (6 de outubro)
 
+📝 **[Lista de Exercícios 02 (PDF)](../courses/as765/lista02.pdf)** - Capítulos 6-9: Estabilidade, Resposta em Frequência, Análise de Nyquist e Controladores PID (entrega: 24 de novembro)
+
 > ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 3/novembro/2025.
 
 ## Cronograma e Material das Aulas
