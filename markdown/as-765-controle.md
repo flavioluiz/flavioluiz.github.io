@@ -20,7 +20,7 @@
 
 📝 **[Lista de Exercícios 02 (PDF)](../courses/as765/lista02.pdf)** - Capítulos 6-9: Estabilidade, Resposta em Frequência, Análise de Nyquist e Controladores PID (entrega: 24 de novembro)
 
-> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 3/novembro/2025.
+> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 10/novembro/2025.
 
 ## Cronograma e Material das Aulas
 
@@ -173,6 +173,7 @@
 **Exemplos MATLAB**:
 - 💻 [Controladores PID (MLX)](../courses/as765/2_nov_2025/aula_3_nov2025_pid.mlx)
 - 💻 [Sistemas Simplificados (MLX)](../courses/as765/2_nov_2025/aula3_nov_2025_sistemas_simplificados.mlx)
+- 💻 [Anti-Windup PID (M)](../courses/as765/10_nov_2025/windup.m)
 
 > ✅ **Atualização (3/nov/2025)**: Slides do Capítulo 9 adicionados - aborda controladores PID com métodos de sintonia e implementação prática.
 
@@ -189,6 +190,8 @@
   - Projeto de controladores usando LGR
   - Efeitos de zeros e polos
   - Exemplos MATLAB: rlocus(), rlocfind(), rlocus design
+
+**Material**: 📊 [Slides Cap 10 - Lugar Geométrico das Raízes](../courses/as765/slides-cap10.pdf)
 
 ---
 
@@ -244,4 +247,4 @@
 
 ---
 
-*Última atualização: 3/novembro/2025*
+*Última atualização: 10/novembro/2025*
