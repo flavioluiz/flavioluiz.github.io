@@ -207,7 +207,9 @@
   - Implementação e validação
   - Exemplos MATLAB: compensador design, bode(), step()
 
-**Material**: 📊 [Slides Cap 11 - Projeto no Domínio da Frequência](../courses/as765/slides_cap11.pdf)
+**Material**: 📊 [Slides Cap 11 - Projeto no Domínio da Frequência (Versão Reduzida)](../courses/as765/slides-cap11_red.pdf)
+
+**Leitura Extra**: 📚 [Slides Cap 11 - Versão Completa](../courses/as765/slides_cap11.pdf)
 
 ---
 
