@@ -22,6 +22,8 @@
 
 > ✅ **Atualização (18/nov/2025)**: Versão corrigida - o exercício 9.3 foi corrigido, a versão anterior não atingia o equilíbrio.
 
+📝 **[Lista de Exercícios 03 (PDF)](../courses/as765/lista03.pdf)** - Entrega: 8 de dezembro de 2025
+
 > ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 10/novembro/2025.
 
 ## Cronograma e Material das Aulas
