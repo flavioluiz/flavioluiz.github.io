@@ -14,7 +14,9 @@
 
 📊 **[Apresentação Geral do Curso (PDF)](../courses/as765/apresentacao-geral.pdf)**
 
-📖 **[Apostila de Sistemas de Controle (PDF)](../courses/as765/apostila-controle-as765.pdf)**
+📖 **[Apostila de Sistemas de Controle (PDF)](../courses/as765/apostila-controle-as765.pdf)** - Versão completa
+
+> ⚠️ **Nota Importante**: Esta é a primeira versão completa da apostila, ainda provisória. O material pode conter erros e precisa de revisão. Comentários e feedback dos alunos são muito bem-vindos!
 
 📝 **[Lista de Exercícios 01 (PDF)](../courses/as765/lista01.pdf)** - Para preparação da 1ª prova (6 de outubro)
 
@@ -24,7 +26,9 @@
 
 📝 **[Lista de Exercícios 03 (PDF)](../courses/as765/lista03.pdf)** - Entrega: 8 de dezembro de 2025
 
-> ⚠️ **Nota Importante**: O conteúdo da apostila é provisório e a apostila está incompleta. A última atualização foi feita em 10/novembro/2025.
+📝 **[Lista de Exercícios 04 (PDF)](../courses/as765/lista04.pdf)** - Capítulo 12: Controle em Espaço de Estados
+
+> ⚠️ **Nota**: A avaliação do Capítulo 12 (Controle em Espaço de Estados) será realizada exclusivamente através desta lista de exercícios.
 
 ## Cronograma e Material das Aulas
 
@@ -217,42 +221,42 @@
 
 ---
 
-### **AULA 11** - Controle Moderno - Parte I
-**Capítulos**: Cap 12 (Parte I) | **Duração**: 4h
+### **AULA 11** - Controle em Espaço de Estados
+**Capítulos**: Cap 12 | **Data**: 1 de dezembro de 2025 | **Duração**: 4h
 
 **Conteúdo**:
-- **Cap 12: Controle no Espaço de Estados - Fundamentos** (4h)
-  - Representação em espaço de estados
-  - Conversão entre função de transferência e espaço de estados
-  - Matriz de transição de estados
-  - Controlabilidade e observabilidade
-  - Exemplos MATLAB: ss(), c2d(), ctrb(), obsv()
+- **Cap 12: Controle em Espaço de Estados** (4h)
+  - Introdução ao controle moderno (controle clássico vs moderno)
+  - Controlabilidade: definição, teste e matriz de controlabilidade
+  - Realimentação de estados: alocação de polos e LQR
+  - LQI: LQR com ação integral para rejeição de perturbações
+  - Observabilidade: definição, teste e matriz de observabilidade
+  - Observadores de estados (Luenberger)
+  - Princípio de separação
+  - Robustez e sensibilidade a incertezas
+  - Síntese e implementação completa
+  - Exemplos MATLAB: ctrb(), obsv(), place(), lqr(), ss(), step(), lsim()
+
+**Material**: 📊 [Slides Cap 12 - Controle em Espaço de Estados](../courses/as765/slides-cap12.pdf)
 
 ---
 
-### **AULA 12** - Controle Moderno - Parte II + **2ª PROVA**
-**Capítulos**: Cap 12 (Parte II) + Avaliação Final | **Duração**: 2h + 2h prova
-
-**Conteúdo**:
-- **Cap 12: Controle no Espaço de Estados - Aplicações** (2h)
-  - Projeto de controladores por alocação de polos
-  - Observadores de estados (Estimadores de Luenberger)
-  - Introdução ao controle ótimo (LQR)
-  - **Aplicação prática MATLAB**: Controle de atitude de aeronave
-  - Simulações avançadas e validação
+### **AULA 12** - **2ª PROVA**
+**Data**: 5 de dezembro de 2025 | **Duração**: 2h
 
 - **2ª PROVA** (2h)
-  - **Matéria**: Capítulos 7 a 12
-  - **Foco**: Frequência, estabilidade avançada, PID, LGR, compensadores, espaço de estados
+  - **Matéria**: Capítulos 7 a 11
+  - **Foco**: Resposta em frequência, análise de estabilidade (Nyquist), controladores PID, lugar geométrico das raízes, projeto no domínio da frequência
 
 ---
 
 ## Avaliação
 
 - **1ª Prova (30%)**: Fundamentos (Cap 1-5)
-- **2ª Prova (40%)**: Métodos de projeto (Cap 7-12)
+- **2ª Prova (40%)**: Métodos de projeto (Cap 7-11)
 - **Entregas (30%)**: Listas de exercícios + Projetos MATLAB
+  - Cap 12 (Controle em Espaço de Estados): avaliado exclusivamente pela Lista 04
 
 ---
 
-*Última atualização: 10/novembro/2025*
+*Última atualização: 30/novembro/2025*
