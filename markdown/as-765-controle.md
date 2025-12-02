@@ -239,6 +239,10 @@
 
 **Material**: 📊 [Slides Cap 12 - Controle em Espaço de Estados](../courses/as765/slides-cap12.pdf)
 
+**Exemplos MATLAB**:
+- 💻 [Simulação LQR (M)](../courses/as765/1_dez_2025/simulacao_LQR.m)
+- 💻 [LQR com Diferentes Matrizes Q (M)](../courses/as765/1_dez_2025/LQR_diferentesQs.m)
+
 ---
 
 ### **AULA 12** - **2ª PROVA**
@@ -259,4 +263,4 @@
 
 ---
 
-*Última atualização: 30/novembro/2025*
+*Última atualização: 1/dezembro/2025*
