@@ -12,6 +12,8 @@
 
 📋 **[Plano de Ensino 2026 (PDF)](../courses/ab721/plano-ab721-2026.pdf)**
 
+📖 **[Apostila de Desempenho de Aeronaves (PDF)](../courses/ab721/apostila-desempenho-ab721.pdf)**
+
 ## Cronograma e Material das Aulas
 
 ### **AULA 1** - Atmosfera e Velocidades
