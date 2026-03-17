@@ -1,6 +1,9 @@
 # Teaching Activities
 
-## Current Courses (2025)
+## Current Courses (2026)
+- **AB-721**: [Flight Performance](https://flavioluiz.github.io/#ab-721-desempenho) (Professional Master's in Aeronautical Engineering)
+
+## Previous Courses (2025)
 - **AS-765**: [Control Systems](https://flavioluiz.github.io/#as-765-controle) (Professional Master's in Aeronautical Engineering)
 - **AB-271**: Port-Hamiltonian Framework for Modeling, Simulation and Control (Academic Graduate Program)
 - **AS-801**: Introduction to Aeronautical Engineering (Specialization Program)
