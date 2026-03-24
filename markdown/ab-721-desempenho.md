@@ -24,6 +24,9 @@
 **Material**:
 - 📊 [Slides - Atmosfera e Velocidades (PDF)](../courses/ab721/slides-atmosfera-velocidades.pdf)
 - 📊 [Slides - Velocidades (PDF)](../courses/ab721/slides-velocidades.pdf)
+- 💻 [Script MATLAB/Octave - `atmosfera.m`](../courses/ab721/aula1/atmosfera.m)
+- 💻 [Backup MATLAB/Octave - `atmosfera.asv`](../courses/ab721/aula1/atmosfera.asv)
+- 💻 [Exemplo MATLAB/Octave - `altitude_densidade.m`](../courses/ab721/aula1/altitude_densidade.m)
 
 **Leitura Extra**:
 - 📚 [Slides - Instrumentos (PDF)](../courses/ab721/slides-instrumentos.pdf)
