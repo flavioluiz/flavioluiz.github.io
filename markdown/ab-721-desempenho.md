@@ -51,6 +51,7 @@
 - Atividade Prática 2
 
 **Material**:
+- 📊 [Slides - Cruzeiro, Subida e Envelope de Voo (PDF)](../courses/ab721/slides-cruzeiro-subida-envelopevoo.pdf)
 - 🧪 [Atividade Prática 2 - Envelopes de Voo (PDF)](../courses/ab721/praticas/ab721-atividade-pratica-2.pdf)
 
 ---
