@@ -64,6 +64,7 @@
 - Atividade Prática 3
 
 **Material**:
+- 📊 [Slides - Alcance, Autonomia e Consumo (PDF)](../courses/ab721/slides-alcance-autonomia-consumo.pdf)
 - 🧪 [Atividade Prática 3 - Alcance, Autonomia e Análise Simplificada de Missão (PDF)](../courses/ab721/praticas/ab721-atividade-pratica-3.pdf)
 
 ---
