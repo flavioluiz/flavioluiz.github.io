@@ -39,6 +39,9 @@
 **Material**:
 - 📊 [Slides - Forças na Aeronave (PDF)](../courses/ab721/slides-forcas-aeronave.pdf)
 - 📊 [Slides - Planeio (PDF)](../courses/ab721/slides-planeio.pdf)
+- 💻 [Script MATLAB/Octave - `atmosfera.m`](../courses/ab721/planeio/atmosfera.m)
+- 💻 [Script MATLAB/Octave - `dinamica.m`](../courses/ab721/planeio/dinamica.m)
+- 💻 [Exemplo MATLAB/Octave - `main_simulacao.m`](../courses/ab721/planeio/main_simulacao.m)
 - 🧪 [Atividade Prática 1 - Atmosfera ISA e Planeio (PDF)](../courses/ab721/praticas/ab721-atividade-pratica-1.pdf)
 
 ---
