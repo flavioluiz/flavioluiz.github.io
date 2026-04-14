@@ -56,6 +56,10 @@
 **Material**:
 - 📊 [Slides - Cruzeiro, Subida e Envelope de Voo (PDF)](../courses/ab721/slides-cruzeiro-subida-envelopevoo.pdf)
 - 🧪 [Atividade Prática 2 - Envelopes de Voo (PDF)](../courses/ab721/praticas/ab721-atividade-pratica-2.pdf)
+- 💻 [Script MATLAB/Octave - `atmosfera.m`](../courses/ab721/envelope/atmosfera.m)
+- 💻 [Script MATLAB/Octave - `calcula_envelope.m`](../courses/ab721/envelope/calcula_envelope.m)
+- 💻 [Script MATLAB/Octave - `envelope.m`](../courses/ab721/envelope/envelope.m)
+- 💻 [Script MATLAB/Octave - `limites_envelope.m`](../courses/ab721/envelope/limites_envelope.m)
 
 ---
 
