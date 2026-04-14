@@ -80,6 +80,8 @@
 - Atividade Prática 4
 
 **Material**:
+- 📊 [Slides - Desempenho em Pista (PDF)](../courses/ab721/slides-desempenho-pista.pdf)
+- 📊 [Slides - Curvas, Manobras e Diagrama V-n (PDF)](../courses/ab721/slides-manobras.pdf)
 - 🧪 [Atividade Prática 4 - Pista Balanceada, Pouso, Curvas, Manobras e Diagrama V-n (PDF)](../courses/ab721/praticas/ab721-atividade-pratica-4.pdf)
 
 ---
@@ -94,4 +96,4 @@
 
 ---
 
-*Última atualização: março/2026*
+*Última atualização: abril/2026*
