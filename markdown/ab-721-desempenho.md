@@ -86,6 +86,7 @@
 **Material**:
 - 📊 [Slides - Desempenho em Pista (PDF)](../courses/ab721/slides-desempenho-pista.pdf)
 - 📊 [Slides - Curvas, Manobras e Diagrama V-n (PDF)](../courses/ab721/slides-manobras.pdf)
+- 💻 [Script MATLAB/Octave - `pista_decolagem.m`](../courses/ab721/pista/pista_decolagem.m)
 - 🧪 [Atividade Prática 4 - Pista Balanceada, Pouso, Curvas, Manobras e Diagrama V-n (PDF)](../courses/ab721/praticas/ab721-atividade-pratica-4.pdf)
 
 ---
