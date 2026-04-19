@@ -93,7 +93,7 @@
 
 ## Lista de Exercícios - Preparação para Prova
 
-- 📝 [Lista de Exercícios AB-721 (PDF)](../courses/ab721/lista_exercicios_ab721.pdf)
+- 📝 [Lista de Exercícios AB-721 (PDF)](../courses/ab721/lista_exercicios_ab721_si.pdf)
 
 ---
 
@@ -107,4 +107,4 @@
 
 ---
 
-*Última atualização: abril/2026 - lista de exercícios para prova*
+*Última atualização: 19/04/2026*
