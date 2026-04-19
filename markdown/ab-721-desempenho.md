@@ -91,6 +91,12 @@
 
 ---
 
+## Lista de Exercícios - Preparação para Prova
+
+- 📝 [Lista de Exercícios AB-721 (PDF)](../courses/ab721/lista_exercicios_ab721.pdf)
+
+---
+
 ## Atividades Práticas e Projeto Final
 
 - **Atividade Prática 1** - 24/03/2026: [Atmosfera ISA e Planeio (PDF)](../courses/ab721/praticas/ab721-atividade-pratica-1.pdf)
@@ -101,4 +107,4 @@
 
 ---
 
-*Última atualização: abril/2026*
+*Última atualização: abril/2026 - lista de exercícios para prova*
