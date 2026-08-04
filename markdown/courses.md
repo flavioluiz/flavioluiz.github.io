@@ -1,6 +1,7 @@
 # Teaching Activities
 
 ## Current Courses (2026)
+- **MVO-20 / AB-110**: [Controle I](https://flavioluiz.github.io/#mvo-20-controle) (Graduação em Engenharia Aeronáutica e Engenharia Aeroespacial / oferta conjunta com a pós-graduação)
 - **AB-721**: [Flight Performance](https://flavioluiz.github.io/#ab-721-desempenho) (Professional Master's in Aeronautical Engineering)
 
 ## Previous Courses (2025)
@@ -18,6 +19,7 @@ I regularly teach the following courses at ITA:
 - **AB-721**: Flight Performance
 
 ### Undergraduate Level
+- **MVO-20**: Controle I
 - **MVO-32**: Airplane Stability and Control
 - **MVO-41**: Orbital Mechanics
 - **MVO-31**: Flight Performance
@@ -34,4 +36,3 @@ I regularly teach the following courses at ITA:
 *Note: Detailed course materials and current semester information are available through ITA's internal learning management system.*
 
 *For historical course materials (2017-2019), please visit the [course archives](#oldcourses).*
-
