@@ -49,6 +49,7 @@
 **Material**:
 - 📊 [Slides — Aula 02 (PDF)](../courses/MVO20/2026/slides-aula02-07-08-2026.pdf)
 - 💻 [Exemplo MATLAB — motor CC com `ode45`](../courses/MVO20/2026/motor_cc_ode45.m)
+- 💻 **MATLAB 1 — apresentado em aula em 07/08/2026**: [programa principal (`main.m`)](../courses/MVO20/2026/matlab1/main.m) e [modelo dinâmico (`dinamica.m`)](../courses/MVO20/2026/matlab1/dinamica.m)
 
 ---
 
@@ -83,4 +84,4 @@
 
 Os materiais das próximas aulas serão acrescentados ao longo do semestre.
 
-*Última atualização: 03/08/2026*
+*Última atualização: 07/08/2026*
