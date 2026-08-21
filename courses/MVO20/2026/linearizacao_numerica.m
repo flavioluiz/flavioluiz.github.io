@@ -1,23 +1,26 @@
 %% Aula 04: linearizacao numerica e validacao
 % Gera as figuras usadas nos slides e reproduz os resultados numericos.
+% Estados e entradas sao mantidos como argumentos separados da dinamica.
 
 clear; clc; close all;
 
 %% 1) Diferencas finitas centradas vs. complex step
-fun_test = @(x) [sin(x(1)) + x(2)^2; ...
-                 x(1)*x(3) + exp(x(2)); ...
-                 x(1)^2 + x(2)^2 + x(3)^2];
-x0 = [1.2; -0.8; 0.5];
-J_test = [cos(x0(1)), 2*x0(2), 0; ...
-          x0(3), exp(x0(2)), x0(1); ...
-          2*x0(1), 2*x0(2), 2*x0(3)];
+funcao_teste = @(X) [sin(X(1)) + X(2)^2; ...
+                      X(1)*X(3) + exp(X(2)); ...
+                      X(1)^2 + X(2)^2 + X(3)^2];
+Xeq_teste = [1.2; -0.8; 0.5];
+J_teste = [cos(Xeq_teste(1)), 2*Xeq_teste(2), 0; ...
+           Xeq_teste(3), exp(Xeq_teste(2)), Xeq_teste(1); ...
+           2*Xeq_teste(1), 2*Xeq_teste(2), 2*Xeq_teste(3)];
 
 passos = logspace(-16,-1,180);
 erro_fd = zeros(size(passos));
 erro_cs = zeros(size(passos));
 for k = 1:numel(passos)
-    erro_fd(k) = max(abs(jac_fd(fun_test,x0,passos(k))-J_test),[],'all');
-    erro_cs(k) = max(abs(jac_cs(fun_test,x0,passos(k))-J_test),[],'all');
+    J_fd = lineariza_passo(funcao_teste,Xeq_teste,passos(k));
+    J_cs = lineariza_complex_passo(funcao_teste,Xeq_teste,passos(k));
+    erro_fd(k) = max(abs(J_fd-J_teste),[],'all');
+    erro_cs(k) = max(abs(J_cs-J_teste),[],'all');
 end
 erro_fd = max(erro_fd,eps);
 erro_cs = max(erro_cs,eps);
@@ -41,28 +44,48 @@ exportgraphics(fig,'Figuras/erro_jacobiana.png','Resolution',220);
 
 %% 2) Motor CC com carga quadratica
 R = 2; L = 0.5; J = 0.02; b = 0.1; kt = 0.1; ke = 0.1; c = 0.002;
-motor = @(z) [-R/L*z(1)-ke/L*z(2)+z(3)/L; ...
-              kt/J*z(1)-b/J*z(2)-c/J*z(2)^2];
-zbar = [5.5; 5; 11.5];
-J_motor = [-R/L, -ke/L, 1/L; ...
-            kt/J, -(b+2*c*zbar(2))/J, 0];
+dinamica = @(X,U) [-R/L*X(1)-ke/L*X(2)+U/L; ...
+                    kt/J*X(1)-b/J*X(2)-c/J*X(2)^2];
 
-J_fd_motor = jac_fd_scaled(motor,zbar);
-J_cs_motor = jac_cs(motor,zbar,1e-100);
-fprintf('Residuo do equilibrio do motor: %.3e\n',norm(motor(zbar),inf));
-fprintf('Erro FD centrada: %.3e\n',max(abs(J_fd_motor-J_motor),[],'all'));
-fprintf('Erro complex step: %.3e\n',max(abs(J_cs_motor-J_motor),[],'all'));
-disp('Jacobiana [A B] analitica:'); disp(J_motor);
-disp('Jacobiana [A B] por diferencas finitas:'); disp(J_fd_motor);
-disp('Jacobiana [A B] por complex step:'); disp(J_cs_motor);
+Xeq = [5.5; 5];
+Ueq = 11.5;
+
+A_analitica = [-R/L, -ke/L; ...
+                kt/J, -(b+2*c*Xeq(2))/J];
+B_analitica = [1/L; 0];
+
+% Abordagem usada em sala: uma chamada para cada argumento da dinamica.
+A = lineariza(@(X) dinamica(X,Ueq),Xeq);
+B = lineariza(@(U) dinamica(Xeq,U),Ueq);
+A_cs = lineariza_complex_passo(@(X) dinamica(X,Ueq),Xeq,1e-100);
+B_cs = lineariza_complex_passo(@(U) dinamica(Xeq,U),Ueq,1e-100);
+
+residuo = dinamica(Xeq,Ueq);
+fprintf('Residuo do equilibrio do motor: %.3e\n',norm(residuo,inf));
+fprintf('Erro de A por diferencas finitas: %.3e\n', ...
+    max(abs(A-A_analitica),[],'all'));
+fprintf('Erro de B por diferencas finitas: %.3e\n', ...
+    max(abs(B-B_analitica),[],'all'));
+fprintf('Erro de A por complex step: %.3e\n', ...
+    max(abs(A_cs-A_analitica),[],'all'));
+fprintf('Erro de B por complex step: %.3e\n', ...
+    max(abs(B_cs-B_analitica),[],'all'));
+disp('Matriz A analitica:'); disp(A_analitica);
+disp('Matriz A por lineariza:'); disp(A);
+disp('Matriz B analitica:'); disp(B_analitica);
+disp('Matriz B por lineariza:'); disp(B);
 
 %% 3) Teste do resto de Taylor
-direcao = [0.5; 1.0; 0.3];
+direcao_X = [0.5; 1.0];
+direcao_U = 0.3;
 alpha = logspace(-6,0,100);
 erro_local = zeros(size(alpha));
 for k = 1:numel(alpha)
-    dz = alpha(k)*direcao;
-    erro_local(k) = norm(motor(zbar+dz)-motor(zbar)-J_motor*dz,2);
+    delta_X = alpha(k)*direcao_X;
+    delta_U = alpha(k)*direcao_U;
+    resto = dinamica(Xeq+delta_X,Ueq+delta_U) ...
+        - residuo - A_analitica*delta_X - B_analitica*delta_U;
+    erro_local(k) = norm(resto,2);
 end
 ref = erro_local(55)*(alpha/alpha(55)).^2;
 
@@ -79,56 +102,49 @@ set(gca,'FontSize',15,'LineWidth',1.0);
 exportgraphics(fig,'Figuras/erro_taylor_motor.png','Resolution',220);
 
 %% 4) Comparacao no tempo para perturbacao pequena e grande
-A = J_motor(:,1:2); B = J_motor(:,3);
 tspan = [0 5];
 amplitudes = [0.25 3.0];
 fig = figure('Color','w','Position',[100 100 1350 620]);
 for p = 1:2
-    dv = amplitudes(p);
-    entrada = @(t) dv*(t>=0.5);
-    rhs_nl = @(t,x) motor([x; zbar(3)+entrada(t)]);
-    rhs_lin = @(t,dx) A*dx+B*entrada(t);
-    [tnl,xnl] = ode45(rhs_nl,tspan,zbar(1:2));
-    [tlin,dxlin] = ode45(rhs_lin,tspan,[0;0]);
+    delta_U = amplitudes(p);
+    entrada = @(t) delta_U*(t>=0.5);
+    rhs_nl = @(t,X) dinamica(X,Ueq+entrada(t));
+    rhs_lin = @(t,delta_X) A*delta_X+B*entrada(t);
+    [tnl,Xnl] = ode45(rhs_nl,tspan,Xeq);
+    [tlin,delta_X_lin] = ode45(rhs_lin,tspan,[0;0]);
     subplot(1,2,p);
-    plot(tnl,xnl(:,2),'Color',[0.00 0.45 0.74],'LineWidth',2.0); hold on;
-    plot(tlin,zbar(2)+dxlin(:,2),'--','Color',[0.85 0.33 0.10],'LineWidth',2.0);
+    plot(tnl,Xnl(:,2),'Color',[0.00 0.45 0.74],'LineWidth',2.0); hold on;
+    plot(tlin,Xeq(2)+delta_X_lin(:,2),'--', ...
+        'Color',[0.85 0.33 0.10],'LineWidth',2.0);
     xline(0.5,':','perturbacao','LabelVerticalAlignment','bottom');
     grid on;
     xlabel('tempo (s)'); ylabel('\omega (rad/s)');
-    title(sprintf('Degrau incremental de %.2g V',dv));
+    title(sprintf('Degrau incremental de %.2g V',delta_U));
     legend('nao linear','linear local','Location','best');
     set(gca,'FontSize',13,'LineWidth',1.0);
 end
 exportgraphics(fig,'Figuras/validacao_tempo_motor.png','Resolution',220);
 
-%% Funcoes auxiliares
-function J = jac_fd(fun,z,h)
-    f0 = fun(z);
-    J = zeros(numel(f0),numel(z));
-    for j = 1:numel(z)
-        dz = zeros(size(z)); dz(j) = h;
-        J(:,j) = (fun(z+dz)-fun(z-dz))/(2*h);
+%% Funcoes auxiliares para estudar o efeito do passo
+function J = lineariza_passo(funcao,X,h)
+    Ny = length(funcao(X));
+    Nx = length(X);
+    J = zeros(Ny,Nx);
+    for j = 1:Nx
+        delta = zeros(size(X));
+        delta(j) = h;
+        J(:,j) = (funcao(X+delta)-funcao(X-delta))/(2*h);
     end
 end
 
-function J = jac_fd_scaled(fun,z)
-    f0 = fun(z);
-    J = zeros(numel(f0),numel(z));
-    eta = eps^(1/3);
-    for j = 1:numel(z)
-        h = eta*max(1,abs(z(j)));
-        dz = zeros(size(z)); dz(j) = h;
-        J(:,j) = (fun(z+dz)-fun(z-dz))/(2*h);
-    end
-end
-
-function J = jac_cs(fun,z,h)
+function J = lineariza_complex_passo(funcao,X,h)
     if nargin < 3, h = 1e-100; end
-    f0 = fun(z);
-    J = zeros(numel(f0),numel(z));
-    for j = 1:numel(z)
-        zc = z; zc(j) = zc(j)+1i*h;
-        J(:,j) = imag(fun(zc))/h;
+    Ny = length(funcao(X));
+    Nx = length(X);
+    J = zeros(Ny,Nx);
+    for j = 1:Nx
+        Xc = X;
+        Xc(j) = Xc(j)+1i*h;
+        J(:,j) = imag(funcao(Xc))/h;
     end
 end

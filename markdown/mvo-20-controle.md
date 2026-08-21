@@ -69,19 +69,61 @@
 
 ### **AULA 04** — 14/08/2026 — Linearização Numérica e Validação
 
+> ⚠️ **Slides atualizados:** o PDF desta aula foi revisado para empregar diretamente a função `lineariza.m` no cálculo independente das Jacobianas $A$ e $B$. Se você baixou a versão anterior, faça um novo download.
+
 **Conteúdo**:
+- função genérica **lineariza** para o cálculo numérico de Jacobianas;
+- obtenção direta das matrizes \(A\) e \(B\) com chamadas independentes;
 - diferenças finitas progressivas e centradas;
 - escolha do passo e escalonamento das variáveis;
 - método *complex step* e suas limitações;
 - comparação entre linearizações analítica e numérica;
+- linearização e simulação do tanque e do pêndulo;
 - validação pelo resto de Taylor e por simulação no tempo.
 
 **Material**:
-- 📊 [Slides — Aula 04 (PDF)](../courses/MVO20/2026/slides-aula04-14-08-2026.pdf)
-- 💻 [Roteiro MATLAB — linearização numérica e validação](../courses/MVO20/2026/linearizacao_numerica.m)
+- 📊 [Slides revisados — Aula 04 (PDF)](../courses/MVO20/2026/slides-aula04-14-08-2026.pdf)
+
+> 💻 **Os quatro códigos abaixo foram feitos em sala com os alunos:**
+
+- 💻 [Função MATLAB lineariza.m — Jacobiana por diferenças centradas](../courses/MVO20/2026/lineariza.m)
+- 💻 [Linearização e simulação do pêndulo](../courses/MVO20/2026/linearizacao_pendulo.m)
+- 💻 [Código do pêndulo feito em aula — mvo20_14_08_pendulo.m](../courses/MVO20/2026/mvo20_14_08_pendulo.m)
+- 💻 [Código do tanque feito em aula — mvo20_14_08.m](../courses/MVO20/2026/mvo20_14_08.m)
+- 💻 [Roteiro complementar — precisão numérica e validação](../courses/MVO20/2026/linearizacao_numerica.m)
+
+---
+
+### **AULA 05** — 18/08/2026 — Transformada de Laplace e Solução de EDOs
+
+**Conteúdo**:
+- definição unilateral e região de convergência;
+- pares básicos e propriedades da transformada de Laplace;
+- transformação de derivadas com condições iniciais;
+- solução sistemática de EDOs de primeira e segunda ordem;
+- separação entre resposta de entrada e memória inicial;
+- teoremas dos valores inicial e final e verificação no MATLAB.
+
+**Material**:
+- 📊 [Slides — Aula 05 (PDF)](../courses/MVO20/2026/slides-aula05-18-08-2026.pdf)
+
+---
+
+### **AULA 06** — 21/08/2026 — Transformada Inversa e Funções de Transferência
+
+**Conteúdo**:
+- transformada inversa e decomposição em frações parciais;
+- polos reais distintos, repetidos e pares complexos;
+- obtenção de funções de transferência a partir de EDOs;
+- obtenção de $G(s)$ a partir do espaço de estados;
+- exemplos do massa–mola–amortecedor, motor CC e pêndulo linearizado;
+- respostas ao impulso e ao degrau e verificação no MATLAB.
+
+**Material**:
+- 📊 [Slides — Aula 06 (PDF)](../courses/MVO20/2026/slides-aula06-21-08-2026.pdf)
 
 ---
 
 Os materiais das próximas aulas serão acrescentados ao longo do semestre.
 
-*Última atualização: 07/08/2026*
+*Última atualização: 21/08/2026*
