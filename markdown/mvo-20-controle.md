@@ -26,9 +26,9 @@
 
 ## Cronograma e Material das Aulas
 
-> 🗓️ **Andamento efetivo em 21/08/2026:** a Aula 04 foi concluída hoje e a Aula 05 foi iniciada. A turma está um pouco atrás do cronograma previsto. As indicações abaixo registram o andamento real; o plano da disciplina permanece como cronograma de referência.
+> 🗓️ **Andamento efetivo em 21/08/2026:** as datas nos títulos abaixo registram quando cada aula foi efetivamente desenvolvida. Alguns conteúdos avançaram por mais de um encontro, e a turma está um pouco atrás do cronograma previsto. O plano da disciplina permanece como cronograma de referência.
 
-### **AULA 01** — realizada em 04/08/2026 — Introdução e Modelagem Mecânica
+### **AULA 01** — iniciada em 04/08/2026; concluída em 07/08/2026 — Introdução e Modelagem Mecânica
 
 **Conteúdo**:
 - objetivos, organização e metodologia da disciplina;
@@ -41,7 +41,7 @@
 
 ---
 
-### **AULA 02** — realizada em 07/08/2026 — Modelagem Elétrica e Eletromecânica
+### **AULA 02** — iniciada em 11/08/2026; concluída em 14/08/2026 — Modelagem Elétrica e Eletromecânica
 
 **Conteúdo**:
 - modelagem de circuitos RC e RLC;
@@ -57,7 +57,7 @@
 
 ---
 
-### **AULA 03** — realizada em 11/08/2026 — Pontos de Operação e Linearização Analítica
+### **AULA 03** — iniciada em 14/08/2026; concluída em 18/08/2026 — Pontos de Operação e Linearização Analítica
 
 **Conteúdo**:
 - pontos de operação, equilíbrios e trajetórias nominais;
@@ -71,9 +71,7 @@
 
 ---
 
-### **AULA 04** — concluída em 21/08/2026 — Linearização Numérica e Validação
-
-**Situação:** concluída em 21/08/2026.
+### **AULA 04** — iniciada em 18/08/2026; concluída em 21/08/2026 — Linearização Numérica e Validação
 
 > ⚠️ **Slides atualizados:** o PDF desta aula foi revisado para empregar diretamente a função `lineariza.m` no cálculo independente das Jacobianas $A$ e $B$. Se você baixou a versão anterior, faça um novo download.
 
