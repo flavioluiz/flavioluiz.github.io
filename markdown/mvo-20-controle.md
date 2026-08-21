@@ -17,7 +17,9 @@
 
 ## Avaliação
 
-- **1º bimestre**: listas de exercícios (30%) e avaliação escrita (70%); prova prevista para 25/09/2026, data a confirmar.
+> 📌 **Prova 1:** presencial, em **22/09/2026**, das **10h00 às 12h00**.
+
+- **1º bimestre**: listas de exercícios (30%) e avaliação escrita presencial (70%); prova em 22/09/2026, das 10h00 às 12h00.
 - **2º bimestre**: listas de exercícios (30%) e avaliação escrita (70%); prova prevista para 17/11/2026, data a confirmar.
 - **Exame final**: prova escrita, em data a confirmar conforme o calendário acadêmico.
 - **Média final**: média aritmética da média do primeiro bimestre, da média do segundo bimestre e do exame final.
