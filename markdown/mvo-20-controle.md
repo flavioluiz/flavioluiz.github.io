@@ -26,7 +26,9 @@
 
 ## Cronograma e Material das Aulas
 
-### **AULA 01** — 04/08/2026 — Introdução e Modelagem Mecânica
+> 🗓️ **Andamento efetivo em 21/08/2026:** a Aula 04 foi concluída hoje e a Aula 05 foi iniciada. A turma está um pouco atrás do cronograma previsto. As indicações abaixo registram o andamento real; o plano da disciplina permanece como cronograma de referência.
+
+### **AULA 01** — realizada em 04/08/2026 — Introdução e Modelagem Mecânica
 
 **Conteúdo**:
 - objetivos, organização e metodologia da disciplina;
@@ -39,7 +41,7 @@
 
 ---
 
-### **AULA 02** — 07/08/2026 — Modelagem Elétrica e Eletromecânica
+### **AULA 02** — realizada em 07/08/2026 — Modelagem Elétrica e Eletromecânica
 
 **Conteúdo**:
 - modelagem de circuitos RC e RLC;
@@ -55,7 +57,7 @@
 
 ---
 
-### **AULA 03** — 11/08/2026 — Pontos de Operação e Linearização Analítica
+### **AULA 03** — realizada em 11/08/2026 — Pontos de Operação e Linearização Analítica
 
 **Conteúdo**:
 - pontos de operação, equilíbrios e trajetórias nominais;
@@ -69,7 +71,9 @@
 
 ---
 
-### **AULA 04** — 14/08/2026 — Linearização Numérica e Validação
+### **AULA 04** — concluída em 21/08/2026 — Linearização Numérica e Validação
+
+**Situação:** concluída em 21/08/2026.
 
 > ⚠️ **Slides atualizados:** o PDF desta aula foi revisado para empregar diretamente a função `lineariza.m` no cálculo independente das Jacobianas $A$ e $B$. Se você baixou a versão anterior, faça um novo download.
 
@@ -96,7 +100,9 @@
 
 ---
 
-### **AULA 05** — 18/08/2026 — Transformada de Laplace e Solução de EDOs
+### **AULA 05** — iniciada em 21/08/2026; em andamento — Transformada de Laplace e Solução de EDOs
+
+**Situação:** iniciada ao final do encontro de 21/08/2026; o conteúdo abaixo ainda está em andamento.
 
 **Conteúdo**:
 - definição unilateral e região de convergência;
@@ -111,7 +117,9 @@
 
 ---
 
-### **AULA 06** — 21/08/2026 — Transformada Inversa e Funções de Transferência
+### **AULA 06** — ainda não ministrada — Transformada Inversa e Funções de Transferência
+
+**Situação:** material disponível antecipadamente; conteúdo ainda não ministrado.
 
 **Conteúdo**:
 - transformada inversa e decomposição em frações parciais;
