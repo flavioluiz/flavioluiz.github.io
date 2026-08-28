@@ -132,6 +132,58 @@
 
 ---
 
-Os materiais das próximas aulas serão acrescentados ao longo do semestre.
+### **AULAS 07–08** — previstas para 28/08/2026 e 01/09/2026 — Polos, Zeros e Diagramas de Blocos
 
-*Última atualização: 21/08/2026*
+**Situação:** material disponível antecipadamente.
+
+**Conteúdo**:
+- identificação de polos e zeros e sua relação com os modos temporais;
+- leitura geométrica dos polos no plano $s$;
+- efeito dos zeros, respostas inversas e cancelamentos polo–zero;
+- estabilidade BIBO do canal e distinção em relação à estabilidade interna;
+- tradução de equações em diagramas de blocos;
+- associações em série, paralelo e realimentação;
+- relações entrada–saída e polos de malha fechada.
+
+**Material**:
+- 📊 [Slides — Aulas 07–08 (PDF)](../courses/MVO20/2026/slides-aulas07-08-28-08-01-09-2026.pdf)
+
+---
+
+### **AULA 09** — prevista para 04/09/2026 — Sistemas de Primeira Ordem e Aproximações
+
+**Situação:** material disponível antecipadamente.
+
+**Conteúdo**:
+- forma canônica $K/(Ts+1)$ e interpretação de ganho e constante de tempo;
+- resposta ao degrau e índices de subida e acomodação;
+- identificação de $K$ e $T$ a partir de uma resposta medida;
+- respostas a impulso e rampa;
+- aproximação de sistemas de ordem elevada por um polo dominante;
+- separação de escalas, resíduos, zeros e validação do modelo reduzido.
+
+**Material**:
+- 📊 [Slides — Aula 09 (PDF)](../courses/MVO20/2026/slides-aula09-04-09-2026.pdf)
+
+---
+
+### **AULA 10** — prevista para 08/09/2026 — Segunda Ordem, Especificações e Dinâmica Dominante
+
+**Situação:** material disponível antecipadamente.
+
+**Conteúdo**:
+- forma canônica de segunda ordem e geometria dos polos;
+- papéis de $\zeta$, $\omega_n$ e $\omega_d$;
+- sobresinal, tempos de pico, subida e acomodação;
+- tradução de especificações transitórias em regiões no plano $s$;
+- aproximação por um par dominante de segunda ordem;
+- preservação do ganho DC e validação por resíduos, curvas e índices.
+
+**Material**:
+- 📊 [Slides — Aula 10 (PDF)](../courses/MVO20/2026/slides-aula10-08-09-2026.pdf)
+
+---
+
+Os materiais das aulas seguintes serão acrescentados ao longo do semestre.
+
+*Última atualização: 27/08/2026*
