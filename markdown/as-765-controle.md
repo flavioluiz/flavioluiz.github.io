@@ -92,7 +92,7 @@ Os materiais das aulas seguintes serão acrescentados ao longo do período.
 
 ## Material de referência
 
-📖 **[Apostila de Sistemas de Controle (PDF)](../courses/as765/apostila-controle-as765.pdf)** — versão de referência produzida em 2025. O conteúdo está em processo de revisão para a oferta de 2026.
+📖 **[Apostila de Sistemas de Controle — edição 2026 (PDF)](../courses/as765/2026/apostila-as765-2026.pdf)** — os capítulos 1 a 3 já incorporam a revisão de 2026; os demais capítulos serão atualizados ao longo do curso.
 
 ## Histórico
 
