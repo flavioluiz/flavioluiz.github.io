@@ -2,10 +2,11 @@
 
 ## Current Courses (2026)
 - **MVO-20 / AB-110**: [Controle I](https://flavioluiz.github.io/#mvo-20-controle) (Graduação em Engenharia Aeronáutica e Engenharia Aeroespacial / oferta conjunta com a pós-graduação)
+- **AS-765**: [Sistemas de Controle](https://flavioluiz.github.io/#as-765-controle) (Mestrado Profissional em Engenharia Aeronáutica)
 - **AB-721**: [Flight Performance](https://flavioluiz.github.io/#ab-721-desempenho) (Professional Master's in Aeronautical Engineering)
 
 ## Previous Courses (2025)
-- **AS-765**: [Control Systems](https://flavioluiz.github.io/#as-765-controle) (Professional Master's in Aeronautical Engineering)
+- **AS-765**: [Sistemas de Controle — arquivo de 2025](https://flavioluiz.github.io/#as-765-controle-2025) (Mestrado Profissional em Engenharia Aeronáutica)
 - **AB-271**: Port-Hamiltonian Framework for Modeling, Simulation and Control (Academic Graduate Program)
 - **AS-801**: Introduction to Aeronautical Engineering (Specialization Program)
 - **AB-721**: [Flight Performance](https://terrific-meadow-b58.notion.site/AB-721-Desempenho-de-aeronaves-2025-1c0c6043e74680799eb4e5ce3736e9fc?pvs=4) (Professional Master's in Aeronautical Engineering)
