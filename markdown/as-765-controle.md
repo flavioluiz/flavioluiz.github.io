@@ -25,15 +25,15 @@
 
 A nota final será calculada por
 
-\\[
+$$
 NF=0{,}20L+0{,}20Q+0{,}60P,
-\\]
+$$
 
-em que \\(L\\) é a média das quatro listas, \\(Q\\) é a média dos sete melhores resultados entre oito quizzes e \\(P\\) é a nota da avaliação escrita integradora. A aprovação requer \\(NF\geq6{,}5\\). O calendário definitivo das atividades será publicado no Google Classroom.
+em que $L$ é a média das quatro listas, $Q$ é a média dos sete melhores resultados entre oito quizzes e $P$ é a nota da avaliação escrita integradora. A aprovação requer $NF\geq6{,}5$. O calendário definitivo das atividades será publicado no Google Classroom.
 
 ## Material das primeiras semanas
 
-Os quatro conjuntos abaixo cobrem as duas primeiras aulas, totalizando oito horas. A divisão preserva a organização utilizada em 2025, com revisão conceitual e atualização dos exemplos.
+Os quatro conjuntos abaixo cobrem as duas primeiras aulas, totalizando oito horas.
 
 - 📊 **[Apresentação da disciplina e fundamentos de controle (PDF)](../courses/as765/2026/slides-01-introducao-as765-2026.pdf)**
 - 📊 **[Modelagem de sistemas dinâmicos (PDF)](../courses/as765/2026/slides-02-modelagem-as765-2026.pdf)**
@@ -60,7 +60,7 @@ Os quatro conjuntos abaixo cobrem as duas primeiras aulas, totalizando oito hora
 
 **Conteúdo**:
 
-- linearização multivariável pelas Jacobianas \\(A\\), \\(B\\), \\(C\\) e \\(D\\);
+- linearização multivariável pelas Jacobianas $A$, $B$, $C$ e $D$;
 - linearização numérica por diferenças finitas e método do passo complexo;
 - validade local e validação do modelo linear;
 - transformada unilateral de Laplace e região de convergência;
