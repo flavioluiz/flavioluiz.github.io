@@ -26,7 +26,7 @@
 
 ## Cronograma e Material das Aulas
 
-> 🗓️ **Andamento efetivo em 21/08/2026:** as datas nos títulos abaixo registram quando cada aula foi efetivamente desenvolvida. Alguns conteúdos avançaram por mais de um encontro, e a turma está um pouco atrás do cronograma previsto. O plano da disciplina permanece como cronograma de referência.
+> 🗓️ **Andamento efetivo em 11/09/2026:** os conteúdos das Aulas 01–09 já foram ministrados. Em 08/09 começou o material de segunda ordem da Aula 10. A programação de 11/09 é concluir esse material e, na sequência, abordar a Aula 11. A partir de 15/09, as aulas seguem o calendário previsto no plano da disciplina.
 
 ### **AULA 01** — iniciada em 04/08/2026; concluída em 07/08/2026 — Introdução e Modelagem Mecânica
 
@@ -98,9 +98,7 @@
 
 ---
 
-### **AULA 05** — iniciada em 21/08/2026; em andamento — Transformada de Laplace e Solução de EDOs
-
-**Situação:** iniciada ao final do encontro de 21/08/2026; o conteúdo abaixo ainda está em andamento.
+### **AULA 05** — ministrada — Transformada de Laplace e Solução de EDOs
 
 **Conteúdo**:
 - definição unilateral e região de convergência;
@@ -115,9 +113,7 @@
 
 ---
 
-### **AULA 06** — ainda não ministrada — Transformada Inversa e Funções de Transferência
-
-**Situação:** material disponível antecipadamente; conteúdo ainda não ministrado.
+### **AULA 06** — ministrada — Transformada Inversa e Funções de Transferência
 
 **Conteúdo**:
 - transformada inversa e decomposição em frações parciais;
@@ -132,9 +128,7 @@
 
 ---
 
-### **AULAS 07–08** — previstas para 28/08/2026 e 01/09/2026 — Polos, Zeros e Diagramas de Blocos
-
-**Situação:** material disponível antecipadamente.
+### **AULAS 07–08** — ministradas — Polos, Zeros e Diagramas de Blocos
 
 **Conteúdo**:
 - identificação de polos e zeros e sua relação com os modos temporais;
@@ -150,9 +144,7 @@
 
 ---
 
-### **AULA 09** — prevista para 04/09/2026 — Sistemas de Primeira Ordem e Aproximações
-
-**Situação:** material disponível antecipadamente.
+### **AULA 09** — ministrada — Sistemas de Primeira Ordem e Aproximações
 
 **Conteúdo**:
 - forma canônica $K/(Ts+1)$ e interpretação de ganho e constante de tempo;
@@ -167,9 +159,9 @@
 
 ---
 
-### **AULA 10** — prevista para 08/09/2026 — Segunda Ordem, Especificações e Dinâmica Dominante
+### **AULA 10** — iniciada em 08/09/2026; conclusão prevista para 11/09/2026 — Segunda Ordem, Especificações e Dinâmica Dominante
 
-**Situação:** material disponível antecipadamente.
+**Situação:** os primeiros tópicos foram apresentados em 08/09/2026. A programação de 11/09/2026 é concluir o material antes de iniciar a Aula 11.
 
 **Conteúdo**:
 - forma canônica de segunda ordem e geometria dos polos;
@@ -184,6 +176,64 @@
 
 ---
 
-Os materiais das aulas seguintes serão acrescentados ao longo do semestre.
+### **AULA 11** — prevista para 11/09/2026 — Erro Estacionário, Tipo do Sistema e Desempenho em Malha Fechada
 
-*Última atualização: 27/08/2026*
+**Situação:** programada para o encontro de 11/09/2026, após a conclusão da Aula 10.
+
+**Conteúdo**:
+- erro no somador e erro de rastreamento;
+- sensibilidade e sensibilidade complementar;
+- uso correto do teorema do valor final;
+- tipo do sistema e constantes de erro de posição, velocidade e aceleração;
+- erro estacionário para entradas degrau, rampa e parábola;
+- efeito de perturbações, ganho de malha e ação integral;
+- verificação dos resultados no MATLAB.
+
+**Material**:
+- 📊 [Slides — Aula 11 (PDF)](../courses/MVO20/2026/slides-aula11-11-09-2026.pdf)
+
+---
+
+### **AULA 12** — prevista para 15/09/2026 — Estabilidade, Localização dos Polos e Equação Característica
+
+**Situação:** material disponível antecipadamente; a data permanece conforme o calendário previsto.
+
+**Conteúdo**:
+- estabilidade BIBO e condição de integrabilidade da resposta ao impulso;
+- interpretação dos modos e dos polos no plano $s$;
+- polos na origem, polos imaginários e multiplicidade;
+- distinções entre estabilidade BIBO, interna e de Lyapunov;
+- equação característica de sistemas realimentados;
+- fronteiras e intervalos de estabilidade em função do ganho;
+- relação entre polos da função de transferência e autovalores da realização.
+
+**Material**:
+- 📊 [Slides — Aula 12 (PDF)](../courses/MVO20/2026/slides-aula12-15-09-2026.pdf)
+
+---
+
+### **AULA 13** — prevista para 18/09/2026 — Critério de Routh–Hurwitz e Aplicações
+
+**Situação:** permanece conforme o calendário previsto; o material será acrescentado quando estiver concluído.
+
+**Conteúdo previsto**:
+- construção e interpretação da tabela de Routh;
+- contagem de raízes no semiplano direito sem calcular explicitamente os polos;
+- condições e intervalos de estabilidade para sistemas com parâmetros;
+- tratamento dos casos especiais do critério.
+
+---
+
+### **PROVA 1** — 22/09/2026, das 10h00 às 12h00
+
+Avaliação escrita presencial do primeiro bimestre.
+
+### **FECHAMENTO DO 1º BIMESTRE** — previsto para 25/09/2026
+
+Correção comentada da avaliação e fechamento do primeiro bimestre, conforme o plano da disciplina.
+
+---
+
+Os materiais das aulas seguintes serão acrescentados ao longo do semestre, de acordo com o calendário previsto.
+
+*Última atualização: 11/09/2026*
