@@ -14,7 +14,7 @@ async function loadMarkdown() {
         }
         
         const markdown = await response.text();
-        const converter = new showdown.Converter();
+        const converter = new showdown.Converter({ tables: true });
         const html = converter.makeHtml(markdown);
         document.getElementById("content").innerHTML = html;
 
