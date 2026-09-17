@@ -26,7 +26,7 @@
 
 ## Cronograma e Material das Aulas
 
-> 🗓️ **Andamento efetivo em 11/09/2026:** os conteúdos das Aulas 01–09 já foram ministrados. Em 08/09 começou o material de segunda ordem da Aula 10. A programação de 11/09 é concluir esse material e, na sequência, abordar a Aula 11. A partir de 15/09, as aulas seguem o calendário previsto no plano da disciplina.
+> 🗓️ **Andamento efetivo em 17/09/2026:** os conteúdos das Aulas 01–12 já foram ministrados. A Aula 13, dedicada ao critério de Routh–Hurwitz, está prevista para 18/09. A Prova 1 será realizada em 22/09.
 
 ### **AULA 01** — iniciada em 04/08/2026; concluída em 07/08/2026 — Introdução e Modelagem Mecânica
 
@@ -159,9 +159,9 @@
 
 ---
 
-### **AULA 10** — iniciada em 08/09/2026; conclusão prevista para 11/09/2026 — Segunda Ordem, Especificações e Dinâmica Dominante
+### **AULA 10** — iniciada em 08/09/2026; concluída em 11/09/2026 — Segunda Ordem, Especificações e Dinâmica Dominante
 
-**Situação:** os primeiros tópicos foram apresentados em 08/09/2026. A programação de 11/09/2026 é concluir o material antes de iniciar a Aula 11.
+**Situação:** os primeiros tópicos foram apresentados em 08/09/2026, e o material foi concluído em 11/09/2026.
 
 **Conteúdo**:
 - forma canônica de segunda ordem e geometria dos polos;
@@ -176,9 +176,9 @@
 
 ---
 
-### **AULA 11** — prevista para 11/09/2026 — Erro Estacionário, Tipo do Sistema e Desempenho em Malha Fechada
+### **AULA 11** — ministrada em 11/09/2026 — Erro Estacionário, Tipo do Sistema e Desempenho em Malha Fechada
 
-**Situação:** programada para o encontro de 11/09/2026, após a conclusão da Aula 10.
+**Situação:** material apresentado após a conclusão da Aula 10.
 
 **Conteúdo**:
 - erro no somador e erro de rastreamento;
@@ -194,9 +194,9 @@
 
 ---
 
-### **AULA 12** — prevista para 15/09/2026 — Estabilidade, Localização dos Polos e Equação Característica
+### **AULA 12** — ministrada em 15/09/2026 — Estabilidade, Localização dos Polos e Equação Característica
 
-**Situação:** material disponível antecipadamente; a data permanece conforme o calendário previsto.
+**Situação:** material apresentado conforme o calendário previsto.
 
 **Conteúdo**:
 - estabilidade BIBO e condição de integrabilidade da resposta ao impulso;
@@ -214,19 +214,28 @@
 
 ### **AULA 13** — prevista para 18/09/2026 — Critério de Routh–Hurwitz e Aplicações
 
-**Situação:** permanece conforme o calendário previsto; o material será acrescentado quando estiver concluído.
+**Situação:** material disponível; aula mantida para 18/09/2026, conforme o calendário previsto.
 
-**Conteúdo previsto**:
+**Conteúdo**:
 - construção e interpretação da tabela de Routh;
 - contagem de raízes no semiplano direito sem calcular explicitamente os polos;
 - condições e intervalos de estabilidade para sistemas com parâmetros;
-- tratamento dos casos especiais do critério.
+- tratamento dos casos especiais do critério;
+- estabilidade relativa por deslocamento do eixo;
+- verificação numérica no MATLAB.
+
+**Material**:
+- 📊 [Slides — Aula 13 (PDF)](../courses/MVO20/2026/slides-aula13-18-09-2026.pdf)
 
 ---
 
 ### **PROVA 1** — 22/09/2026, das 10h00 às 12h00
 
 Avaliação escrita presencial do primeiro bimestre.
+
+**Material de preparação**:
+- 📝 [Lista de preparação para a P1 (PDF)](../courses/MVO20/2026/lista-preparacao-p1-2026.pdf)
+- ✅ [Gabarito da lista de preparação para a P1 (PDF)](../courses/MVO20/2026/gabarito-lista-preparacao-p1-2026.pdf)
 
 ### **FECHAMENTO DO 1º BIMESTRE** — previsto para 25/09/2026
 
@@ -236,4 +245,4 @@ Correção comentada da avaliação e fechamento do primeiro bimestre, conforme 
 
 Os materiais das aulas seguintes serão acrescentados ao longo do semestre, de acordo com o calendário previsto.
 
-*Última atualização: 11/09/2026*
+*Última atualização: 17/09/2026*
