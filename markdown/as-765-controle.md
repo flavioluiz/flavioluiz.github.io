@@ -62,8 +62,8 @@ Os horários e prazos publicados no Google Classroom são os definitivos.
 
 ## Aulas e materiais publicados
 
-Os cinco conjuntos de slides abaixo correspondem às três primeiras aulas,
-totalizando doze horas-aula.
+Os seis conjuntos de slides abaixo correspondem às quatro primeiras aulas,
+totalizando dezesseis horas-aula.
 
 ### Aula 1 — 31/08/2026 — Capítulo 1 e início do Capítulo 2
 
@@ -129,6 +129,26 @@ totalizando doze horas-aula.
 - relações de malha fechada para referência, perturbação e ruído;
 - redução sistemática de diagramas e exemplos no MATLAB.
 
+### Aula 4 — 28/09/2026 — Capítulo 5
+
+**Capítulo previsto**:
+
+- **Capítulo 5 — Resposta dinâmica de sistemas lineares**.
+
+**Material**:
+
+- 📊 **[Resposta dinâmica de sistemas lineares (PDF)](../courses/as765/2026/slides-06-resposta-temporal-as765-2026.pdf)**
+- 💻 **[Exemplos e verificações no MATLAB](../courses/as765/2026/aula04_cap05.m)**
+
+**Conteúdo da aula**:
+
+- respostas ao degrau, à rampa e ao impulso de sistemas de primeira ordem;
+- sistemas de segunda ordem e classificação por amortecimento;
+- tempo de subida, pico, sobressinal e acomodação;
+- dinâmica dominante, resíduos, zeros e validação de modelos reduzidos;
+- erro em regime permanente, tipo do sistema e condições do teorema do valor final;
+- exemplos e verificação dos índices no MATLAB.
+
 ## Cronograma de referência
 
 - **31/08 — Capítulos 1 e 2**: introdução, modelagem, pontos de operação e início da linearização.
@@ -154,4 +174,4 @@ Os materiais das aulas seguintes serão acrescentados ao longo do período.
 
 📚 [Material e cronograma da oferta de 2025](#as-765-controle-2025)
 
-*Última atualização: 14/09/2026*
+*Última atualização: 27/09/2026*
