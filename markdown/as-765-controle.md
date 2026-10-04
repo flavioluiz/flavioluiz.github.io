@@ -13,7 +13,7 @@
 - **Encerramento do conteúdo**: 23/11/2026
 - **Avaliação integradora**: 14/12/2026, com duração de quatro horas-aula
 
-> 🗓️ Haverá aula em **28/09** e também na **quarta-feira, 07/10**. O encontro de 07/10 permite antecipar a sequência da disciplina; não haverá aula em **30/11**. O horário e a sala da quarta-feira serão confirmados no ambiente da disciplina.
+> 🗓️ A aula de **quarta-feira, 07/10**, foi transferida para **terça-feira, 10/11, à tarde**. O horário exato e a sala serão confirmados no ambiente da disciplina. Não haverá aula em 07/10 nem em 30/11; o conteúdo termina em 23/11 e a prova permanece em 14/12.
 
 📋 **[Plano da Disciplina AS-765 — 2026 (PDF)](../courses/as765/2026/plano-disciplina-as765-2026.pdf)**
 
@@ -43,8 +43,8 @@ Os horários e prazos publicados no Google Classroom são os definitivos.
 | Q2 | 21/09, após a aula | 28/09 | Laplace, funções de transferência e diagramas de blocos |
 | Q3 | 28/09, após a aula | 08/10 | Resposta temporal |
 | Q4 | 06/10 | 15/10 | Estabilidade e critério de Routh-Hurwitz |
-| Q5 | 19/10, após a aula | 26/10 | Diagramas de Bode e Nyquist |
-| Q6 | 26/10, após a aula | 04/11 | Controladores P, PI, PD e PID |
+| Q5 | 26/10, após a aula | 04/11 | Diagramas de Bode e Nyquist |
+| Q6 | 09/11, após a aula | 16/11 | Controladores P, PI, PD e PID |
 | Q7 | 16/11, após a aula | 23/11 | Lugar das raízes, sensibilidade e compensadores |
 | Q8 | 23/11, após a aula | 30/11 | Controle em espaço de estados e revisão integradora |
 
@@ -54,7 +54,7 @@ Os horários e prazos publicados no Google Classroom são os definitivos.
 |---|:---:|:---:|---|
 | L1 | **14/09, publicada** | **05/10** | Modelagem, linearização e transformada de Laplace |
 | L2 | 06/10 | 18/10 | Funções de transferência, resposta temporal e estabilidade |
-| L3 | 20/10 | 08/11 | Resposta em frequência, margens e critério de Nyquist |
+| L3 | 27/10 | 15/11 | Resposta em frequência, margens e critério de Nyquist |
 | L4 | 17/11 | 06/12 | PID, lugar das raízes, sensibilidade e projeto de compensadores |
 
 - 📄 **[Lista 1 - enunciado (PDF)](../courses/as765/2026/lista-01-modelagem-linearizacao-laplace.pdf)**
@@ -177,10 +177,10 @@ totalizando vinte horas-aula.
 - **21/09 — Capítulo 4**: funções de transferência, polos, zeros e diagramas de blocos.
 - **28/09 — Capítulo 5**: respostas temporais, índices de desempenho, dinâmica dominante e erro em regime.
 - **05/10 — Capítulo 6**: estabilidade BIBO e interna, equação característica e critério de Routh-Hurwitz.
-- **07/10 — Capítulo 7**: resposta em frequência e diagramas de Bode. Encontro excepcional na quarta-feira.
-- **19/10 — Capítulo 8**: diagramas e critério de Nyquist, margens de estabilidade e robustez.
-- **26/10 — Capítulo 9**: controladores P, PI, PD e PID, sintonia e limitações práticas.
-- **09/11 — Capítulo 10**: Lugar Geométrico das Raízes e projeto de controladores.
+- **19/10 — Capítulo 7**: resposta em frequência e diagramas de Bode.
+- **26/10 — Capítulo 8**: diagramas e critério de Nyquist, margens de estabilidade e robustez.
+- **09/11 — Capítulo 9**: controladores P, PI, PD e PID, sintonia e limitações práticas.
+- **10/11 — Capítulo 10**: Lugar Geométrico das Raízes e projeto de controladores. Encontro excepcional na terça-feira, à tarde; horário exato e sala a confirmar.
 - **16/11 — Capítulo 11**: funções de sensibilidade, compensadores e projeto no domínio da frequência.
 - **23/11 — Capítulo 12**: controle em espaço de estados, LQR/LQI e observadores. Encerramento do conteúdo.
 - **14/12 — Avaliação escrita integradora**: quatro horas-aula; não haverá conteúdo novo.
@@ -189,7 +189,7 @@ Os materiais das aulas seguintes serão acrescentados ao longo do período.
 
 ## Material de referência
 
-📖 **[Apostila de Sistemas de Controle — edição 2026 (PDF)](../courses/as765/2026/apostila-as765-2026.pdf)** — os capítulos 1 a 3 já incorporam a revisão de 2026; os demais capítulos serão atualizados ao longo do curso.
+📖 **[Apostila de Sistemas de Controle — edição 2026 (PDF)](../courses/as765/2026/apostila-as765-2026.pdf)** — os capítulos 1 a 3, 5 e 6 já incorporam a revisão de 2026. Resposta temporal e estabilidade foram atualizadas em 04/10, com hipóteses explícitas, exemplos corrigidos e verificação MATLAB. Os demais capítulos serão revisados ao longo do curso.
 
 ## Histórico
 
