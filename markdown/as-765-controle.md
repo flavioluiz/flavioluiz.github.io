@@ -62,8 +62,8 @@ Os horários e prazos publicados no Google Classroom são os definitivos.
 
 ## Aulas e materiais publicados
 
-Os seis conjuntos de slides abaixo correspondem às quatro primeiras aulas,
-totalizando dezesseis horas-aula.
+Os sete conjuntos de slides abaixo correspondem às cinco primeiras aulas,
+totalizando vinte horas-aula.
 
 ### Aula 1 — 31/08/2026 — Capítulo 1 e início do Capítulo 2
 
@@ -149,6 +149,27 @@ totalizando dezesseis horas-aula.
 - erro em regime permanente, tipo do sistema e condições do teorema do valor final;
 - exemplos e verificação dos índices no MATLAB.
 
+### Aula 5 — 05/10/2026 — Capítulo 6
+
+**Capítulo previsto**:
+
+- **Capítulo 6 — Estabilidade**.
+
+**Materiais**:
+
+- 📊 **[Estabilidade (PDF)](../courses/as765/2026/slides-07-estabilidade-as765-2026.pdf)**
+- 💻 **[Roteiro de exemplos e verificações MATLAB](../courses/as765/2026/aula05_cap06.m)**
+- 💻 **[Função de Routh para casos regulares](../courses/as765/2026/routh_regular.m)** — salvar na mesma pasta do roteiro.
+
+**Conteúdo da aula**:
+
+- estabilidade BIBO, estabilidade do equilíbrio e estabilidade interna assintótica;
+- polos, autovalores e modos internos ocultos;
+- equação característica e critério de Routh–Hurwitz;
+- pivô zero, linha inteira nula e raízes no eixo imaginário;
+- faixas de ganho, análise das fronteiras e verificação computacional;
+- exercício integrado de quarta ordem com solução.
+
 ## Cronograma de referência
 
 - **31/08 — Capítulos 1 e 2**: introdução, modelagem, pontos de operação e início da linearização.
@@ -174,4 +195,4 @@ Os materiais das aulas seguintes serão acrescentados ao longo do período.
 
 📚 [Material e cronograma da oferta de 2025](#as-765-controle-2025)
 
-*Última atualização: 27/09/2026*
+*Última atualização: 04/10/2026*
