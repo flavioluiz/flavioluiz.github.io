@@ -40,7 +40,7 @@ Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 f
 | Quiz | Publicação | Encerramento | Conteúdo principal |
 |---|:---:|:---:|---|
 | Q1 | **14/09, publicado** | **21/09** | Modelagem e linearização |
-| Q2 | 21/09, após a aula | 28/09 | Laplace, funções de transferência e diagramas de blocos |
+| Q2 | **Publicado e encerrado** | 28/09 | Laplace, funções de transferência e diagramas de blocos |
 | Q3 | **04/10, publicado no Classroom** | **12/10** | Resposta temporal |
 | Q4 | **Publicado no Classroom** | **18/10** | Estabilidade e critério de Routh-Hurwitz |
 | Q5 | 26/10, após a aula | 04/11 | Diagramas de Bode e Nyquist |
