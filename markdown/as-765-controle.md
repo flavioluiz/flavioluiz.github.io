@@ -39,14 +39,14 @@ Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 f
 
 | Quiz | Publicação | Encerramento | Conteúdo principal |
 |---|:---:|:---:|---|
-| Q1 | **14/09, publicado** | **21/09** | Modelagem e linearização |
-| Q2 | **Publicado e encerrado** | 28/09 | Laplace, funções de transferência e diagramas de blocos |
-| Q3 | **04/10, publicado no Classroom** | **12/10** | Resposta temporal |
-| Q4 | **Publicado no Classroom** | **18/10** | Estabilidade e critério de Routh-Hurwitz |
-| Q5 | 26/10, após a aula | 04/11 | Diagramas de Bode e Nyquist |
-| Q6 | 09/11, após a aula | 16/11 | Controladores P, PI, PD e PID |
-| Q7 | 16/11, após a aula | 23/11 | Lugar das raízes, sensibilidade e compensadores |
-| Q8 | 23/11, após a aula | 30/11 | Controle em espaço de estados e revisão integradora |
+| Q1 | 14/09, publicado | 21/09 | Modelagem e linearização |
+| Q2 | 21/09, publicado | 28/09 | Laplace, funções de transferência e diagramas de blocos |
+| Q3 | 04/10, publicado | 12/10 | Resposta temporal |
+| Q4 | 04/10, publicado | 18/10 | Estabilidade e critério de Routh-Hurwitz |
+| Q5 | 26/10 | 04/11 | Diagramas de Bode e Nyquist |
+| Q6 | 09/11 | 16/11 | Controladores P, PI, PD e PID |
+| Q7 | 16/11 | 23/11 | Lugar das raízes, sensibilidade e compensadores |
+| Q8 | 23/11 | 30/11 | Controle em espaço de estados e revisão integradora |
 
 ### Listas em dupla
 
