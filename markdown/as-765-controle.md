@@ -33,7 +33,7 @@ em que $L$ é a média das quatro listas, $Q$ é a média dos sete melhores resu
 
 ## Programação de quizzes e listas
 
-Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 foi publicado em **04/10**, com entrega em **12/10**, data em que **não haverá aula**. O Q4 será publicado em **05/10**, com entrega em **18/10**, antes da próxima aula, em **19/10**.
+Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 foi publicado em **04/10**, com entrega em **12/10**, data em que **não haverá aula**. O Q4 e a L2 já foram publicados no Classroom, com entrega em **18/10**, antes da próxima aula, em **19/10**.
 
 ### Quizzes individuais
 
@@ -42,7 +42,7 @@ Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 f
 | Q1 | **14/09, publicado** | **21/09** | Modelagem e linearização |
 | Q2 | 21/09, após a aula | 28/09 | Laplace, funções de transferência e diagramas de blocos |
 | Q3 | **04/10, publicado no Classroom** | **12/10** | Resposta temporal |
-| Q4 | **05/10, publicação prevista** | **18/10** | Estabilidade e critério de Routh-Hurwitz |
+| Q4 | **Publicado no Classroom** | **18/10** | Estabilidade e critério de Routh-Hurwitz |
 | Q5 | 26/10, após a aula | 04/11 | Diagramas de Bode e Nyquist |
 | Q6 | 09/11, após a aula | 16/11 | Controladores P, PI, PD e PID |
 | Q7 | 16/11, após a aula | 23/11 | Lugar das raízes, sensibilidade e compensadores |
@@ -53,7 +53,7 @@ Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 f
 | Lista | Publicação | Entrega | Conteúdo principal |
 |---|:---:|:---:|---|
 | L1 | **14/09, publicada** | **05/10** | Modelagem, linearização e transformada de Laplace |
-| L2 | **Disponível no site**; publicação no Classroom pelo docente | **18/10** | Funções de transferência, resposta temporal e estabilidade |
+| L2 | **Publicada no Classroom e disponível no site** | **18/10** | Funções de transferência, resposta temporal e estabilidade |
 | L3 | 27/10 | 15/11 | Resposta em frequência, margens e critério de Nyquist |
 | L4 | 17/11 | 06/12 | PID, lugar das raízes, sensibilidade e projeto de compensadores |
 
