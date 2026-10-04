@@ -13,7 +13,7 @@
 - **Encerramento do conteúdo**: 23/11/2026
 - **Avaliação integradora**: 14/12/2026, com duração de quatro horas-aula
 
-> 🗓️ A aula de **quarta-feira, 07/10**, foi transferida para **terça-feira, 10/11, à tarde**. O horário exato e a sala serão confirmados no ambiente da disciplina. Não haverá aula em 07/10 nem em 30/11; o conteúdo termina em 23/11 e a prova permanece em 14/12.
+> 🗓️ A aula de **quarta-feira, 07/10**, foi transferida para **terça-feira, 10/11, à tarde**. O horário exato e a sala serão confirmados no ambiente da disciplina. Não haverá aula em 07/10, 12/10 nem em 30/11; o conteúdo termina em 23/11 e a prova permanece em 14/12.
 
 📋 **[Plano da Disciplina AS-765 — 2026 (PDF)](../courses/as765/2026/plano-disciplina-as765-2026.pdf)**
 
@@ -33,7 +33,7 @@ em que $L$ é a média das quatro listas, $Q$ é a média dos sete melhores resu
 
 ## Programação de quizzes e listas
 
-Os horários e prazos publicados no Google Classroom são os definitivos.
+Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 foi publicado em **04/10**, com entrega em **12/10**, data em que **não haverá aula**. O Q4 será publicado em **05/10**, com entrega em **18/10**, antes da próxima aula, em **19/10**.
 
 ### Quizzes individuais
 
@@ -41,8 +41,8 @@ Os horários e prazos publicados no Google Classroom são os definitivos.
 |---|:---:|:---:|---|
 | Q1 | **14/09, publicado** | **21/09** | Modelagem e linearização |
 | Q2 | 21/09, após a aula | 28/09 | Laplace, funções de transferência e diagramas de blocos |
-| Q3 | 28/09, após a aula | 08/10 | Resposta temporal |
-| Q4 | 06/10 | 15/10 | Estabilidade e critério de Routh-Hurwitz |
+| Q3 | **04/10, publicado no Classroom** | **12/10** | Resposta temporal |
+| Q4 | **05/10, publicação prevista** | **18/10** | Estabilidade e critério de Routh-Hurwitz |
 | Q5 | 26/10, após a aula | 04/11 | Diagramas de Bode e Nyquist |
 | Q6 | 09/11, após a aula | 16/11 | Controladores P, PI, PD e PID |
 | Q7 | 16/11, após a aula | 23/11 | Lugar das raízes, sensibilidade e compensadores |
@@ -53,12 +53,14 @@ Os horários e prazos publicados no Google Classroom são os definitivos.
 | Lista | Publicação | Entrega | Conteúdo principal |
 |---|:---:|:---:|---|
 | L1 | **14/09, publicada** | **05/10** | Modelagem, linearização e transformada de Laplace |
-| L2 | 06/10 | 18/10 | Funções de transferência, resposta temporal e estabilidade |
+| L2 | **Disponível no site**; publicação no Classroom pelo docente | **18/10** | Funções de transferência, resposta temporal e estabilidade |
 | L3 | 27/10 | 15/11 | Resposta em frequência, margens e critério de Nyquist |
 | L4 | 17/11 | 06/12 | PID, lugar das raízes, sensibilidade e projeto de compensadores |
 
 - 📄 **[Lista 1 - enunciado (PDF)](../courses/as765/2026/lista-01-modelagem-linearizacao-laplace.pdf)**
 - 💻 **[Lista 1 - roteiro inicial MATLAB](../courses/as765/2026/l1-esqueleto.m)**
+- 📄 **[Lista 2 - enunciado (PDF)](../courses/as765/2026/lista-02-transferencia-resposta-estabilidade.pdf)**
+- 💻 **[Lista 2 - roteiro inicial MATLAB](../courses/as765/2026/l2-esqueleto.m)**
 
 ## Aulas e materiais publicados
 
