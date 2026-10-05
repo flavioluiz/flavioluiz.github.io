@@ -20,13 +20,13 @@
 > 📌 **Prova 1:** presencial, em **22/09/2026**, das **10h00 às 12h00**.
 
 - **1º bimestre**: listas de exercícios (30%) e avaliação escrita presencial (70%); prova em 22/09/2026, das 10h00 às 12h00.
-- **2º bimestre**: listas de exercícios (30%) e avaliação escrita (70%); prova prevista para 17/11/2026, data a confirmar.
+- **2º bimestre**: listas de exercícios (30%) e avaliação escrita (70%); prova prevista para 27/11/2026, data a confirmar.
 - **Exame final**: prova escrita, em data a confirmar conforme o calendário acadêmico.
 - **Média final**: média aritmética da média do primeiro bimestre, da média do segundo bimestre e do exame final.
 
 ## Cronograma e Material das Aulas
 
-> 🗓️ **Andamento efetivo em 17/09/2026:** os conteúdos das Aulas 01–12 já foram ministrados. A Aula 13, dedicada ao critério de Routh–Hurwitz, está prevista para 18/09. A Prova 1 será realizada em 22/09.
+> 🗓️ **Segundo bimestre:** retomada em **06/10/2026**, após a semaninha de 28/09 a 04/10. Os slides e exemplos MATLAB das aulas de **06/10 e 09/10** estão disponíveis abaixo. A Prova 2 está prevista para **27/11**, a confirmar.
 
 ### **AULA 01** — iniciada em 04/08/2026; concluída em 07/08/2026 — Introdução e Modelagem Mecânica
 
@@ -212,9 +212,9 @@
 
 ---
 
-### **AULA 13** — prevista para 18/09/2026 — Critério de Routh–Hurwitz e Aplicações
+### **AULA 13** — 18/09/2026 — Critério de Routh–Hurwitz e Aplicações
 
-**Situação:** material disponível; aula mantida para 18/09/2026, conforme o calendário previsto.
+**Situação:** material disponível para a aula de 18/09/2026.
 
 **Conteúdo**:
 - construção e interpretação da tabela de Routh;
@@ -237,12 +237,70 @@ Avaliação escrita presencial do primeiro bimestre.
 - 📝 [Lista de preparação para a P1 (PDF)](../courses/MVO20/2026/lista-preparacao-p1-2026.pdf)
 - ✅ [Gabarito da lista de preparação para a P1 (PDF)](../courses/MVO20/2026/gabarito-lista-preparacao-p1-2026.pdf)
 
-### **FECHAMENTO DO 1º BIMESTRE** — previsto para 25/09/2026
+### **FECHAMENTO DO 1º BIMESTRE** — 25/09/2026
 
 Correção comentada da avaliação e fechamento do primeiro bimestre, conforme o plano da disciplina.
 
 ---
 
+### **SEMANINHA** — 28/09 a 04/10/2026
+
+Sem atividades letivas em **29/09 e 02/10**.
+
+### Cronograma do segundo bimestre
+
+| Data | Conteúdo |
+| --- | --- |
+| 06/10 | Resposta senoidal e interpretação de $G(j\omega)$. |
+| 09/10 | Diagramas de Bode: fatores elementares. |
+| 13/10 | Construção de Bode para sistemas compostos. |
+| 16/10 | Laboratório de Bode no MATLAB. |
+| 20/10 | Banda passante, ressonância e relações tempo–frequência. |
+| 23/10 | **Feriado — sem aula.** |
+| 27/10 | Frequências de cruzamento e margens de ganho e fase. |
+| 30/10 | Ações P, PI, PD e PID. |
+| 03/11 | Projeto e sintonia de controladores PI/PID. |
+| 06/11 | Saturação, *anti-windup* e ação derivativa filtrada. |
+| 10/11 | Lugar das raízes: fundamentos e regras de construção. |
+| 13/11 | Estabilidade e desempenho pelo lugar das raízes. |
+| 17/11 | Projeto de controladores pelo lugar das raízes. |
+| 20/11 | **Feriado — sem aula.** |
+| 24/11 | Projeto integrado, validação e revisão. |
+| 27/11 | **Avaliação do segundo bimestre — data a confirmar.** |
+
+---
+
+### **AULA 15** — 06/10/2026 — Resposta Senoidal e Interpretação de $G(j\omega)$
+
+**Conteúdo**:
+- retomada de polos, estabilidade e dos modelos de primeira e segunda ordem;
+- resposta senoidal de regime, módulo e fase de $G(j\omega)$;
+- relação com a transformada de Laplace e separação do transitório;
+- medição de ganho e fase, superposição e canais de malha fechada;
+- exercícios resolvidos e conferência no MATLAB.
+
+**Material**:
+- 📊 [Slides — Aula 15 (PDF)](../courses/MVO20/2026/slides-aula15-06-10-2026.pdf)
+- 💻 [Exemplos MATLAB — Aula 15](../courses/MVO20/2026/exemplos_aula15.m)
+
+---
+
+### **AULA 16** — 09/10/2026 — Diagramas de Bode: Fatores Elementares
+
+**Conteúdo**:
+- decibéis, escala logarítmica e normalização dos fatores;
+- ganho constante, integradores e diferenciadores;
+- polos e zeros reais, curvas exatas e assíntotas;
+- fatores de segunda ordem e influência do amortecimento;
+- posição dos zeros e interpretação da fase;
+- exercícios resolvidos, exemplos MATLAB e preparação para sistemas compostos.
+
+**Material**:
+- 📊 [Slides — Aula 16 (PDF)](../courses/MVO20/2026/slides-aula16-09-10-2026.pdf)
+- 💻 [Exemplos MATLAB — Aula 16](../courses/MVO20/2026/exemplos_aula16.m)
+
+---
+
 Os materiais das aulas seguintes serão acrescentados ao longo do semestre, de acordo com o calendário previsto.
 
-*Última atualização: 17/09/2026*
+*Última atualização: 05/10/2026*
