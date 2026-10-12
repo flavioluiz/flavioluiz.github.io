@@ -26,7 +26,7 @@
 
 ## Cronograma e Material das Aulas
 
-> 🗓️ **Segundo bimestre:** retomada em **06/10/2026**, após a semaninha de 28/09 a 04/10. Os slides e exemplos MATLAB das aulas de **06/10 e 09/10** estão disponíveis abaixo. A Prova 2 está prevista para **27/11**, a confirmar.
+> 🗓️ **Segundo bimestre:** retomada em **06/10/2026**, após a semaninha de 28/09 a 04/10. Os slides de todas as aulas até a **Aula 20 (27/10)** estão disponíveis abaixo. A Prova 2 está prevista para **27/11**, a confirmar.
 
 ### **AULA 01** — iniciada em 04/08/2026; concluída em 07/08/2026 — Introdução e Modelagem Mecânica
 
@@ -237,9 +237,12 @@ Avaliação escrita presencial do primeiro bimestre.
 - 📝 [Lista de preparação para a P1 (PDF)](../courses/MVO20/2026/lista-preparacao-p1-2026.pdf)
 - ✅ [Gabarito da lista de preparação para a P1 (PDF)](../courses/MVO20/2026/gabarito-lista-preparacao-p1-2026.pdf)
 
-### **FECHAMENTO DO 1º BIMESTRE** — 25/09/2026
+### **AULA 14** — 25/09/2026 — Revisão da Primeira Prova e Fechamento do Bimestre
 
 Correção comentada da avaliação e fechamento do primeiro bimestre, conforme o plano da disciplina.
+
+**Material**:
+- 📊 [Slides — Aula 14 (PDF)](../courses/MVO20/2026/slides-aula14-25-09-2026.pdf)
 
 ---
 
@@ -301,6 +304,62 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
+### **AULA 17** — 13/10/2026 — Construção de Bode para Sistemas Compostos
+
+**Conteúdo**:
+- normalização e soma das contribuições de polos e zeros;
+- magnitude e fase: curvas exatas, assíntotas e pontos de conferência;
+- polos repetidos, fase contínua e fatores de segunda ordem;
+- efeito do ganho, zeros no semiplano direito e associações em paralelo;
+- exercícios resolvidos e preparação para o laboratório.
+
+**Material**:
+- 📊 [Slides — Aula 17 (PDF)](../courses/MVO20/2026/slides-aula17-13-10-2026.pdf)
+
+---
+
+### **AULA 18** — 16/10/2026 — Laboratório de Bode no MATLAB
+
+**Conteúdo**:
+- cálculo por bode, freqresp e avaliação direta da expressão complexa;
+- comparação entre curvas exatas e esboços assintóticos;
+- efeito do ganho, fase principal e fase contínua;
+- previsão senoidal e simulação temporal com lsim;
+- estimativa de amplitude e fase e desafio em duplas.
+
+**Material**:
+- 📊 [Slides — Aula 18 (PDF)](../courses/MVO20/2026/slides-aula18-16-10-2026.pdf)
+
+---
+
+### **AULA 19** — 20/10/2026 — Banda Passante, Ressonância e Relações Tempo–Frequência
+
+**Conteúdo**:
+- banda passante relativa ao ganho estático e convenção de meia potência;
+- primeira ordem: relações entre banda e tempos característicos;
+- segunda ordem: amortecimento, frequência e pico de ressonância;
+- escala de frequência, sobressinal e acomodação;
+- efeito dos zeros, limites das aproximações e exercícios resolvidos.
+
+**Material**:
+- 📊 [Slides — Aula 19 (PDF)](../courses/MVO20/2026/slides-aula19-20-10-2026.pdf)
+
+---
+
+### **AULA 20** — 27/10/2026 — Frequências de Cruzamento e Margens de Ganho e Fase
+
+**Conteúdo**:
+- função de malha e condição crítica da realimentação negativa;
+- cruzamentos de ganho e de fase e leitura das margens no Bode;
+- exemplo completo com conferência pelo critério de Routh;
+- variação de ganho, resposta temporal e efeito do atraso;
+- comandos margin e allmargin e conexão com o projeto de controladores.
+
+**Material**:
+- 📊 [Slides — Aula 20 (PDF)](../courses/MVO20/2026/slides-aula20-27-10-2026.pdf)
+
+---
+
 Os materiais das aulas seguintes serão acrescentados ao longo do semestre, de acordo com o calendário previsto.
 
-*Última atualização: 05/10/2026*
+*Última atualização: 12/10/2026*
