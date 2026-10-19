@@ -172,6 +172,22 @@ totalizando vinte horas-aula.
 - faixas de ganho, análise das fronteiras e verificação computacional;
 - exercício integrado de quarta ordem com solução.
 
+### Aula 6 — 19/10/2026 — Capítulo 7
+
+**Materiais**:
+
+- 📊 **[Resposta em frequência e diagramas de Bode (PDF)](../courses/as765/2026/slides-08-resposta-frequencia-as765-2026.pdf)**
+- 💻 **[Exemplos e verificações MATLAB](../courses/as765/2026/aula06_cap07.m)**
+
+**Conteúdo da aula**:
+
+- resposta senoidal, amplitude, fase e hipóteses de regime permanente;
+- diagramas de Bode, decibéis e fatores elementares;
+- segunda ordem, ressonância, banda passante e relações tempo–frequência;
+- construção manual de sistemas compostos e fase contínua;
+- fase mínima e não mínima, atrasos e dinâmica distribuída;
+- demonstrações MATLAB e exercícios com solução.
+
 ## Cronograma de referência
 
 - **31/08 — Capítulos 1 e 2**: introdução, modelagem, pontos de operação e início da linearização.
@@ -197,4 +213,4 @@ Os materiais das aulas seguintes serão acrescentados ao longo do período.
 
 📚 [Material e cronograma da oferta de 2025](#as-765-controle-2025)
 
-*Última atualização: 04/10/2026*
+*Última atualização: 19/10/2026*
