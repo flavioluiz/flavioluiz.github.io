@@ -188,6 +188,21 @@ totalizando vinte horas-aula.
 - fase mínima e não mínima, atrasos e dinâmica distribuída;
 - demonstrações MATLAB e exercícios com solução.
 
+### Aula 7 — 26/10/2026 — Capítulo 8
+
+**Materiais**:
+
+- 📊 **[Nyquist e margens de estabilidade (PDF)](../courses/as765/2026/slides-09-nyquist-margens-as765-2026.pdf)**
+
+**Conteúdo da aula**:
+
+- critério simplificado de Nyquist para malha aberta estável;
+- contagem de voltas, ganho crítico e conferência por Routh;
+- margens de ganho, fase e atraso no Bode e sua interpretação no Nyquist;
+- contorno, princípio do argumento e critério geral de Nyquist;
+- casos com polos instáveis e polos na origem;
+- sensibilidade, fase mínima, limitações e exercícios com solução.
+
 ## Cronograma de referência
 
 - **31/08 — Capítulos 1 e 2**: introdução, modelagem, pontos de operação e início da linearização.
@@ -213,4 +228,4 @@ Os materiais das aulas seguintes serão acrescentados ao longo do período.
 
 📚 [Material e cronograma da oferta de 2025](#as-765-controle-2025)
 
-*Última atualização: 19/10/2026*
+*Última atualização: 26/10/2026*
