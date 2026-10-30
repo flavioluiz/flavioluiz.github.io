@@ -17,7 +17,7 @@
 
 ## Avaliação
 
-> 📌 **Prova 1:** presencial, em **22/09/2026**, das **10h00 às 12h00**.
+> 📌 **Prova 1:** realizada presencialmente em **22/09/2026**, das **10h00 às 12h00**.
 
 - **1º bimestre**: listas de exercícios (30%) e avaliação escrita presencial (70%); prova em 22/09/2026, das 10h00 às 12h00.
 - **2º bimestre**: listas de exercícios (30%) e avaliação escrita (70%); prova prevista para 27/11/2026, data a confirmar.
@@ -26,7 +26,9 @@
 
 ## Cronograma e Material das Aulas
 
-> 🗓️ **Segundo bimestre:** retomada em **06/10/2026**, após a semaninha de 28/09 a 04/10. Os slides de todas as aulas até a **Aula 20 (27/10)** estão disponíveis abaixo. A Prova 2 está prevista para **27/11**, a confirmar.
+> 🗓️ **Aula de hoje — 30/10/2026:** **Aula 21 — Ações P, PI, PD e PID**. [Abrir os slides (PDF)](../courses/MVO20/2026/slides-aula21-30-10-2026.pdf).
+>
+> As **Aulas 01 a 20 já foram ministradas**. Os slides estão disponíveis até a **Aula 23 (06/11)**. Os próximos encontros serão em **03/11** e **06/11**. A Prova 2 está prevista para **27/11**, a confirmar.
 
 ### **AULA 01** — iniciada em 04/08/2026; concluída em 07/08/2026 — Introdução e Modelagem Mecânica
 
@@ -212,9 +214,9 @@
 
 ---
 
-### **AULA 13** — 18/09/2026 — Critério de Routh–Hurwitz e Aplicações
+### **AULA 13** — ministrada em 18/09/2026 — Critério de Routh–Hurwitz e Aplicações
 
-**Situação:** material disponível para a aula de 18/09/2026.
+**Situação:** material apresentado em 18/09/2026.
 
 **Conteúdo**:
 - construção e interpretação da tabela de Routh;
@@ -229,7 +231,7 @@
 
 ---
 
-### **PROVA 1** — 22/09/2026, das 10h00 às 12h00
+### **PROVA 1** — realizada em 22/09/2026, das 10h00 às 12h00
 
 Avaliação escrita presencial do primeiro bimestre.
 
@@ -237,7 +239,7 @@ Avaliação escrita presencial do primeiro bimestre.
 - 📝 [Lista de preparação para a P1 (PDF)](../courses/MVO20/2026/lista-preparacao-p1-2026.pdf)
 - ✅ [Gabarito da lista de preparação para a P1 (PDF)](../courses/MVO20/2026/gabarito-lista-preparacao-p1-2026.pdf)
 
-### **AULA 14** — 25/09/2026 — Revisão da Primeira Prova e Fechamento do Bimestre
+### **AULA 14** — ministrada em 25/09/2026 — Revisão da Primeira Prova e Fechamento do Bimestre
 
 Correção comentada da avaliação e fechamento do primeiro bimestre, conforme o plano da disciplina.
 
@@ -252,28 +254,28 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ### Cronograma do segundo bimestre
 
-| Data | Conteúdo |
-| --- | --- |
-| 06/10 | Resposta senoidal e interpretação de $G(j\omega)$. |
-| 09/10 | Diagramas de Bode: fatores elementares. |
-| 13/10 | Construção de Bode para sistemas compostos. |
-| 16/10 | Laboratório de Bode no MATLAB. |
-| 20/10 | Banda passante, ressonância e relações tempo–frequência. |
-| 23/10 | **Feriado — sem aula.** |
-| 27/10 | Frequências de cruzamento e margens de ganho e fase. |
-| 30/10 | Ações P, PI, PD e PID. |
-| 03/11 | Projeto e sintonia de controladores PI/PID. |
-| 06/11 | Saturação, *anti-windup* e ação derivativa filtrada. |
-| 10/11 | Lugar das raízes: fundamentos e regras de construção. |
-| 13/11 | Estabilidade e desempenho pelo lugar das raízes. |
-| 17/11 | Projeto de controladores pelo lugar das raízes. |
-| 20/11 | **Feriado — sem aula.** |
-| 24/11 | Projeto integrado, validação e revisão. |
-| 27/11 | **Avaliação do segundo bimestre — data a confirmar.** |
+| Data | Conteúdo | Situação |
+| --- | --- | --- |
+| 06/10 | Resposta senoidal e interpretação de $G(j\omega)$. | Ministrada |
+| 09/10 | Diagramas de Bode: fatores elementares. | Ministrada |
+| 13/10 | Construção de Bode para sistemas compostos. | Ministrada |
+| 16/10 | Laboratório de Bode no MATLAB. | Ministrada |
+| 20/10 | Banda passante, ressonância e relações tempo–frequência. | Ministrada |
+| 23/10 | **Feriado — sem aula.** | Sem aula |
+| 27/10 | Frequências de cruzamento e margens de ganho e fase. | Ministrada |
+| 30/10 | Ações P, PI, PD e PID. | Aula de hoje |
+| 03/11 | Projeto e sintonia de controladores PI/PID. | Prevista |
+| 06/11 | Saturação, *anti-windup* e ação derivativa filtrada. | Prevista |
+| 10/11 | Lugar das raízes: fundamentos e regras de construção. | Prevista |
+| 13/11 | Estabilidade e desempenho pelo lugar das raízes. | Prevista |
+| 17/11 | Projeto de controladores pelo lugar das raízes. | Prevista |
+| 20/11 | **Feriado — sem aula.** | Sem aula |
+| 24/11 | Projeto integrado, validação e revisão. | Prevista |
+| 27/11 | **Avaliação do segundo bimestre — data a confirmar.** | Data a confirmar |
 
 ---
 
-### **AULA 15** — 06/10/2026 — Resposta Senoidal e Interpretação de $G(j\omega)$
+### **AULA 15** — ministrada em 06/10/2026 — Resposta Senoidal e Interpretação de $G(j\omega)$
 
 **Conteúdo**:
 - retomada de polos, estabilidade e dos modelos de primeira e segunda ordem;
@@ -288,7 +290,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 16** — 09/10/2026 — Diagramas de Bode: Fatores Elementares
+### **AULA 16** — ministrada em 09/10/2026 — Diagramas de Bode: Fatores Elementares
 
 **Conteúdo**:
 - decibéis, escala logarítmica e normalização dos fatores;
@@ -304,7 +306,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 17** — 13/10/2026 — Construção de Bode para Sistemas Compostos
+### **AULA 17** — ministrada em 13/10/2026 — Construção de Bode para Sistemas Compostos
 
 **Conteúdo**:
 - normalização e soma das contribuições de polos e zeros;
@@ -318,7 +320,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 18** — 16/10/2026 — Laboratório de Bode no MATLAB
+### **AULA 18** — ministrada em 16/10/2026 — Laboratório de Bode no MATLAB
 
 **Conteúdo**:
 - cálculo por bode, freqresp e avaliação direta da expressão complexa;
@@ -332,7 +334,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 19** — 20/10/2026 — Banda Passante, Ressonância e Relações Tempo–Frequência
+### **AULA 19** — ministrada em 20/10/2026 — Banda Passante, Ressonância e Relações Tempo–Frequência
 
 **Conteúdo**:
 - banda passante relativa ao ganho estático e convenção de meia potência;
@@ -346,7 +348,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 20** — 27/10/2026 — Frequências de Cruzamento e Margens de Ganho e Fase
+### **AULA 20** — ministrada em 27/10/2026 — Frequências de Cruzamento e Margens de Ganho e Fase
 
 **Conteúdo**:
 - função de malha e condição crítica da realimentação negativa;
@@ -360,6 +362,53 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
+### **AULA 21** — hoje, 30/10/2026 — Ações P, PI, PD e PID
+
+**Conteúdo**:
+- papel das ações proporcional, integral e derivativa e conversão entre parâmetros;
+- erro estacionário, rejeição de perturbações, polos e estabilidade;
+- interpretação dos controladores ideais em frequência e comparação na planta de três polos;
+- limites da derivada ideal: amplificação de ruído e impulso de comando;
+- feedforward de referência, exercícios e exemplos MATLAB.
+
+**Material**:
+- 📊 [Slides — Aula 21 (PDF)](../courses/MVO20/2026/slides-aula21-30-10-2026.pdf)
+- 💻 [Exemplos MATLAB e dados — Aula 21 (ZIP)](../courses/MVO20/2026/exemplos-aula21-2026.zip)
+
+---
+
+### **AULA 22** — prevista para 03/11/2026 — Projeto e Sintonia de Controladores PI/PID
+
+**Conteúdo**:
+- projeto por modelos simplificados e comparação de coeficientes;
+- projeto PI, zeros e pré-filtro de referência;
+- projeto PID ideal, polos especificados e comando impulsivo;
+- regras de Ziegler–Nichols pelo degrau e pelo ganho crítico;
+- validação das respostas de saída e margens, com ajuste dos ganhos.
+
+**Material**:
+- 📊 [Slides — Aula 22 (PDF)](../courses/MVO20/2026/slides-aula22-03-11-2026.pdf)
+- 💻 [Exemplos MATLAB e dados — Aula 22 (ZIP)](../courses/MVO20/2026/exemplos-aula22-2026.zip)
+
+---
+
+### **AULA 23** — prevista para 06/11/2026 — Saturação, Anti-windup e Derivada Filtrada
+
+**Conteúdo**:
+- limites do atuador, windup, back-calculation e integração condicional;
+- apresentação da derivada filtrada, escolha do filtro e efeitos na malha;
+- ruído de medição e tratamento de mudanças na referência;
+- realização em estados e implementação digital do PID;
+- ensaio com ruído e saturação; material complementar sobre convenções, inicialização e verificação.
+
+**Material**:
+- 📊 [Slides — Aula 23: 38 slides de exposição e 6 de anexo (PDF)](../courses/MVO20/2026/slides-aula23-06-11-2026.pdf)
+- 💻 [Exemplos MATLAB, controlador digital e dados — Aula 23 (ZIP)](../courses/MVO20/2026/exemplos-aula23-2026.zip)
+
+Para executar os exemplos, extraia o ZIP mantendo a pasta `Figuras` e abra o arquivo `exemplos_aulaXX.m` correspondente no MATLAB com Control System Toolbox. O pacote da Aula 23 inclui `pid_discreto.m`.
+
+---
+
 Os materiais das aulas seguintes serão acrescentados ao longo do semestre, de acordo com o calendário previsto.
 
-*Última atualização: 12/10/2026*
+*Última atualização: 30/10/2026*
