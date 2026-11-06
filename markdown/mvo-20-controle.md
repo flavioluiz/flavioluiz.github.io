@@ -9,7 +9,7 @@
 
 - **Período**: 2º semestre de 2026
 - **Horários**: terças-feiras, das 08h00 às 09h50; sextas-feiras, das 10h10 às 12h00
-- **Carga horária no calendário**: 60 horas-aula
+- **Encontro de 17/11**: das 08h00 às 12h00, incluindo a reposição de 06/11
 - **Docente**: Prof. Flávio Luiz Cardoso Ribeiro
 - **Material**: slides, exemplos MATLAB/Simulink, listas de exercícios e atividades computacionais
 
@@ -20,15 +20,15 @@
 > 📌 **Prova 1:** realizada presencialmente em **22/09/2026**, das **10h00 às 12h00**.
 
 - **1º bimestre**: listas de exercícios (30%) e avaliação escrita presencial (70%); prova em 22/09/2026, das 10h00 às 12h00.
-- **2º bimestre**: listas de exercícios (30%) e avaliação escrita (70%); prova prevista para 27/11/2026, data a confirmar.
+- **2º bimestre**: listas de exercícios (30%) e avaliação escrita (70%); prova em 24/11/2026.
 - **Exame final**: prova escrita, em data a confirmar conforme o calendário acadêmico.
 - **Média final**: média aritmética da média do primeiro bimestre, da média do segundo bimestre e do exame final.
 
 ## Cronograma e Material das Aulas
 
-> 🗓️ **Aula de hoje — 30/10/2026:** **Aula 21 — Ações P, PI, PD e PID**. [Abrir os slides (PDF)](../courses/MVO20/2026/slides-aula21-30-10-2026.pdf).
+> 🗓️ **Cronograma atualizado em 06/11/2026:** não haverá aula em **06/11**. A reposição será incorporada ao encontro de **17/11, das 08h às 12h**.
 >
-> As **Aulas 01 a 20 já foram ministradas**. Os slides estão disponíveis até a **Aula 23 (06/11)**. Os próximos encontros serão em **03/11** e **06/11**. A Prova 2 está prevista para **27/11**, a confirmar.
+> A **Aula 21** começou em **30/10** e foi concluída em **03/11**. As próximas aulas serão em **10/11 (Aula 22)**, **13/11 (Aula 23)** e **17/11 (Aulas 24 e 25)**. Os slides de todas elas estão disponíveis abaixo. **Prova 2: 24/11. Atividade de 27/11: a definir.**
 
 ### **AULA 01** — iniciada em 04/08/2026; concluída em 07/08/2026 — Introdução e Modelagem Mecânica
 
@@ -263,15 +263,16 @@ Sem atividades letivas em **29/09 e 02/10**.
 | 20/10 | Banda passante, ressonância e relações tempo–frequência. | Ministrada |
 | 23/10 | **Feriado — sem aula.** | Sem aula |
 | 27/10 | Frequências de cruzamento e margens de ganho e fase. | Ministrada |
-| 30/10 | Ações P, PI, PD e PID. | Aula de hoje |
-| 03/11 | Projeto e sintonia de controladores PI/PID. | Prevista |
-| 06/11 | Saturação, *anti-windup* e ação derivativa filtrada. | Prevista |
-| 10/11 | Lugar das raízes: fundamentos e regras de construção. | Prevista |
-| 13/11 | Estabilidade e desempenho pelo lugar das raízes. | Prevista |
-| 17/11 | Projeto de controladores pelo lugar das raízes. | Prevista |
+| 30/10 | Conclusão de resposta em frequência e margens; início da Aula 21 — ações P, PI, PD e PID. | Ministrada |
+| 03/11 | Conclusão da Aula 21 — ações P, PI, PD e PID. | Ministrada |
+| 06/11 | **Sem aula; reposição em 17/11.** | Reposição agendada |
+| 10/11 | Aula 22 — projeto e sintonia de controladores PI/PID. | Prevista |
+| 13/11 | Aula 23 — saturação, *anti-windup*, derivada filtrada e implementação digital. | Prevista |
+| 17/11, 08h–10h | Aula 24 — lugar das raízes: fundamentos e regras de construção. | Prevista |
+| 17/11, 10h–12h | Aula 25 — lugar das raízes: desempenho, projeto e revisão para a prova. | Prevista |
 | 20/11 | **Feriado — sem aula.** | Sem aula |
-| 24/11 | Projeto integrado, validação e revisão. | Prevista |
-| 27/11 | **Avaliação do segundo bimestre — data a confirmar.** | Data a confirmar |
+| 24/11 | **Avaliação do segundo bimestre.** | Agendada |
+| 27/11 | **Atividade a definir.** | A definir |
 
 ---
 
@@ -348,7 +349,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 20** — ministrada em 27/10/2026 — Frequências de Cruzamento e Margens de Ganho e Fase
+### **AULA 20** — iniciada em 27/10/2026; concluída em 30/10/2026 — Frequências de Cruzamento e Margens de Ganho e Fase
 
 **Conteúdo**:
 - função de malha e condição crítica da realimentação negativa;
@@ -362,7 +363,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 21** — hoje, 30/10/2026 — Ações P, PI, PD e PID
+### **AULA 21** — iniciada em 30/10/2026; concluída em 03/11/2026 — Ações P, PI, PD e PID
 
 **Conteúdo**:
 - papel das ações proporcional, integral e derivativa e conversão entre parâmetros;
@@ -377,7 +378,7 @@ Sem atividades letivas em **29/09 e 02/10**.
 
 ---
 
-### **AULA 22** — prevista para 03/11/2026 — Projeto e Sintonia de Controladores PI/PID
+### **AULA 22** — prevista para 10/11/2026 — Projeto e Sintonia de Controladores PI/PID
 
 **Conteúdo**:
 - projeto por modelos simplificados e comparação de coeficientes;
@@ -387,12 +388,12 @@ Sem atividades letivas em **29/09 e 02/10**.
 - validação das respostas de saída e margens, com ajuste dos ganhos.
 
 **Material**:
-- 📊 [Slides — Aula 22 (PDF)](../courses/MVO20/2026/slides-aula22-03-11-2026.pdf)
+- 📊 [Slides — Aula 22 (PDF)](../courses/MVO20/2026/slides-aula22-10-11-2026.pdf)
 - 💻 [Exemplos MATLAB e dados — Aula 22 (ZIP)](../courses/MVO20/2026/exemplos-aula22-2026.zip)
 
 ---
 
-### **AULA 23** — prevista para 06/11/2026 — Saturação, Anti-windup e Derivada Filtrada
+### **AULA 23** — prevista para 13/11/2026 — Saturação, Anti-windup e Derivada Filtrada
 
 **Conteúdo**:
 - limites do atuador, windup, back-calculation e integração condicional;
@@ -402,13 +403,43 @@ Sem atividades letivas em **29/09 e 02/10**.
 - ensaio com ruído e saturação; material complementar sobre convenções, inicialização e verificação.
 
 **Material**:
-- 📊 [Slides — Aula 23: 38 slides de exposição e 6 de anexo (PDF)](../courses/MVO20/2026/slides-aula23-06-11-2026.pdf)
+- 📊 [Slides — Aula 23: 38 slides de exposição e 6 de anexo (PDF)](../courses/MVO20/2026/slides-aula23-13-11-2026.pdf)
 - 💻 [Exemplos MATLAB, controlador digital e dados — Aula 23 (ZIP)](../courses/MVO20/2026/exemplos-aula23-2026.zip)
+
+---
+
+### **AULA 24** — prevista para 17/11/2026, das 08h às 10h — Lugar das Raízes: Fundamentos
+
+**Conteúdo**:
+- equação característica, condições de ângulo e módulo;
+- ramos, trechos do eixo real e assíntotas;
+- pontos de saída e cruzamento do eixo imaginário;
+- relação com estabilidade e critério de Routh;
+- exemplos, exercício resolvido e verificação no MATLAB.
+
+**Material**:
+- 📊 [Slides — Aula 24 (PDF)](../courses/MVO20/2026/slides-aula24-17-11-2026.pdf)
+- 💻 [Exemplos MATLAB e dados — Aula 24 (ZIP)](../courses/MVO20/2026/exemplos-aula24-2026.zip)
+
+---
+
+### **AULA 25** — prevista para 17/11/2026, das 10h às 12h — Lugar das Raízes: Desempenho, Projeto e Revisão
+
+Última aula de conteúdo antes da prova de **24/11**.
+
+**Conteúdo**:
+- regiões de polos, amortecimento e limites da aproximação dominante;
+- seleção de ganho e validação do desempenho temporal;
+- projeto de compensador de avanço de fase;
+- verificação dos polos, saída e esforço de controle;
+- revisão com exercícios de margens, implementação de PID e lugar das raízes.
+
+**Material**:
+- 📊 [Slides — Aula 25 (PDF)](../courses/MVO20/2026/slides-aula25-17-11-2026.pdf)
+- 💻 [Exemplos MATLAB e dados — Aula 25 (ZIP)](../courses/MVO20/2026/exemplos-aula25-2026.zip)
 
 Para executar os exemplos, extraia o ZIP mantendo a pasta `Figuras` e abra o arquivo `exemplos_aulaXX.m` correspondente no MATLAB com Control System Toolbox. O pacote da Aula 23 inclui `pid_discreto.m`.
 
 ---
 
-Os materiais das aulas seguintes serão acrescentados ao longo do semestre, de acordo com o calendário previsto.
-
-*Última atualização: 30/10/2026*
+*Última atualização: 06/11/2026*
