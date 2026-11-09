@@ -64,8 +64,8 @@ Os horários e prazos publicados no Google Classroom são os definitivos. O Q3 f
 
 ## Aulas e materiais publicados
 
-Os sete conjuntos de slides abaixo correspondem às cinco primeiras aulas,
-totalizando vinte horas-aula.
+Os materiais estão organizados por aula. Também estão disponíveis os slides,
+os fontes e os exemplos MATLAB dos encontros de novembro listados abaixo.
 
 ### Aula 1 — 31/08/2026 — Capítulo 1 e início do Capítulo 2
 
@@ -203,6 +203,57 @@ totalizando vinte horas-aula.
 - casos com polos instáveis e polos na origem;
 - sensibilidade, fase mínima, limitações e exercícios com solução.
 
+### Aula 8 — 09/11/2026 — Capítulo 9
+
+**Materiais**:
+
+- 📊 **[Controladores P, PI, PD e PID (PDF)](../courses/as765/2026/slides-10-pid-as765-2026.pdf)**
+- 📦 **[Material completo da aula: slides, fontes e exemplos MATLAB (ZIP)](../courses/as765/2026/material-aula-09-11-as765-2026.zip)**
+
+**Conteúdo da aula**:
+
+- ações proporcional, integral e derivativa; formas paralela e por tempos;
+- efeitos sobre polos, zeros, erro permanente e rejeição de perturbações;
+- projeto nominal de PI/PID e sintonia por Ziegler–Nichols;
+- saturação, equilíbrio alcançável, windup e anti-windup;
+- derivada filtrada, ruído e derivada sobre a medição;
+- exercícios e validação de saída, margens e esforço de controle no MATLAB.
+
+### Aula 9 — 10/11/2026 — Capítulo 10
+
+Encontro excepcional na terça-feira, à tarde, em reposição à aula de 07/10.
+O horário exato e a sala serão informados no ambiente da disciplina.
+
+**Materiais**:
+
+- 📊 **[Lugar das raízes e projeto de controladores (PDF)](../courses/as765/2026/slides-11-lugar-raizes-as765-2026.pdf)**
+- 📦 **[Material completo da aula: slides, fontes e exemplos MATLAB (ZIP)](../courses/as765/2026/material-aula-10-11-as765-2026.zip)**
+
+**Conteúdo da aula**:
+
+- equação característica e condições de ângulo e módulo;
+- regras de construção, eixo real, assíntotas e pontos de saída;
+- fronteiras de estabilidade e conferência por Routh;
+- regiões de desempenho, polos dominantes e seleção de ganho;
+- projeto de avanço de fase pela deficiência de ângulo;
+- verificação da resposta completa e do comando, com exercícios e MATLAB.
+
+### Aula 10 — 16/11/2026 — Capítulo 11
+
+**Materiais**:
+
+- 📊 **[Sensibilidade e projeto no domínio da frequência (PDF)](../courses/as765/2026/slides-12-projeto-frequencia-as765-2026.pdf)**
+- 📦 **[Material completo da aula: slides, fontes e exemplos MATLAB (ZIP)](../courses/as765/2026/material-aula-16-11-as765-2026.zip)**
+
+**Conteúdo da aula**:
+
+- funções S, T, PS e CS; sinais da malha e estabilidade interna;
+- sensibilidade, margem de fase, banda e especificações de projeto;
+- pré-filtro de referência e esforço de controle;
+- compensadores de avanço e atraso, com normalização dos ganhos;
+- validação de margens, erro de rampa, transitório e comando;
+- atrasos, zeros instáveis, integral de Bode e robustez.
+
 ## Cronograma de referência
 
 - **31/08 — Capítulos 1 e 2**: introdução, modelagem, pontos de operação e início da linearização.
@@ -218,7 +269,7 @@ totalizando vinte horas-aula.
 - **23/11 — Capítulo 12**: controle em espaço de estados, LQR/LQI e observadores. Encerramento do conteúdo.
 - **14/12 — Avaliação escrita integradora**: quatro horas-aula; não haverá conteúdo novo.
 
-Os materiais das aulas seguintes serão acrescentados ao longo do período.
+O material da aula de 23/11 será acrescentado ao longo do período.
 
 ## Material de referência
 
@@ -228,4 +279,4 @@ Os materiais das aulas seguintes serão acrescentados ao longo do período.
 
 📚 [Material e cronograma da oferta de 2025](#as-765-controle-2025)
 
-*Última atualização: 26/10/2026*
+*Última atualização: 09/11/2026*
