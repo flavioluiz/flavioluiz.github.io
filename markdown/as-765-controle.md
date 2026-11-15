@@ -10,10 +10,10 @@
 - **Local**: ITA, sala 1403
 - **Carga horária**: 48 horas-aula — 44 horas de conteúdo, exercícios e atividades computacionais; 4 horas de avaliação
 - **Docente**: Prof. Flávio Luiz Cardoso Ribeiro
-- **Encerramento do conteúdo**: 23/11/2026
+- **Encerramento do conteúdo**: 24/11/2026
 - **Avaliação integradora**: 14/12/2026, com duração de quatro horas-aula
 
-> 🗓️ A aula de **quarta-feira, 07/10**, foi transferida para **terça-feira, 10/11, à tarde**. O horário exato e a sala serão confirmados no ambiente da disciplina. Não haverá aula em 07/10, 12/10 nem em 30/11; o conteúdo termina em 23/11 e a prova permanece em 14/12.
+> 🗓️ **Calendário atualizado:** a **aula 9**, anteriormente prevista para 10/11, será em **16/11/2026**; a **aula 10**, em **23/11**; e a **aula 11**, em **terça-feira, 24/11, à tarde**. O horário exato e a sala do encontro de 24/11 serão confirmados no ambiente da disciplina. Não haverá aula em 07/10, 12/10 nem em 30/11; o conteúdo termina em 24/11 e a prova permanece em 14/12.
 
 📋 **[Plano da Disciplina AS-765 — 2026 (PDF)](../courses/as765/2026/plano-disciplina-as765-2026.pdf)**
 
@@ -219,10 +219,9 @@ os fontes e os exemplos MATLAB dos encontros de novembro listados abaixo.
 - derivada filtrada, ruído e derivada sobre a medição;
 - exercícios e validação de saída, margens e esforço de controle no MATLAB.
 
-### Aula 9 — 10/11/2026 — Capítulo 10
+### Aula 9 — 16/11/2026 — Capítulo 10
 
-Encontro excepcional na terça-feira, à tarde, em reposição à aula de 07/10.
-O horário exato e a sala serão informados no ambiente da disciplina.
+Aula transferida de 10/11 para 16/11/2026, no horário regular.
 
 **Materiais**:
 
@@ -238,7 +237,7 @@ O horário exato e a sala serão informados no ambiente da disciplina.
 - projeto de avanço de fase pela deficiência de ângulo;
 - verificação da resposta completa e do comando, com exercícios e MATLAB.
 
-### Aula 10 — 16/11/2026 — Capítulo 11
+### Aula 10 — 23/11/2026 — Capítulo 11
 
 **Materiais**:
 
@@ -264,12 +263,12 @@ O horário exato e a sala serão informados no ambiente da disciplina.
 - **19/10 — Capítulo 7**: resposta em frequência e diagramas de Bode.
 - **26/10 — Capítulo 8**: diagramas e critério de Nyquist, margens de estabilidade e robustez.
 - **09/11 — Capítulo 9**: controladores P, PI, PD e PID, sintonia e limitações práticas.
-- **10/11 — Capítulo 10**: Lugar Geométrico das Raízes e projeto de controladores. Encontro excepcional na terça-feira, à tarde; horário exato e sala a confirmar.
-- **16/11 — Capítulo 11**: funções de sensibilidade, compensadores e projeto no domínio da frequência.
-- **23/11 — Capítulo 12**: controle em espaço de estados, LQR/LQI e observadores. Encerramento do conteúdo.
+- **16/11 — Capítulo 10**: Lugar Geométrico das Raízes e projeto de controladores.
+- **23/11 — Capítulo 11**: funções de sensibilidade, compensadores e projeto no domínio da frequência.
+- **24/11 — Capítulo 12**: controle em espaço de estados, LQR/LQI e observadores. Encontro excepcional na terça-feira, à tarde; horário exato e sala a confirmar. Encerramento do conteúdo.
 - **14/12 — Avaliação escrita integradora**: quatro horas-aula; não haverá conteúdo novo.
 
-O material da aula de 23/11 será acrescentado ao longo do período.
+O material da aula 11, de 24/11, será acrescentado ao longo do período.
 
 ## Material de referência
 
@@ -279,4 +278,4 @@ O material da aula de 23/11 será acrescentado ao longo do período.
 
 📚 [Material e cronograma da oferta de 2025](#as-765-controle-2025)
 
-*Última atualização: 09/11/2026*
+*Última atualização: 15/11/2026*
