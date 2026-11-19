@@ -442,4 +442,13 @@ Para executar os exemplos, extraia o ZIP mantendo a pasta `Figuras` e abra o arq
 
 ---
 
-*Última atualização: 06/11/2026*
+### **PROVA 2** — prevista para 24/11/2026
+
+Avaliação escrita do segundo bimestre.
+
+**Material de preparação**:
+- 📝 [Lista de preparação para a P2 (PDF)](../courses/MVO20/2026/lista-preparacao-p2-2026.pdf)
+
+---
+
+*Última atualização: 19/11/2026*
