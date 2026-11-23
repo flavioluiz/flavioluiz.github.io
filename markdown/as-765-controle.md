@@ -13,7 +13,7 @@
 - **Encerramento do conteúdo**: 24/11/2026
 - **Avaliação integradora**: 14/12/2026, com duração de quatro horas-aula
 
-> 🗓️ **Calendário atualizado:** a **aula 9**, anteriormente prevista para 10/11, será em **16/11/2026**; a **aula 10**, em **23/11**; e a **aula 11**, em **terça-feira, 24/11, à tarde**. O horário exato e a sala do encontro de 24/11 serão confirmados no ambiente da disciplina. Não haverá aula em 07/10, 12/10 nem em 30/11; o conteúdo termina em 24/11 e a prova permanece em 14/12.
+> 🗓️ **Calendário atualizado:** a aula de PID começou em **09/11** e foi concluída em **16/11**, quando também iniciamos o lugar das raízes. Em **23/11**, concluímos o lugar das raízes e estudamos o projeto no domínio da frequência; em **terça-feira, 24/11, à tarde**, encerramos o conteúdo com controle em espaço de estados. O horário exato e a sala do encontro de 24/11 serão confirmados no ambiente da disciplina. Não houve aula em 07/10, 12/10 e 10/11, e não haverá aula em 30/11; a prova permanece em 14/12.
 
 📋 **[Plano da Disciplina AS-765 — 2026 (PDF)](../courses/as765/2026/plano-disciplina-as765-2026.pdf)**
 
@@ -205,6 +205,8 @@ os fontes e os exemplos MATLAB dos encontros de novembro listados abaixo.
 
 ### Aula 8 — 09/11/2026 — Capítulo 9
 
+Conteúdo concluído na aula de 16/11.
+
 **Materiais**:
 
 - 📊 **[Controladores P, PI, PD e PID (PDF)](../courses/as765/2026/slides-10-pid-as765-2026.pdf)**
@@ -219,39 +221,54 @@ os fontes e os exemplos MATLAB dos encontros de novembro listados abaixo.
 - derivada filtrada, ruído e derivada sobre a medição;
 - exercícios e validação de saída, margens e esforço de controle no MATLAB.
 
-### Aula 9 — 16/11/2026 — Capítulo 10
-
-Aula transferida de 10/11 para 16/11/2026, no horário regular.
+### Aula 9 — 16/11/2026 — conclusão do Capítulo 9 e início do Capítulo 10
 
 **Materiais**:
 
+- 📊 **[Controladores P, PI, PD e PID — conclusão (PDF)](../courses/as765/2026/slides-10-pid-as765-2026.pdf)**
 - 📊 **[Lugar das raízes e projeto de controladores (PDF)](../courses/as765/2026/slides-11-lugar-raizes-as765-2026.pdf)**
-- 📦 **[Material completo da aula: slides, fontes e exemplos MATLAB (ZIP)](../courses/as765/2026/material-aula-10-11-as765-2026.zip)**
+- 📦 **[Material completo do lugar das raízes: slides, fontes e exemplos MATLAB (ZIP)](../courses/as765/2026/material-aula-10-11-as765-2026.zip)**
 
 **Conteúdo da aula**:
 
-- equação característica e condições de ângulo e módulo;
-- regras de construção, eixo real, assíntotas e pontos de saída;
-- fronteiras de estabilidade e conferência por Routh;
-- regiões de desempenho, polos dominantes e seleção de ganho;
-- projeto de avanço de fase pela deficiência de ângulo;
-- verificação da resposta completa e do comando, com exercícios e MATLAB.
+- conclusão dos controladores P, PI, PD e PID;
+- introdução ao lugar das raízes: equação característica e condições de ângulo e módulo.
 
-### Aula 10 — 23/11/2026 — Capítulo 11
+### Aula 10 — 23/11/2026 — conclusão do Capítulo 10 e Capítulo 11
 
 **Materiais**:
 
-- 📊 **[Sensibilidade e projeto no domínio da frequência (PDF)](../courses/as765/2026/slides-12-projeto-frequencia-as765-2026.pdf)**
-- 📦 **[Material completo da aula: slides, fontes e exemplos MATLAB (ZIP)](../courses/as765/2026/material-aula-16-11-as765-2026.zip)**
+- 📊 **[Do lugar das raízes ao projeto em frequência — slides da aula (PDF)](../courses/as765/2026/slides-13-lgr-projeto-frequencia-as765-2026.pdf)**
+- 📊 **[Sensibilidade e projeto no domínio da frequência — conjunto completo, para leitura (PDF)](../courses/as765/2026/slides-12-projeto-frequencia-as765-2026.pdf)**
+- 📦 **[Material do projeto em frequência: slides, fontes e exemplos MATLAB (ZIP)](../courses/as765/2026/material-aula-16-11-as765-2026.zip)**
 
 **Conteúdo da aula**:
 
-- funções S, T, PS e CS; sinais da malha e estabilidade interna;
-- sensibilidade, margem de fase, banda e especificações de projeto;
-- pré-filtro de referência e esforço de controle;
-- compensadores de avanço e atraso, com normalização dos ganhos;
-- validação de margens, erro de rampa, transitório e comando;
-- atrasos, zeros instáveis, integral de Bode e robustez.
+- projeto de avanço de fase pelo lugar das raízes e verificação da resposta completa e do comando;
+- compensadores de avanço e atraso no Bode: fase máxima e frequência central;
+- funções S, T, PS e CS, estabilidade interna e margem de fase no cruzamento;
+- tradução de requisitos temporais em cruzamento de ganho, margem de fase e ganho em baixa frequência;
+- projeto de avanço e de avanço–atraso para atitude de rolamento: margens, erro de rampa, transitório e comando;
+- atraso de transporte e conferência no MATLAB.
+
+O conjunto completo do Capítulo 11 inclui tópicos deixados para leitura: pré-filtro, banda passante, cancelamento instável, zeros no semiplano direito, integral de Bode e robustez.
+
+### Aula 11 — 24/11/2026 — Capítulo 12
+
+Encontro excepcional na terça-feira, à tarde; horário exato e sala a confirmar no ambiente da disciplina.
+
+**Material**:
+
+- 📊 **[Projeto por realimentação de estados (PDF)](../courses/as765/2026/slides-14-realimentacao-estados-as765-2026.pdf)**
+
+**Conteúdo da aula**:
+
+- representação em espaço de estados e controlabilidade;
+- alocação de polos e comparação com o avanço de fase;
+- regulador linear quadrático (LQR), escolha de pesos e margens garantidas;
+- ação integral (LQI) e rejeição de carga constante;
+- observabilidade, observador de estados e princípio da separação;
+- controlador com observador visto como compensador e reconferência das margens.
 
 ## Cronograma de referência
 
@@ -263,12 +280,10 @@ Aula transferida de 10/11 para 16/11/2026, no horário regular.
 - **19/10 — Capítulo 7**: resposta em frequência e diagramas de Bode.
 - **26/10 — Capítulo 8**: diagramas e critério de Nyquist, margens de estabilidade e robustez.
 - **09/11 — Capítulo 9**: controladores P, PI, PD e PID, sintonia e limitações práticas.
-- **16/11 — Capítulo 10**: Lugar Geométrico das Raízes e projeto de controladores.
-- **23/11 — Capítulo 11**: funções de sensibilidade, compensadores e projeto no domínio da frequência.
+- **16/11 — Capítulos 9 e 10**: conclusão de PID e início do Lugar Geométrico das Raízes.
+- **23/11 — Capítulos 10 e 11**: projeto pelo lugar das raízes, funções de sensibilidade, compensadores de avanço e atraso e projeto no domínio da frequência.
 - **24/11 — Capítulo 12**: controle em espaço de estados, LQR/LQI e observadores. Encontro excepcional na terça-feira, à tarde; horário exato e sala a confirmar. Encerramento do conteúdo.
 - **14/12 — Avaliação escrita integradora**: quatro horas-aula; não haverá conteúdo novo.
-
-O material da aula 11, de 24/11, será acrescentado ao longo do período.
 
 ## Material de referência
 
@@ -278,4 +293,4 @@ O material da aula 11, de 24/11, será acrescentado ao longo do período.
 
 📚 [Material e cronograma da oferta de 2025](#as-765-controle-2025)
 
-*Última atualização: 15/11/2026*
+*Última atualização: 22/11/2026*
